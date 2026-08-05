@@ -36,6 +36,42 @@ def records_for(history, year, brackets):
     return table
 
 
+def check_analytics_invariants(history):
+    """Two things that must be true no matter what the numbers say.
+
+    Both are cheap, and both would catch a whole class of double-counting or
+    dropped-game bugs that look perfectly reasonable in the output.
+    """
+    import analytics
+
+    problems = []
+
+    # Every game has exactly one winner and one loser, so total wins across the
+    # league must be exactly half of all team-game rows.
+    career = analytics.luck(history)["career"]
+    total_games = sum(row["games"] for row in career)
+    total_wins = sum(row["actualWins"] for row in career)
+    if total_wins * 2 != total_games:
+        problems.append(
+            "wins (%d) should be exactly half of team-games (%d)"
+            % (total_wins, total_games)
+        )
+
+    # Expected wins is a redistribution of the same wins, so luck is zero-sum
+    # across the league. Any drift means a week was scored against the wrong
+    # field of opponents.
+    total_luck = sum(row["luck"] for row in career)
+    if abs(total_luck) > 0.05:
+        problems.append("luck should sum to zero across the league, got %+.2f" % total_luck)
+
+    print("analytics invariants: %s" % ("ok" if not problems else "FAILED"))
+    for problem in problems:
+        print("  - %s" % problem)
+    print("  total wins %d of %d team-games, luck sums to %+.2f"
+          % (total_wins, total_games, total_luck))
+    return problems
+
+
 def main():
     history = load_league_history()
     print("%d managers, %d game rows\n" % (len(history.managers), len(history.games)))
@@ -95,6 +131,8 @@ def main():
         print("")
 
     print("-" * 60)
+    invariant_problems = check_analytics_invariants(history)
+    print("-" * 60)
     if mismatches:
         print("%d mismatches against ESPN's own records -- do not build on this yet"
               % mismatches)
@@ -103,7 +141,7 @@ def main():
     if unchecked:
         print("%d team-seasons had no stored ESPN record to check against" % unchecked)
     print("\nThe champions above are the real test. Confirm them from memory.")
-    return 1 if mismatches else 0
+    return 1 if (mismatches or invariant_problems) else 0
 
 
 if __name__ == "__main__":

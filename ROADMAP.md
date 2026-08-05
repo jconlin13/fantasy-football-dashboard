@@ -132,13 +132,24 @@ resolve to one manager, because that silently sums two teams' results into one r
 **Verified:** `pipeline/validate_model.py` checks computed records against ESPN's own stored
 `record.overall` — **80 of 80 team-seasons match.** It does not assume what ESPN counts; it
 computes both definitions and reports which agrees (the answer is regular season only,
-consistently). The champions the model derives are printed at the top of each season's
-block and still need confirming from memory — matching ESPN's records proves the arithmetic,
-not that the right team is named champion.
+consistently). Matching ESPN's records proves the arithmetic, not that the right team is
+named champion — so the eight champions the bracket walk derives were confirmed separately
+from memory by the commissioner. Both gates passed.
 
-## Phase 4 — Records, head-to-head, luck
+## Phase 4 — Records, head-to-head, luck ✅ (computed; not yet on the site)
 
 Definitions matter more than code here — these are the numbers the league will argue about.
+All three live in `pipeline/analytics.py` rather than the `analytics/` package this roadmap
+originally sketched: they are the same `games` table grouped three ways, and splitting them
+across files would have separated things that share every helper. Phase 5 reads different
+tables and gets its own module.
+
+**Two invariants are now enforced by `validate_model.py`**, because both would catch
+double-counting or dropped games that look entirely reasonable in the output:
+
+- League-wide wins must be exactly half of all team-game rows (545 of 1090).
+- Luck must sum to zero across the league, since expected wins only redistribute the same
+  wins. Currently +0.00.
 
 - **Records book** — highest/lowest week, biggest blowout, narrowest win, longest streaks,
   best/worst season, most points in a loss. Regular season and playoffs kept separate.
