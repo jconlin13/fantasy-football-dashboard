@@ -384,3 +384,227 @@ footer {
 [hidden] {
   display: none !important;
 }
+
+/* ---------- tabs ---------- */
+
+/* A horizontal strip of chips that scrolls sideways on a phone rather than
+   wrapping into a block of buttons that pushes the content off screen. */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin: 0 -14px 18px;
+  padding: 0 14px 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs button {
+  flex: none;
+  padding: 9px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tabs button[aria-selected="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+}
+
+/* ---------- tables ---------- */
+
+.scroller {
+  margin: 0 -20px;
+  padding: 0 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+th {
+  padding: 0 0 8px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: right;
+  white-space: nowrap;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+td {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+td:first-child {
+  font-weight: 700;
+}
+
+th + th,
+td + td {
+  padding-left: 14px;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+.pos {
+  color: #0f9d58;
+  font-weight: 700;
+}
+
+.neg {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+/* ---------- record / stat rows ---------- */
+
+.stat {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.stat:last-child {
+  border-bottom: 0;
+}
+
+.stat .label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.stat .value {
+  font-size: 22px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.stat .who {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: right;
+}
+
+/* ---------- explainer ---------- */
+
+/* Every stat carries its definition. A number nobody can explain just starts a
+   new argument about the number. */
+.explain {
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--bg);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* ---------- picker ---------- */
+
+select {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* ---------- champions ---------- */
+
+.champ {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.champ:last-child {
+  border-bottom: 0;
+}
+
+.champ .year {
+  flex: none;
+  width: 52px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.champ .name {
+  flex: 1;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.champ .rings {
+  flex: none;
+  font-size: 15px;
+}
+
+/* Sub-headings inside a panel: quieter than the card title above them, but
+   still clearly a break between two different tables. */
+.card h3 {
+  margin: 26px 0 12px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.card h3:first-of-type {
+  margin-top: 8px;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.champ .rings .badge {
+  margin-left: 8px;
+}

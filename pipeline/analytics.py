@@ -204,6 +204,89 @@ def head_to_head(history):
     return sorted(matrix, key=lambda row: (row["manager"], row["opponent"]))
 
 
+def season_summaries(history):
+    """Champion and final standings for each completed season."""
+    summaries = []
+    for year in sorted(history.seasons):
+        season = history.seasons[year]
+        if not season.complete:
+            continue
+
+        table = collections.defaultdict(lambda: [0, 0, 0.0])
+        for game in _counting(history, (REGULAR,)):
+            if game["year"] != year:
+                continue
+            row = table[game["manager"]]
+            row[0] += 1 if game["won"] else 0
+            row[1] += 0 if game["won"] else 1
+            row[2] += game["points_for"]
+
+        standings = []
+        for team_id, manager in season.manager_of.items():
+            wins, losses, points = table.get(manager, [0, 0, 0.0])
+            standings.append(
+                {
+                    "manager": _name(history, manager),
+                    "rank": season.espn_rank.get(team_id),
+                    "wins": wins,
+                    "losses": losses,
+                    "points": round(points, 1),
+                }
+            )
+        standings.sort(key=lambda row: row["rank"] or 99)
+
+        summaries.append(
+            {
+                "year": year,
+                "champion": _name(history, season.champion) if season.champion else None,
+                "runnerUp": standings[1]["manager"] if len(standings) > 1 else None,
+                "standings": standings,
+            }
+        )
+    return summaries
+
+
+def manager_careers(history):
+    """One row per manager: everything about them on a single screen."""
+    seasons_played = collections.defaultdict(set)
+    record = collections.defaultdict(lambda: [0, 0, 0.0, 0.0])
+    titles = collections.Counter()
+
+    for game in _counting(history):
+        seasons_played[game["manager"]].add(game["year"])
+        row = record[game["manager"]]
+        row[0] += 1 if game["won"] else 0
+        row[1] += 0 if game["won"] else 1
+        row[2] += game["points_for"]
+        row[3] += game["points_against"]
+
+    for year, season in history.seasons.items():
+        if season.champion:
+            titles[season.champion] += 1
+
+    rows = []
+    for manager in history.managers:
+        wins, losses, points_for, points_against = record.get(manager, [0, 0, 0.0, 0.0])
+        played = sorted(seasons_played.get(manager, []))
+        rows.append(
+            {
+                "manager": _name(history, manager),
+                "seasons": len(played),
+                "firstSeason": played[0] if played else None,
+                "lastSeason": played[-1] if played else None,
+                "championships": titles.get(manager, 0),
+                "wins": wins,
+                "losses": losses,
+                "winPct": round(wins / float(wins + losses), 3) if wins + losses else 0.0,
+                "pointsFor": round(points_for, 1),
+                "pointsAgainst": round(points_against, 1),
+                "active": max(history.seasons) in seasons_played.get(manager, set())
+                or (max(history.seasons) - 1) in seasons_played.get(manager, set()),
+            }
+        )
+    return sorted(rows, key=lambda row: (-row["championships"], -row["winPct"]))
+
+
 def luck(history):
     """Expected wins from an all-play record, and how far actual wins strayed.
 

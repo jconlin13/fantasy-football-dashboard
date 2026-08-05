@@ -15,7 +15,7 @@ What this site is, what has been built, and what is left. Last revised 2026-08-0
   - [x] Optimal-lineup solver + efficiency (exact assignment, 1,186 team-weeks, 0 violations)
   - [x] Draft-pick return (labelled honestly — it tracks roster churn, not draft skill)
   - [x] Trade market summary (full retrospectives not possible — see below)
-- [ ] **Phase 6** — All-Time Analysis pages on the site
+- [x] **Phase 6** — All-Time Analysis page (7 tabbed sections, mobile-verified)
 - [ ] **Phase 7** — Automation, GitHub Pages, launch
 - [ ] **Phase 8** — Backlog
 

@@ -145,12 +145,55 @@ def build_draft():
     }
 
 
+def build_analysis():
+    """Everything the All-Time Analysis page renders, in one feed.
+
+    One file rather than six: the whole thing is a couple of hundred kilobytes,
+    and a single fetch means switching between sections on the page costs
+    nothing. Split it if it ever stops being small.
+    """
+    # Imported here so the splash page can still be rebuilt on a machine with no
+    # archive -- config/draft.ini is all draft.json needs.
+    import analytics
+    import draft as draft_analytics
+    import lineups as lineup_analytics
+    from model import load_league_history
+
+    history = load_league_history()
+    lineup_rows = lineup_analytics.load_lineups(history)
+    pick_rows = draft_analytics.draft_returns(history)
+
+    return {
+        "generated": datetime.date.today().isoformat(),
+        "firstSeason": min(history.seasons) if history.seasons else None,
+        "lastSeason": max(
+            (year for year, season in history.seasons.items() if season.complete),
+            default=None,
+        ),
+        "seasons": analytics.season_summaries(history),
+        "managers": analytics.manager_careers(history),
+        "records": analytics.records_book(history),
+        "headToHead": analytics.head_to_head(history),
+        "luck": analytics.luck(history),
+        "lineups": lineup_analytics.efficiency(history, lineup_rows),
+        "draft": draft_analytics.draft_roi(history, pick_rows),
+        "trades": draft_analytics.trade_activity(history),
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.parse_args()
+    parser.add_argument(
+        "--splash-only",
+        action="store_true",
+        help="skip the analysis feed (no archive needed)",
+    )
+    args = parser.parse_args()
 
     print("building site data")
     changed = write_json("draft.json", build_draft())
+    if not args.splash_only:
+        changed = write_json("analysis.json", build_analysis()) or changed
     print("done%s" % ("" if changed else " (nothing changed)"))
     return 0
 

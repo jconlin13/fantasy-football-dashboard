@@ -1,0 +1,4481 @@
+{
+  "draft": {
+    "bestPicks": [
+      {
+        "baseline": 120.87,
+        "manager": "Tyler S.",
+        "overall": 81,
+        "returned": 357.26,
+        "round": 9,
+        "vsSlot": 236.39,
+        "year": 2020
+      },
+      {
+        "baseline": 166.25,
+        "manager": "Spencer C.",
+        "overall": 18,
+        "returned": 402.42,
+        "round": 2,
+        "vsSlot": 236.17,
+        "year": 2022
+      },
+      {
+        "baseline": 72.2,
+        "manager": "Olivia M.",
+        "overall": 153,
+        "returned": 300.32,
+        "round": 16,
+        "vsSlot": 228.12,
+        "year": 2024
+      },
+      {
+        "baseline": 188.04,
+        "manager": "Tyler S.",
+        "overall": 61,
+        "returned": 412.9,
+        "round": 7,
+        "vsSlot": 224.86,
+        "year": 2021
+      },
+      {
+        "baseline": 164.88,
+        "manager": "Max O.",
+        "overall": 1,
+        "returned": 373.76,
+        "round": 1,
+        "vsSlot": 208.88,
+        "year": 2022
+      },
+      {
+        "baseline": 124.19,
+        "manager": "Griffin B.",
+        "overall": 128,
+        "returned": 325.64,
+        "round": 13,
+        "vsSlot": 201.45,
+        "year": 2018
+      },
+      {
+        "baseline": 78.66,
+        "manager": "Jack C.",
+        "overall": 125,
+        "returned": 277.98,
+        "round": 13,
+        "vsSlot": 199.32,
+        "year": 2018
+      },
+      {
+        "baseline": 103.55,
+        "manager": "Jack C.",
+        "overall": 75,
+        "returned": 300.0,
+        "round": 8,
+        "vsSlot": 196.45,
+        "year": 2021
+      },
+      {
+        "baseline": 78.34,
+        "manager": "Liam H.",
+        "overall": 107,
+        "returned": 273.14,
+        "round": 11,
+        "vsSlot": 194.8,
+        "year": 2018
+      },
+      {
+        "baseline": 80.36,
+        "manager": "Spencer C.",
+        "overall": 129,
+        "returned": 272.28,
+        "round": 13,
+        "vsSlot": 191.92,
+        "year": 2019
+      }
+    ],
+    "byManager": [
+      {
+        "avgVsSlot": 19.31,
+        "avgWeeksHeld": 13.75,
+        "manager": "Josh D.",
+        "picks": 16,
+        "totalVsSlot": 309.0
+      },
+      {
+        "avgVsSlot": 12.25,
+        "avgWeeksHeld": 13.86,
+        "manager": "Tommy G.",
+        "picks": 133,
+        "totalVsSlot": 1629.0
+      },
+      {
+        "avgVsSlot": 8.93,
+        "avgWeeksHeld": 12.7,
+        "manager": "Olivia M.",
+        "picks": 117,
+        "totalVsSlot": 1044.6
+      },
+      {
+        "avgVsSlot": 5.97,
+        "avgWeeksHeld": 12.53,
+        "manager": "Spencer C.",
+        "picks": 133,
+        "totalVsSlot": 794.2
+      },
+      {
+        "avgVsSlot": 4.43,
+        "avgWeeksHeld": 12.37,
+        "manager": "Jack C.",
+        "picks": 133,
+        "totalVsSlot": 589.5
+      },
+      {
+        "avgVsSlot": 3.94,
+        "avgWeeksHeld": 14.63,
+        "manager": "Teddy C.",
+        "picks": 133,
+        "totalVsSlot": 523.7
+      },
+      {
+        "avgVsSlot": 1.79,
+        "avgWeeksHeld": 11.85,
+        "manager": "Griffin B.",
+        "picks": 133,
+        "totalVsSlot": 238.4
+      },
+      {
+        "avgVsSlot": -4.25,
+        "avgWeeksHeld": 13.23,
+        "manager": "Nathan M.",
+        "picks": 133,
+        "totalVsSlot": -564.8
+      },
+      {
+        "avgVsSlot": -6.7,
+        "avgWeeksHeld": 11.04,
+        "manager": "Max O.",
+        "picks": 133,
+        "totalVsSlot": -891.7
+      },
+      {
+        "avgVsSlot": -13.39,
+        "avgWeeksHeld": 11.3,
+        "manager": "Tyler S.",
+        "picks": 133,
+        "totalVsSlot": -1780.2
+      },
+      {
+        "avgVsSlot": -14.22,
+        "avgWeeksHeld": 10.91,
+        "manager": "Liam H.",
+        "picks": 133,
+        "totalVsSlot": -1891.9
+      }
+    ],
+    "bySlot": [
+      {
+        "avgReturn": 164.88,
+        "overall": 1,
+        "picks": 8
+      },
+      {
+        "avgReturn": 232.04,
+        "overall": 2,
+        "picks": 8
+      },
+      {
+        "avgReturn": 290.11,
+        "overall": 3,
+        "picks": 8
+      },
+      {
+        "avgReturn": 266.6,
+        "overall": 4,
+        "picks": 8
+      },
+      {
+        "avgReturn": 266.91,
+        "overall": 5,
+        "picks": 8
+      },
+      {
+        "avgReturn": 263.02,
+        "overall": 6,
+        "picks": 8
+      },
+      {
+        "avgReturn": 331.3,
+        "overall": 7,
+        "picks": 8
+      },
+      {
+        "avgReturn": 292.03,
+        "overall": 8,
+        "picks": 8
+      },
+      {
+        "avgReturn": 231.2,
+        "overall": 9,
+        "picks": 8
+      },
+      {
+        "avgReturn": 182.62,
+        "overall": 10,
+        "picks": 8
+      },
+      {
+        "avgReturn": 271.63,
+        "overall": 11,
+        "picks": 8
+      },
+      {
+        "avgReturn": 239.12,
+        "overall": 12,
+        "picks": 8
+      },
+      {
+        "avgReturn": 239.17,
+        "overall": 13,
+        "picks": 8
+      },
+      {
+        "avgReturn": 234.24,
+        "overall": 14,
+        "picks": 8
+      },
+      {
+        "avgReturn": 210.08,
+        "overall": 15,
+        "picks": 8
+      },
+      {
+        "avgReturn": 221.46,
+        "overall": 16,
+        "picks": 8
+      },
+      {
+        "avgReturn": 209.64,
+        "overall": 17,
+        "picks": 8
+      },
+      {
+        "avgReturn": 166.25,
+        "overall": 18,
+        "picks": 8
+      },
+      {
+        "avgReturn": 242.57,
+        "overall": 19,
+        "picks": 8
+      },
+      {
+        "avgReturn": 193.92,
+        "overall": 20,
+        "picks": 8
+      },
+      {
+        "avgReturn": 231.55,
+        "overall": 21,
+        "picks": 8
+      },
+      {
+        "avgReturn": 277.27,
+        "overall": 22,
+        "picks": 8
+      },
+      {
+        "avgReturn": 268.25,
+        "overall": 23,
+        "picks": 8
+      },
+      {
+        "avgReturn": 216.47,
+        "overall": 24,
+        "picks": 8
+      },
+      {
+        "avgReturn": 169.84,
+        "overall": 25,
+        "picks": 8
+      },
+      {
+        "avgReturn": 224.01,
+        "overall": 26,
+        "picks": 8
+      },
+      {
+        "avgReturn": 202.59,
+        "overall": 27,
+        "picks": 8
+      },
+      {
+        "avgReturn": 243.66,
+        "overall": 28,
+        "picks": 8
+      },
+      {
+        "avgReturn": 217.7,
+        "overall": 29,
+        "picks": 8
+      },
+      {
+        "avgReturn": 199.28,
+        "overall": 30,
+        "picks": 8
+      },
+      {
+        "avgReturn": 217.82,
+        "overall": 31,
+        "picks": 8
+      },
+      {
+        "avgReturn": 200.77,
+        "overall": 32,
+        "picks": 8
+      },
+      {
+        "avgReturn": 170.57,
+        "overall": 33,
+        "picks": 8
+      },
+      {
+        "avgReturn": 166.16,
+        "overall": 34,
+        "picks": 8
+      },
+      {
+        "avgReturn": 203.91,
+        "overall": 35,
+        "picks": 8
+      },
+      {
+        "avgReturn": 165.28,
+        "overall": 36,
+        "picks": 8
+      },
+      {
+        "avgReturn": 230.51,
+        "overall": 37,
+        "picks": 8
+      },
+      {
+        "avgReturn": 193.21,
+        "overall": 38,
+        "picks": 8
+      },
+      {
+        "avgReturn": 165.91,
+        "overall": 39,
+        "picks": 8
+      },
+      {
+        "avgReturn": 210.84,
+        "overall": 40,
+        "picks": 8
+      },
+      {
+        "avgReturn": 192.85,
+        "overall": 41,
+        "picks": 8
+      },
+      {
+        "avgReturn": 190.97,
+        "overall": 42,
+        "picks": 8
+      },
+      {
+        "avgReturn": 226.31,
+        "overall": 43,
+        "picks": 8
+      },
+      {
+        "avgReturn": 94.62,
+        "overall": 44,
+        "picks": 8
+      },
+      {
+        "avgReturn": 131.67,
+        "overall": 45,
+        "picks": 8
+      },
+      {
+        "avgReturn": 171.18,
+        "overall": 46,
+        "picks": 8
+      },
+      {
+        "avgReturn": 158.54,
+        "overall": 47,
+        "picks": 8
+      },
+      {
+        "avgReturn": 183.11,
+        "overall": 48,
+        "picks": 8
+      },
+      {
+        "avgReturn": 159.65,
+        "overall": 49,
+        "picks": 8
+      },
+      {
+        "avgReturn": 193.28,
+        "overall": 50,
+        "picks": 8
+      },
+      {
+        "avgReturn": 183.07,
+        "overall": 51,
+        "picks": 8
+      },
+      {
+        "avgReturn": 169.88,
+        "overall": 52,
+        "picks": 8
+      },
+      {
+        "avgReturn": 129.91,
+        "overall": 53,
+        "picks": 8
+      },
+      {
+        "avgReturn": 158.56,
+        "overall": 54,
+        "picks": 8
+      },
+      {
+        "avgReturn": 189.05,
+        "overall": 55,
+        "picks": 8
+      },
+      {
+        "avgReturn": 177.26,
+        "overall": 56,
+        "picks": 8
+      },
+      {
+        "avgReturn": 178.04,
+        "overall": 57,
+        "picks": 8
+      },
+      {
+        "avgReturn": 155.21,
+        "overall": 58,
+        "picks": 8
+      },
+      {
+        "avgReturn": 211.43,
+        "overall": 59,
+        "picks": 8
+      },
+      {
+        "avgReturn": 147.11,
+        "overall": 60,
+        "picks": 8
+      },
+      {
+        "avgReturn": 188.04,
+        "overall": 61,
+        "picks": 8
+      },
+      {
+        "avgReturn": 182.52,
+        "overall": 62,
+        "picks": 8
+      },
+      {
+        "avgReturn": 188.24,
+        "overall": 63,
+        "picks": 8
+      },
+      {
+        "avgReturn": 185.64,
+        "overall": 64,
+        "picks": 8
+      },
+      {
+        "avgReturn": 198.51,
+        "overall": 65,
+        "picks": 8
+      },
+      {
+        "avgReturn": 207.03,
+        "overall": 66,
+        "picks": 8
+      },
+      {
+        "avgReturn": 81.79,
+        "overall": 67,
+        "picks": 8
+      },
+      {
+        "avgReturn": 110.65,
+        "overall": 68,
+        "picks": 8
+      },
+      {
+        "avgReturn": 163.66,
+        "overall": 69,
+        "picks": 8
+      },
+      {
+        "avgReturn": 160.0,
+        "overall": 70,
+        "picks": 8
+      },
+      {
+        "avgReturn": 123.74,
+        "overall": 71,
+        "picks": 8
+      },
+      {
+        "avgReturn": 164.18,
+        "overall": 72,
+        "picks": 8
+      },
+      {
+        "avgReturn": 95.38,
+        "overall": 73,
+        "picks": 8
+      },
+      {
+        "avgReturn": 98.17,
+        "overall": 74,
+        "picks": 8
+      },
+      {
+        "avgReturn": 103.55,
+        "overall": 75,
+        "picks": 8
+      },
+      {
+        "avgReturn": 143.76,
+        "overall": 76,
+        "picks": 8
+      },
+      {
+        "avgReturn": 133.41,
+        "overall": 77,
+        "picks": 8
+      },
+      {
+        "avgReturn": 124.05,
+        "overall": 78,
+        "picks": 8
+      },
+      {
+        "avgReturn": 136.2,
+        "overall": 79,
+        "picks": 8
+      },
+      {
+        "avgReturn": 101.79,
+        "overall": 80,
+        "picks": 8
+      },
+      {
+        "avgReturn": 120.87,
+        "overall": 81,
+        "picks": 8
+      },
+      {
+        "avgReturn": 168.54,
+        "overall": 82,
+        "picks": 8
+      },
+      {
+        "avgReturn": 102.34,
+        "overall": 83,
+        "picks": 8
+      },
+      {
+        "avgReturn": 152.53,
+        "overall": 84,
+        "picks": 8
+      },
+      {
+        "avgReturn": 94.23,
+        "overall": 85,
+        "picks": 8
+      },
+      {
+        "avgReturn": 155.37,
+        "overall": 86,
+        "picks": 8
+      },
+      {
+        "avgReturn": 104.62,
+        "overall": 87,
+        "picks": 8
+      },
+      {
+        "avgReturn": 90.32,
+        "overall": 88,
+        "picks": 8
+      },
+      {
+        "avgReturn": 115.83,
+        "overall": 89,
+        "picks": 8
+      },
+      {
+        "avgReturn": 181.52,
+        "overall": 90,
+        "picks": 8
+      },
+      {
+        "avgReturn": 132.65,
+        "overall": 91,
+        "picks": 8
+      },
+      {
+        "avgReturn": 131.97,
+        "overall": 92,
+        "picks": 8
+      },
+      {
+        "avgReturn": 84.71,
+        "overall": 93,
+        "picks": 8
+      },
+      {
+        "avgReturn": 111.97,
+        "overall": 94,
+        "picks": 8
+      },
+      {
+        "avgReturn": 140.95,
+        "overall": 95,
+        "picks": 8
+      },
+      {
+        "avgReturn": 101.02,
+        "overall": 96,
+        "picks": 8
+      },
+      {
+        "avgReturn": 101.64,
+        "overall": 97,
+        "picks": 8
+      },
+      {
+        "avgReturn": 134.47,
+        "overall": 98,
+        "picks": 8
+      },
+      {
+        "avgReturn": 108.01,
+        "overall": 99,
+        "picks": 8
+      },
+      {
+        "avgReturn": 155.01,
+        "overall": 100,
+        "picks": 8
+      },
+      {
+        "avgReturn": 81.5,
+        "overall": 101,
+        "picks": 8
+      },
+      {
+        "avgReturn": 101.3,
+        "overall": 102,
+        "picks": 8
+      },
+      {
+        "avgReturn": 103.98,
+        "overall": 103,
+        "picks": 8
+      },
+      {
+        "avgReturn": 71.63,
+        "overall": 104,
+        "picks": 8
+      },
+      {
+        "avgReturn": 117.05,
+        "overall": 105,
+        "picks": 8
+      },
+      {
+        "avgReturn": 82.41,
+        "overall": 106,
+        "picks": 8
+      },
+      {
+        "avgReturn": 78.34,
+        "overall": 107,
+        "picks": 8
+      },
+      {
+        "avgReturn": 72.88,
+        "overall": 108,
+        "picks": 8
+      },
+      {
+        "avgReturn": 125.38,
+        "overall": 109,
+        "picks": 8
+      },
+      {
+        "avgReturn": 115.0,
+        "overall": 110,
+        "picks": 8
+      },
+      {
+        "avgReturn": 69.04,
+        "overall": 111,
+        "picks": 8
+      },
+      {
+        "avgReturn": 56.18,
+        "overall": 112,
+        "picks": 8
+      },
+      {
+        "avgReturn": 124.11,
+        "overall": 113,
+        "picks": 8
+      },
+      {
+        "avgReturn": 98.21,
+        "overall": 114,
+        "picks": 8
+      },
+      {
+        "avgReturn": 102.18,
+        "overall": 115,
+        "picks": 8
+      },
+      {
+        "avgReturn": 111.86,
+        "overall": 116,
+        "picks": 8
+      },
+      {
+        "avgReturn": 185.35,
+        "overall": 117,
+        "picks": 8
+      },
+      {
+        "avgReturn": 137.68,
+        "overall": 118,
+        "picks": 8
+      },
+      {
+        "avgReturn": 77.1,
+        "overall": 119,
+        "picks": 8
+      },
+      {
+        "avgReturn": 96.28,
+        "overall": 120,
+        "picks": 8
+      },
+      {
+        "avgReturn": 42.38,
+        "overall": 121,
+        "picks": 8
+      },
+      {
+        "avgReturn": 141.33,
+        "overall": 122,
+        "picks": 8
+      },
+      {
+        "avgReturn": 150.84,
+        "overall": 123,
+        "picks": 8
+      },
+      {
+        "avgReturn": 72.48,
+        "overall": 124,
+        "picks": 8
+      },
+      {
+        "avgReturn": 78.66,
+        "overall": 125,
+        "picks": 8
+      },
+      {
+        "avgReturn": 113.24,
+        "overall": 126,
+        "picks": 8
+      },
+      {
+        "avgReturn": 77.79,
+        "overall": 127,
+        "picks": 8
+      },
+      {
+        "avgReturn": 124.19,
+        "overall": 128,
+        "picks": 8
+      },
+      {
+        "avgReturn": 80.36,
+        "overall": 129,
+        "picks": 8
+      },
+      {
+        "avgReturn": 129.2,
+        "overall": 130,
+        "picks": 8
+      },
+      {
+        "avgReturn": 117.47,
+        "overall": 131,
+        "picks": 8
+      },
+      {
+        "avgReturn": 55.34,
+        "overall": 132,
+        "picks": 8
+      },
+      {
+        "avgReturn": 22.89,
+        "overall": 133,
+        "picks": 8
+      },
+      {
+        "avgReturn": 56.97,
+        "overall": 134,
+        "picks": 8
+      },
+      {
+        "avgReturn": 66.38,
+        "overall": 135,
+        "picks": 8
+      },
+      {
+        "avgReturn": 121.7,
+        "overall": 136,
+        "picks": 8
+      },
+      {
+        "avgReturn": 95.78,
+        "overall": 137,
+        "picks": 8
+      },
+      {
+        "avgReturn": 124.94,
+        "overall": 138,
+        "picks": 8
+      },
+      {
+        "avgReturn": 65.69,
+        "overall": 139,
+        "picks": 8
+      },
+      {
+        "avgReturn": 130.64,
+        "overall": 140,
+        "picks": 8
+      },
+      {
+        "avgReturn": 68.51,
+        "overall": 141,
+        "picks": 8
+      },
+      {
+        "avgReturn": 68.81,
+        "overall": 142,
+        "picks": 8
+      },
+      {
+        "avgReturn": 79.35,
+        "overall": 143,
+        "picks": 8
+      },
+      {
+        "avgReturn": 79.11,
+        "overall": 144,
+        "picks": 8
+      },
+      {
+        "avgReturn": 141.78,
+        "overall": 145,
+        "picks": 8
+      },
+      {
+        "avgReturn": 31.73,
+        "overall": 146,
+        "picks": 8
+      },
+      {
+        "avgReturn": 37.82,
+        "overall": 147,
+        "picks": 8
+      },
+      {
+        "avgReturn": 46.52,
+        "overall": 148,
+        "picks": 8
+      },
+      {
+        "avgReturn": 109.38,
+        "overall": 149,
+        "picks": 8
+      },
+      {
+        "avgReturn": 56.04,
+        "overall": 150,
+        "picks": 8
+      },
+      {
+        "avgReturn": 59.4,
+        "overall": 151,
+        "picks": 8
+      },
+      {
+        "avgReturn": 86.97,
+        "overall": 152,
+        "picks": 8
+      },
+      {
+        "avgReturn": 72.2,
+        "overall": 153,
+        "picks": 8
+      },
+      {
+        "avgReturn": 43.65,
+        "overall": 154,
+        "picks": 8
+      },
+      {
+        "avgReturn": 59.98,
+        "overall": 155,
+        "picks": 8
+      },
+      {
+        "avgReturn": 48.57,
+        "overall": 156,
+        "picks": 8
+      },
+      {
+        "avgReturn": 44.65,
+        "overall": 157,
+        "picks": 8
+      },
+      {
+        "avgReturn": 84.19,
+        "overall": 158,
+        "picks": 8
+      },
+      {
+        "avgReturn": 54.71,
+        "overall": 159,
+        "picks": 8
+      },
+      {
+        "avgReturn": 86.37,
+        "overall": 160,
+        "picks": 8
+      },
+      {
+        "avgReturn": 18.3,
+        "overall": 161,
+        "picks": 4
+      },
+      {
+        "avgReturn": 79.05,
+        "overall": 162,
+        "picks": 4
+      },
+      {
+        "avgReturn": 74.18,
+        "overall": 163,
+        "picks": 4
+      },
+      {
+        "avgReturn": 34.06,
+        "overall": 164,
+        "picks": 4
+      },
+      {
+        "avgReturn": 18.48,
+        "overall": 165,
+        "picks": 4
+      },
+      {
+        "avgReturn": 88.38,
+        "overall": 166,
+        "picks": 4
+      },
+      {
+        "avgReturn": 31.7,
+        "overall": 167,
+        "picks": 4
+      },
+      {
+        "avgReturn": 11.95,
+        "overall": 168,
+        "picks": 4
+      },
+      {
+        "avgReturn": 7.3,
+        "overall": 169,
+        "picks": 4
+      },
+      {
+        "avgReturn": 19.52,
+        "overall": 170,
+        "picks": 4
+      },
+      {
+        "avgReturn": 50.1,
+        "overall": 171,
+        "picks": 1
+      },
+      {
+        "avgReturn": 48.0,
+        "overall": 172,
+        "picks": 1
+      },
+      {
+        "avgReturn": 8.5,
+        "overall": 173,
+        "picks": 1
+      },
+      {
+        "avgReturn": 70.7,
+        "overall": 174,
+        "picks": 1
+      },
+      {
+        "avgReturn": 14.7,
+        "overall": 175,
+        "picks": 1
+      },
+      {
+        "avgReturn": 0.0,
+        "overall": 176,
+        "picks": 1
+      },
+      {
+        "avgReturn": 0.0,
+        "overall": 177,
+        "picks": 1
+      },
+      {
+        "avgReturn": 9.7,
+        "overall": 178,
+        "picks": 1
+      },
+      {
+        "avgReturn": 59.0,
+        "overall": 179,
+        "picks": 1
+      },
+      {
+        "avgReturn": 0.0,
+        "overall": 180,
+        "picks": 1
+      }
+    ],
+    "worstPicks": [
+      {
+        "baseline": 290.11,
+        "manager": "Griffin B.",
+        "overall": 3,
+        "returned": 15.4,
+        "round": 1,
+        "vsSlot": -274.71,
+        "year": 2020
+      },
+      {
+        "baseline": 217.82,
+        "manager": "Josh D.",
+        "overall": 31,
+        "returned": 0,
+        "round": 4,
+        "vsSlot": -217.82,
+        "year": 2018
+      },
+      {
+        "baseline": 209.64,
+        "manager": "Tyler S.",
+        "overall": 17,
+        "returned": 0.0,
+        "round": 2,
+        "vsSlot": -209.64,
+        "year": 2023
+      },
+      {
+        "baseline": 217.7,
+        "manager": "Teddy C.",
+        "overall": 29,
+        "returned": 23.1,
+        "round": 3,
+        "vsSlot": -194.6,
+        "year": 2023
+      },
+      {
+        "baseline": 210.84,
+        "manager": "Tyler S.",
+        "overall": 40,
+        "returned": 17.0,
+        "round": 4,
+        "vsSlot": -193.84,
+        "year": 2021
+      },
+      {
+        "baseline": 216.47,
+        "manager": "Tyler S.",
+        "overall": 24,
+        "returned": 30.02,
+        "round": 3,
+        "vsSlot": -186.45,
+        "year": 2018
+      },
+      {
+        "baseline": 263.02,
+        "manager": "Olivia M.",
+        "overall": 6,
+        "returned": 83.9,
+        "round": 1,
+        "vsSlot": -179.12,
+        "year": 2020
+      },
+      {
+        "baseline": 188.04,
+        "manager": "Spencer C.",
+        "overall": 61,
+        "returned": 9.2,
+        "round": 7,
+        "vsSlot": -178.84,
+        "year": 2018
+      },
+      {
+        "baseline": 185.64,
+        "manager": "Tyler S.",
+        "overall": 64,
+        "returned": 10.0,
+        "round": 7,
+        "vsSlot": -175.64,
+        "year": 2019
+      },
+      {
+        "baseline": 188.24,
+        "manager": "Nathan M.",
+        "overall": 63,
+        "returned": 20.9,
+        "round": 7,
+        "vsSlot": -167.34,
+        "year": 2025
+      }
+    ]
+  },
+  "firstSeason": 2018,
+  "generated": "2026-08-05",
+  "headToHead": [
+    {
+      "avgMargin": 8.38,
+      "losses": 5,
+      "manager": "Griffin B.",
+      "meetings": 14,
+      "opponent": "Jack C.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 9
+    },
+    {
+      "avgMargin": -10.49,
+      "losses": 1,
+      "manager": "Griffin B.",
+      "meetings": 2,
+      "opponent": "Josh D.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 1
+    },
+    {
+      "avgMargin": -2.47,
+      "losses": 4,
+      "manager": "Griffin B.",
+      "meetings": 9,
+      "opponent": "Liam H.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 5
+    },
+    {
+      "avgMargin": 5.32,
+      "losses": 5,
+      "manager": "Griffin B.",
+      "meetings": 10,
+      "opponent": "Max O.",
+      "playoffLosses": 1,
+      "playoffWins": 1,
+      "wins": 5
+    },
+    {
+      "avgMargin": 6.68,
+      "losses": 6,
+      "manager": "Griffin B.",
+      "meetings": 17,
+      "opponent": "Nathan M.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 11
+    },
+    {
+      "avgMargin": -16.64,
+      "losses": 11,
+      "manager": "Griffin B.",
+      "meetings": 15,
+      "opponent": "Olivia M.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 4
+    },
+    {
+      "avgMargin": 4.6,
+      "losses": 8,
+      "manager": "Griffin B.",
+      "meetings": 16,
+      "opponent": "Spencer C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 8
+    },
+    {
+      "avgMargin": 18.52,
+      "losses": 2,
+      "manager": "Griffin B.",
+      "meetings": 8,
+      "opponent": "Teddy C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 6
+    },
+    {
+      "avgMargin": 4.9,
+      "losses": 10,
+      "manager": "Griffin B.",
+      "meetings": 19,
+      "opponent": "Tommy G.",
+      "playoffLosses": 1,
+      "playoffWins": 2,
+      "wins": 9
+    },
+    {
+      "avgMargin": 5.78,
+      "losses": 4,
+      "manager": "Griffin B.",
+      "meetings": 9,
+      "opponent": "Tyler S.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 5
+    },
+    {
+      "avgMargin": -8.38,
+      "losses": 9,
+      "manager": "Jack C.",
+      "meetings": 14,
+      "opponent": "Griffin B.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 5
+    },
+    {
+      "avgMargin": 70.16,
+      "losses": 0,
+      "manager": "Jack C.",
+      "meetings": 1,
+      "opponent": "Josh D.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 1
+    },
+    {
+      "avgMargin": -7.47,
+      "losses": 11,
+      "manager": "Jack C.",
+      "meetings": 18,
+      "opponent": "Liam H.",
+      "playoffLosses": 2,
+      "playoffWins": 0,
+      "wins": 7
+    },
+    {
+      "avgMargin": -16.65,
+      "losses": 14,
+      "manager": "Jack C.",
+      "meetings": 18,
+      "opponent": "Max O.",
+      "playoffLosses": 1,
+      "playoffWins": 1,
+      "wins": 4
+    },
+    {
+      "avgMargin": 5.62,
+      "losses": 4,
+      "manager": "Jack C.",
+      "meetings": 8,
+      "opponent": "Nathan M.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 4
+    },
+    {
+      "avgMargin": 2.71,
+      "losses": 3,
+      "manager": "Jack C.",
+      "meetings": 7,
+      "opponent": "Olivia M.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 4
+    },
+    {
+      "avgMargin": -17.28,
+      "losses": 6,
+      "manager": "Jack C.",
+      "meetings": 8,
+      "opponent": "Spencer C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 2
+    },
+    {
+      "avgMargin": -8.12,
+      "losses": 8,
+      "manager": "Jack C.",
+      "meetings": 16,
+      "opponent": "Teddy C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 8
+    },
+    {
+      "avgMargin": -3.93,
+      "losses": 6,
+      "manager": "Jack C.",
+      "meetings": 9,
+      "opponent": "Tommy G.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 3
+    },
+    {
+      "avgMargin": 5.05,
+      "losses": 7,
+      "manager": "Jack C.",
+      "meetings": 17,
+      "opponent": "Tyler S.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 10
+    },
+    {
+      "avgMargin": 10.49,
+      "losses": 1,
+      "manager": "Josh D.",
+      "meetings": 2,
+      "opponent": "Griffin B.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 1
+    },
+    {
+      "avgMargin": -70.16,
+      "losses": 1,
+      "manager": "Josh D.",
+      "meetings": 1,
+      "opponent": "Jack C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 0
+    },
+    {
+      "avgMargin": 35.62,
+      "losses": 0,
+      "manager": "Josh D.",
+      "meetings": 1,
+      "opponent": "Liam H.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 1
+    },
+    {
+      "avgMargin": -15.56,
+      "losses": 1,
+      "manager": "Josh D.",
+      "meetings": 2,
+      "opponent": "Max O.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 1
+    },
+    {
+      "avgMargin": 36.47,
+      "losses": 0,
+      "manager": "Josh D.",
+      "meetings": 2,
+      "opponent": "Nathan M.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 2
+    },
+    {
+      "avgMargin": 41.18,
+      "losses": 0,
+      "manager": "Josh D.",
+      "meetings": 2,
+      "opponent": "Spencer C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 2
+    },
+    {
+      "avgMargin": 45.32,
+      "losses": 0,
+      "manager": "Josh D.",
+      "meetings": 1,
+      "opponent": "Teddy C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 1
+    },
+    {
+      "avgMargin": 1.63,
+      "losses": 1,
+      "manager": "Josh D.",
+      "meetings": 2,
+      "opponent": "Tommy G.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 1
+    },
+    {
+      "avgMargin": 33.3,
+      "losses": 0,
+      "manager": "Josh D.",
+      "meetings": 2,
+      "opponent": "Tyler S.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 2
+    },
+    {
+      "avgMargin": 2.47,
+      "losses": 5,
+      "manager": "Liam H.",
+      "meetings": 9,
+      "opponent": "Griffin B.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 4
+    },
+    {
+      "avgMargin": 7.47,
+      "losses": 7,
+      "manager": "Liam H.",
+      "meetings": 18,
+      "opponent": "Jack C.",
+      "playoffLosses": 0,
+      "playoffWins": 2,
+      "wins": 11
+    },
+    {
+      "avgMargin": -35.62,
+      "losses": 1,
+      "manager": "Liam H.",
+      "meetings": 1,
+      "opponent": "Josh D.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 0
+    },
+    {
+      "avgMargin": -0.45,
+      "losses": 7,
+      "manager": "Liam H.",
+      "meetings": 19,
+      "opponent": "Max O.",
+      "playoffLosses": 0,
+      "playoffWins": 3,
+      "wins": 12
+    },
+    {
+      "avgMargin": 16.3,
+      "losses": 4,
+      "manager": "Liam H.",
+      "meetings": 9,
+      "opponent": "Nathan M.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 5
+    },
+    {
+      "avgMargin": -11.98,
+      "losses": 6,
+      "manager": "Liam H.",
+      "meetings": 9,
+      "opponent": "Olivia M.",
+      "playoffLosses": 0,
+      "playoffWins": 2,
+      "wins": 3
+    },
+    {
+      "avgMargin": -6.24,
+      "losses": 8,
+      "manager": "Liam H.",
+      "meetings": 14,
+      "opponent": "Spencer C.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 6
+    },
+    {
+      "avgMargin": 5.9,
+      "losses": 7,
+      "manager": "Liam H.",
+      "meetings": 17,
+      "opponent": "Teddy C.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 10
+    },
+    {
+      "avgMargin": -16.21,
+      "losses": 5,
+      "manager": "Liam H.",
+      "meetings": 8,
+      "opponent": "Tommy G.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 3
+    },
+    {
+      "avgMargin": -1.4,
+      "losses": 9,
+      "manager": "Liam H.",
+      "meetings": 17,
+      "opponent": "Tyler S.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 8
+    },
+    {
+      "avgMargin": -5.32,
+      "losses": 5,
+      "manager": "Max O.",
+      "meetings": 10,
+      "opponent": "Griffin B.",
+      "playoffLosses": 1,
+      "playoffWins": 1,
+      "wins": 5
+    },
+    {
+      "avgMargin": 16.65,
+      "losses": 4,
+      "manager": "Max O.",
+      "meetings": 18,
+      "opponent": "Jack C.",
+      "playoffLosses": 1,
+      "playoffWins": 1,
+      "wins": 14
+    },
+    {
+      "avgMargin": 15.56,
+      "losses": 1,
+      "manager": "Max O.",
+      "meetings": 2,
+      "opponent": "Josh D.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 1
+    },
+    {
+      "avgMargin": 0.45,
+      "losses": 12,
+      "manager": "Max O.",
+      "meetings": 19,
+      "opponent": "Liam H.",
+      "playoffLosses": 3,
+      "playoffWins": 0,
+      "wins": 7
+    },
+    {
+      "avgMargin": 8.3,
+      "losses": 3,
+      "manager": "Max O.",
+      "meetings": 10,
+      "opponent": "Nathan M.",
+      "playoffLosses": 2,
+      "playoffWins": 0,
+      "wins": 7
+    },
+    {
+      "avgMargin": -5.6,
+      "losses": 4,
+      "manager": "Max O.",
+      "meetings": 9,
+      "opponent": "Olivia M.",
+      "playoffLosses": 1,
+      "playoffWins": 1,
+      "wins": 5
+    },
+    {
+      "avgMargin": 9.8,
+      "losses": 4,
+      "manager": "Max O.",
+      "meetings": 10,
+      "opponent": "Spencer C.",
+      "playoffLosses": 0,
+      "playoffWins": 2,
+      "wins": 6
+    },
+    {
+      "avgMargin": 1.77,
+      "losses": 9,
+      "manager": "Max O.",
+      "meetings": 18,
+      "opponent": "Teddy C.",
+      "playoffLosses": 2,
+      "playoffWins": 0,
+      "wins": 9
+    },
+    {
+      "avgMargin": 8.13,
+      "losses": 3,
+      "manager": "Max O.",
+      "meetings": 15,
+      "opponent": "Tommy G.",
+      "playoffLosses": 0,
+      "playoffWins": 2,
+      "wins": 12
+    },
+    {
+      "avgMargin": 14.42,
+      "losses": 5,
+      "manager": "Max O.",
+      "meetings": 17,
+      "opponent": "Tyler S.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 12
+    },
+    {
+      "avgMargin": -6.68,
+      "losses": 11,
+      "manager": "Nathan M.",
+      "meetings": 17,
+      "opponent": "Griffin B.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 6
+    },
+    {
+      "avgMargin": -5.62,
+      "losses": 4,
+      "manager": "Nathan M.",
+      "meetings": 8,
+      "opponent": "Jack C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 4
+    },
+    {
+      "avgMargin": -36.47,
+      "losses": 2,
+      "manager": "Nathan M.",
+      "meetings": 2,
+      "opponent": "Josh D.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 0
+    },
+    {
+      "avgMargin": -16.3,
+      "losses": 5,
+      "manager": "Nathan M.",
+      "meetings": 9,
+      "opponent": "Liam H.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 4
+    },
+    {
+      "avgMargin": -8.3,
+      "losses": 7,
+      "manager": "Nathan M.",
+      "meetings": 10,
+      "opponent": "Max O.",
+      "playoffLosses": 0,
+      "playoffWins": 2,
+      "wins": 3
+    },
+    {
+      "avgMargin": -38.4,
+      "losses": 12,
+      "manager": "Nathan M.",
+      "meetings": 14,
+      "opponent": "Olivia M.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 2
+    },
+    {
+      "avgMargin": -6.03,
+      "losses": 8,
+      "manager": "Nathan M.",
+      "meetings": 16,
+      "opponent": "Spencer C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 8
+    },
+    {
+      "avgMargin": 6.57,
+      "losses": 3,
+      "manager": "Nathan M.",
+      "meetings": 10,
+      "opponent": "Teddy C.",
+      "playoffLosses": 1,
+      "playoffWins": 1,
+      "wins": 7
+    },
+    {
+      "avgMargin": -28.3,
+      "losses": 12,
+      "manager": "Nathan M.",
+      "meetings": 16,
+      "opponent": "Tommy G.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 4
+    },
+    {
+      "avgMargin": -1.77,
+      "losses": 6,
+      "manager": "Nathan M.",
+      "meetings": 13,
+      "opponent": "Tyler S.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 7
+    },
+    {
+      "avgMargin": 16.64,
+      "losses": 4,
+      "manager": "Olivia M.",
+      "meetings": 15,
+      "opponent": "Griffin B.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 11
+    },
+    {
+      "avgMargin": -2.71,
+      "losses": 4,
+      "manager": "Olivia M.",
+      "meetings": 7,
+      "opponent": "Jack C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 3
+    },
+    {
+      "avgMargin": 11.98,
+      "losses": 3,
+      "manager": "Olivia M.",
+      "meetings": 9,
+      "opponent": "Liam H.",
+      "playoffLosses": 2,
+      "playoffWins": 0,
+      "wins": 6
+    },
+    {
+      "avgMargin": 5.6,
+      "losses": 5,
+      "manager": "Olivia M.",
+      "meetings": 9,
+      "opponent": "Max O.",
+      "playoffLosses": 1,
+      "playoffWins": 1,
+      "wins": 4
+    },
+    {
+      "avgMargin": 38.4,
+      "losses": 2,
+      "manager": "Olivia M.",
+      "meetings": 14,
+      "opponent": "Nathan M.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 12
+    },
+    {
+      "avgMargin": -6.19,
+      "losses": 9,
+      "manager": "Olivia M.",
+      "meetings": 14,
+      "opponent": "Spencer C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 5
+    },
+    {
+      "avgMargin": 2.51,
+      "losses": 7,
+      "manager": "Olivia M.",
+      "meetings": 13,
+      "opponent": "Teddy C.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 6
+    },
+    {
+      "avgMargin": 11.48,
+      "losses": 7,
+      "manager": "Olivia M.",
+      "meetings": 16,
+      "opponent": "Tommy G.",
+      "playoffLosses": 0,
+      "playoffWins": 2,
+      "wins": 9
+    },
+    {
+      "avgMargin": -7.27,
+      "losses": 4,
+      "manager": "Olivia M.",
+      "meetings": 7,
+      "opponent": "Tyler S.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 3
+    },
+    {
+      "avgMargin": -4.6,
+      "losses": 8,
+      "manager": "Spencer C.",
+      "meetings": 16,
+      "opponent": "Griffin B.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 8
+    },
+    {
+      "avgMargin": 17.28,
+      "losses": 2,
+      "manager": "Spencer C.",
+      "meetings": 8,
+      "opponent": "Jack C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 6
+    },
+    {
+      "avgMargin": -41.18,
+      "losses": 2,
+      "manager": "Spencer C.",
+      "meetings": 2,
+      "opponent": "Josh D.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 0
+    },
+    {
+      "avgMargin": 6.24,
+      "losses": 6,
+      "manager": "Spencer C.",
+      "meetings": 14,
+      "opponent": "Liam H.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 8
+    },
+    {
+      "avgMargin": -9.8,
+      "losses": 6,
+      "manager": "Spencer C.",
+      "meetings": 10,
+      "opponent": "Max O.",
+      "playoffLosses": 2,
+      "playoffWins": 0,
+      "wins": 4
+    },
+    {
+      "avgMargin": 6.03,
+      "losses": 8,
+      "manager": "Spencer C.",
+      "meetings": 16,
+      "opponent": "Nathan M.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 8
+    },
+    {
+      "avgMargin": 6.19,
+      "losses": 5,
+      "manager": "Spencer C.",
+      "meetings": 14,
+      "opponent": "Olivia M.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 9
+    },
+    {
+      "avgMargin": 8.05,
+      "losses": 5,
+      "manager": "Spencer C.",
+      "meetings": 10,
+      "opponent": "Teddy C.",
+      "playoffLosses": 1,
+      "playoffWins": 1,
+      "wins": 5
+    },
+    {
+      "avgMargin": -12.17,
+      "losses": 13,
+      "manager": "Spencer C.",
+      "meetings": 16,
+      "opponent": "Tommy G.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 3
+    },
+    {
+      "avgMargin": 8.23,
+      "losses": 4,
+      "manager": "Spencer C.",
+      "meetings": 8,
+      "opponent": "Tyler S.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 4
+    },
+    {
+      "avgMargin": -18.52,
+      "losses": 6,
+      "manager": "Teddy C.",
+      "meetings": 8,
+      "opponent": "Griffin B.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 2
+    },
+    {
+      "avgMargin": 8.12,
+      "losses": 8,
+      "manager": "Teddy C.",
+      "meetings": 16,
+      "opponent": "Jack C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 8
+    },
+    {
+      "avgMargin": -45.32,
+      "losses": 1,
+      "manager": "Teddy C.",
+      "meetings": 1,
+      "opponent": "Josh D.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 0
+    },
+    {
+      "avgMargin": -5.9,
+      "losses": 10,
+      "manager": "Teddy C.",
+      "meetings": 17,
+      "opponent": "Liam H.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 7
+    },
+    {
+      "avgMargin": -1.77,
+      "losses": 9,
+      "manager": "Teddy C.",
+      "meetings": 18,
+      "opponent": "Max O.",
+      "playoffLosses": 0,
+      "playoffWins": 2,
+      "wins": 9
+    },
+    {
+      "avgMargin": -6.57,
+      "losses": 7,
+      "manager": "Teddy C.",
+      "meetings": 10,
+      "opponent": "Nathan M.",
+      "playoffLosses": 1,
+      "playoffWins": 1,
+      "wins": 3
+    },
+    {
+      "avgMargin": -2.51,
+      "losses": 6,
+      "manager": "Teddy C.",
+      "meetings": 13,
+      "opponent": "Olivia M.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 7
+    },
+    {
+      "avgMargin": -8.05,
+      "losses": 5,
+      "manager": "Teddy C.",
+      "meetings": 10,
+      "opponent": "Spencer C.",
+      "playoffLosses": 1,
+      "playoffWins": 1,
+      "wins": 5
+    },
+    {
+      "avgMargin": -6.83,
+      "losses": 6,
+      "manager": "Teddy C.",
+      "meetings": 10,
+      "opponent": "Tommy G.",
+      "playoffLosses": 0,
+      "playoffWins": 2,
+      "wins": 4
+    },
+    {
+      "avgMargin": 2.47,
+      "losses": 8,
+      "manager": "Teddy C.",
+      "meetings": 16,
+      "opponent": "Tyler S.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 8
+    },
+    {
+      "avgMargin": -4.9,
+      "losses": 9,
+      "manager": "Tommy G.",
+      "meetings": 19,
+      "opponent": "Griffin B.",
+      "playoffLosses": 2,
+      "playoffWins": 1,
+      "wins": 10
+    },
+    {
+      "avgMargin": 3.93,
+      "losses": 3,
+      "manager": "Tommy G.",
+      "meetings": 9,
+      "opponent": "Jack C.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 6
+    },
+    {
+      "avgMargin": -1.63,
+      "losses": 1,
+      "manager": "Tommy G.",
+      "meetings": 2,
+      "opponent": "Josh D.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 1
+    },
+    {
+      "avgMargin": 16.21,
+      "losses": 3,
+      "manager": "Tommy G.",
+      "meetings": 8,
+      "opponent": "Liam H.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 5
+    },
+    {
+      "avgMargin": -8.13,
+      "losses": 12,
+      "manager": "Tommy G.",
+      "meetings": 15,
+      "opponent": "Max O.",
+      "playoffLosses": 2,
+      "playoffWins": 0,
+      "wins": 3
+    },
+    {
+      "avgMargin": 28.3,
+      "losses": 4,
+      "manager": "Tommy G.",
+      "meetings": 16,
+      "opponent": "Nathan M.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 12
+    },
+    {
+      "avgMargin": -11.48,
+      "losses": 9,
+      "manager": "Tommy G.",
+      "meetings": 16,
+      "opponent": "Olivia M.",
+      "playoffLosses": 2,
+      "playoffWins": 0,
+      "wins": 7
+    },
+    {
+      "avgMargin": 12.17,
+      "losses": 3,
+      "manager": "Tommy G.",
+      "meetings": 16,
+      "opponent": "Spencer C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 13
+    },
+    {
+      "avgMargin": 6.83,
+      "losses": 4,
+      "manager": "Tommy G.",
+      "meetings": 10,
+      "opponent": "Teddy C.",
+      "playoffLosses": 2,
+      "playoffWins": 0,
+      "wins": 6
+    },
+    {
+      "avgMargin": 0.29,
+      "losses": 4,
+      "manager": "Tommy G.",
+      "meetings": 9,
+      "opponent": "Tyler S.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 5
+    },
+    {
+      "avgMargin": -5.78,
+      "losses": 5,
+      "manager": "Tyler S.",
+      "meetings": 9,
+      "opponent": "Griffin B.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 4
+    },
+    {
+      "avgMargin": -5.05,
+      "losses": 10,
+      "manager": "Tyler S.",
+      "meetings": 17,
+      "opponent": "Jack C.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 7
+    },
+    {
+      "avgMargin": -33.3,
+      "losses": 2,
+      "manager": "Tyler S.",
+      "meetings": 2,
+      "opponent": "Josh D.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 0
+    },
+    {
+      "avgMargin": 1.4,
+      "losses": 8,
+      "manager": "Tyler S.",
+      "meetings": 17,
+      "opponent": "Liam H.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 9
+    },
+    {
+      "avgMargin": -14.42,
+      "losses": 12,
+      "manager": "Tyler S.",
+      "meetings": 17,
+      "opponent": "Max O.",
+      "playoffLosses": 1,
+      "playoffWins": 0,
+      "wins": 5
+    },
+    {
+      "avgMargin": 1.77,
+      "losses": 7,
+      "manager": "Tyler S.",
+      "meetings": 13,
+      "opponent": "Nathan M.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 6
+    },
+    {
+      "avgMargin": 7.27,
+      "losses": 3,
+      "manager": "Tyler S.",
+      "meetings": 7,
+      "opponent": "Olivia M.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 4
+    },
+    {
+      "avgMargin": -8.23,
+      "losses": 4,
+      "manager": "Tyler S.",
+      "meetings": 8,
+      "opponent": "Spencer C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 4
+    },
+    {
+      "avgMargin": -2.47,
+      "losses": 8,
+      "manager": "Tyler S.",
+      "meetings": 16,
+      "opponent": "Teddy C.",
+      "playoffLosses": 0,
+      "playoffWins": 0,
+      "wins": 8
+    },
+    {
+      "avgMargin": -0.29,
+      "losses": 5,
+      "manager": "Tyler S.",
+      "meetings": 9,
+      "opponent": "Tommy G.",
+      "playoffLosses": 0,
+      "playoffWins": 1,
+      "wins": 4
+    }
+  ],
+  "lastSeason": 2025,
+  "lineups": {
+    "career": [
+      {
+        "actual": 14236.0,
+        "efficiency": 0.8865,
+        "leftOnBench": 1822.6,
+        "manager": "Olivia M.",
+        "optimal": 16058.6,
+        "weeks": 104
+      },
+      {
+        "actual": 17281.0,
+        "efficiency": 0.8851,
+        "leftOnBench": 2242.9,
+        "manager": "Max O.",
+        "optimal": 19523.9,
+        "weeks": 128
+      },
+      {
+        "actual": 15816.2,
+        "efficiency": 0.8783,
+        "leftOnBench": 2191.8,
+        "manager": "Tommy G.",
+        "optimal": 18008.0,
+        "weeks": 120
+      },
+      {
+        "actual": 14522.6,
+        "efficiency": 0.8719,
+        "leftOnBench": 2133.9,
+        "manager": "Tyler S.",
+        "optimal": 16656.5,
+        "weeks": 115
+      },
+      {
+        "actual": 15879.3,
+        "efficiency": 0.8719,
+        "leftOnBench": 2333.9,
+        "manager": "Liam H.",
+        "optimal": 18213.2,
+        "weeks": 121
+      },
+      {
+        "actual": 15606.3,
+        "efficiency": 0.8713,
+        "leftOnBench": 2304.7,
+        "manager": "Griffin B.",
+        "optimal": 17911.0,
+        "weeks": 119
+      },
+      {
+        "actual": 14872.7,
+        "efficiency": 0.8704,
+        "leftOnBench": 2214.5,
+        "manager": "Spencer C.",
+        "optimal": 17087.1,
+        "weeks": 114
+      },
+      {
+        "actual": 13927.6,
+        "efficiency": 0.8668,
+        "leftOnBench": 2139.8,
+        "manager": "Nathan M.",
+        "optimal": 16067.4,
+        "weeks": 115
+      },
+      {
+        "actual": 14610.4,
+        "efficiency": 0.8632,
+        "leftOnBench": 2315.4,
+        "manager": "Jack C.",
+        "optimal": 16925.8,
+        "weeks": 116
+      },
+      {
+        "actual": 14718.7,
+        "efficiency": 0.8569,
+        "leftOnBench": 2458.3,
+        "manager": "Teddy C.",
+        "optimal": 17177.1,
+        "weeks": 119
+      },
+      {
+        "actual": 1896.5,
+        "efficiency": 0.8308,
+        "leftOnBench": 386.2,
+        "manager": "Josh D.",
+        "optimal": 2282.7,
+        "weeks": 15
+      }
+    ],
+    "seasons": [
+      {
+        "efficiency": 0.887,
+        "leftOnBench": 227.9,
+        "manager": "Griffin B.",
+        "year": 2018
+      },
+      {
+        "efficiency": 0.8747,
+        "leftOnBench": 291.9,
+        "manager": "Jack C.",
+        "year": 2018
+      },
+      {
+        "efficiency": 0.8308,
+        "leftOnBench": 386.2,
+        "manager": "Josh D.",
+        "year": 2018
+      },
+      {
+        "efficiency": 0.9003,
+        "leftOnBench": 179.8,
+        "manager": "Liam H.",
+        "year": 2018
+      },
+      {
+        "efficiency": 0.9062,
+        "leftOnBench": 213.2,
+        "manager": "Max O.",
+        "year": 2018
+      },
+      {
+        "efficiency": 0.8652,
+        "leftOnBench": 220.8,
+        "manager": "Nathan M.",
+        "year": 2018
+      },
+      {
+        "efficiency": 0.7835,
+        "leftOnBench": 347.7,
+        "manager": "Spencer C.",
+        "year": 2018
+      },
+      {
+        "efficiency": 0.7932,
+        "leftOnBench": 333.8,
+        "manager": "Teddy C.",
+        "year": 2018
+      },
+      {
+        "efficiency": 0.8865,
+        "leftOnBench": 213.1,
+        "manager": "Tommy G.",
+        "year": 2018
+      },
+      {
+        "efficiency": 0.917,
+        "leftOnBench": 194.1,
+        "manager": "Tyler S.",
+        "year": 2018
+      },
+      {
+        "efficiency": 0.8571,
+        "leftOnBench": 265.3,
+        "manager": "Griffin B.",
+        "year": 2019
+      },
+      {
+        "efficiency": 0.8772,
+        "leftOnBench": 229.4,
+        "manager": "Jack C.",
+        "year": 2019
+      },
+      {
+        "efficiency": 0.8735,
+        "leftOnBench": 302.8,
+        "manager": "Liam H.",
+        "year": 2019
+      },
+      {
+        "efficiency": 0.896,
+        "leftOnBench": 223.5,
+        "manager": "Max O.",
+        "year": 2019
+      },
+      {
+        "efficiency": 0.7761,
+        "leftOnBench": 328.3,
+        "manager": "Nathan M.",
+        "year": 2019
+      },
+      {
+        "efficiency": 0.8814,
+        "leftOnBench": 289.2,
+        "manager": "Olivia M.",
+        "year": 2019
+      },
+      {
+        "efficiency": 0.7188,
+        "leftOnBench": 493.3,
+        "manager": "Spencer C.",
+        "year": 2019
+      },
+      {
+        "efficiency": 0.8261,
+        "leftOnBench": 255.3,
+        "manager": "Teddy C.",
+        "year": 2019
+      },
+      {
+        "efficiency": 0.8712,
+        "leftOnBench": 324.9,
+        "manager": "Tommy G.",
+        "year": 2019
+      },
+      {
+        "efficiency": 0.8519,
+        "leftOnBench": 261.7,
+        "manager": "Tyler S.",
+        "year": 2019
+      },
+      {
+        "efficiency": 0.8606,
+        "leftOnBench": 242.9,
+        "manager": "Griffin B.",
+        "year": 2020
+      },
+      {
+        "efficiency": 0.8565,
+        "leftOnBench": 240.0,
+        "manager": "Jack C.",
+        "year": 2020
+      },
+      {
+        "efficiency": 0.8686,
+        "leftOnBench": 324.9,
+        "manager": "Liam H.",
+        "year": 2020
+      },
+      {
+        "efficiency": 0.8949,
+        "leftOnBench": 230.1,
+        "manager": "Max O.",
+        "year": 2020
+      },
+      {
+        "efficiency": 0.8888,
+        "leftOnBench": 238.5,
+        "manager": "Nathan M.",
+        "year": 2020
+      },
+      {
+        "efficiency": 0.8884,
+        "leftOnBench": 213.0,
+        "manager": "Olivia M.",
+        "year": 2020
+      },
+      {
+        "efficiency": 0.8947,
+        "leftOnBench": 187.6,
+        "manager": "Spencer C.",
+        "year": 2020
+      },
+      {
+        "efficiency": 0.8643,
+        "leftOnBench": 308.8,
+        "manager": "Teddy C.",
+        "year": 2020
+      },
+      {
+        "efficiency": 0.8663,
+        "leftOnBench": 224.3,
+        "manager": "Tommy G.",
+        "year": 2020
+      },
+      {
+        "efficiency": 0.8762,
+        "leftOnBench": 232.8,
+        "manager": "Tyler S.",
+        "year": 2020
+      },
+      {
+        "efficiency": 0.8575,
+        "leftOnBench": 356.9,
+        "manager": "Griffin B.",
+        "year": 2021
+      },
+      {
+        "efficiency": 0.8779,
+        "leftOnBench": 264.4,
+        "manager": "Jack C.",
+        "year": 2021
+      },
+      {
+        "efficiency": 0.8518,
+        "leftOnBench": 291.4,
+        "manager": "Liam H.",
+        "year": 2021
+      },
+      {
+        "efficiency": 0.8663,
+        "leftOnBench": 312.5,
+        "manager": "Max O.",
+        "year": 2021
+      },
+      {
+        "efficiency": 0.8472,
+        "leftOnBench": 291.6,
+        "manager": "Nathan M.",
+        "year": 2021
+      },
+      {
+        "efficiency": 0.8866,
+        "leftOnBench": 277.2,
+        "manager": "Olivia M.",
+        "year": 2021
+      },
+      {
+        "efficiency": 0.9102,
+        "leftOnBench": 186.8,
+        "manager": "Spencer C.",
+        "year": 2021
+      },
+      {
+        "efficiency": 0.8589,
+        "leftOnBench": 258.0,
+        "manager": "Teddy C.",
+        "year": 2021
+      },
+      {
+        "efficiency": 0.8492,
+        "leftOnBench": 315.8,
+        "manager": "Tommy G.",
+        "year": 2021
+      },
+      {
+        "efficiency": 0.8673,
+        "leftOnBench": 311.5,
+        "manager": "Tyler S.",
+        "year": 2021
+      },
+      {
+        "efficiency": 0.8452,
+        "leftOnBench": 394.1,
+        "manager": "Griffin B.",
+        "year": 2022
+      },
+      {
+        "efficiency": 0.8695,
+        "leftOnBench": 250.7,
+        "manager": "Jack C.",
+        "year": 2022
+      },
+      {
+        "efficiency": 0.8768,
+        "leftOnBench": 241.9,
+        "manager": "Liam H.",
+        "year": 2022
+      },
+      {
+        "efficiency": 0.8629,
+        "leftOnBench": 357.6,
+        "manager": "Max O.",
+        "year": 2022
+      },
+      {
+        "efficiency": 0.89,
+        "leftOnBench": 299.8,
+        "manager": "Nathan M.",
+        "year": 2022
+      },
+      {
+        "efficiency": 0.9136,
+        "leftOnBench": 182.4,
+        "manager": "Olivia M.",
+        "year": 2022
+      },
+      {
+        "efficiency": 0.8884,
+        "leftOnBench": 282.6,
+        "manager": "Spencer C.",
+        "year": 2022
+      },
+      {
+        "efficiency": 0.8576,
+        "leftOnBench": 323.6,
+        "manager": "Teddy C.",
+        "year": 2022
+      },
+      {
+        "efficiency": 0.9036,
+        "leftOnBench": 241.8,
+        "manager": "Tommy G.",
+        "year": 2022
+      },
+      {
+        "efficiency": 0.8723,
+        "leftOnBench": 258.6,
+        "manager": "Tyler S.",
+        "year": 2022
+      },
+      {
+        "efficiency": 0.8756,
+        "leftOnBench": 347.7,
+        "manager": "Griffin B.",
+        "year": 2023
+      },
+      {
+        "efficiency": 0.8431,
+        "leftOnBench": 449.9,
+        "manager": "Jack C.",
+        "year": 2023
+      },
+      {
+        "efficiency": 0.851,
+        "leftOnBench": 403.2,
+        "manager": "Liam H.",
+        "year": 2023
+      },
+      {
+        "efficiency": 0.8911,
+        "leftOnBench": 277.6,
+        "manager": "Max O.",
+        "year": 2023
+      },
+      {
+        "efficiency": 0.8713,
+        "leftOnBench": 273.3,
+        "manager": "Nathan M.",
+        "year": 2023
+      },
+      {
+        "efficiency": 0.8417,
+        "leftOnBench": 348.8,
+        "manager": "Olivia M.",
+        "year": 2023
+      },
+      {
+        "efficiency": 0.9142,
+        "leftOnBench": 172.6,
+        "manager": "Spencer C.",
+        "year": 2023
+      },
+      {
+        "efficiency": 0.885,
+        "leftOnBench": 236.9,
+        "manager": "Teddy C.",
+        "year": 2023
+      },
+      {
+        "efficiency": 0.8719,
+        "leftOnBench": 271.2,
+        "manager": "Tommy G.",
+        "year": 2023
+      },
+      {
+        "efficiency": 0.8492,
+        "leftOnBench": 305.7,
+        "manager": "Tyler S.",
+        "year": 2023
+      },
+      {
+        "efficiency": 0.8946,
+        "leftOnBench": 245.2,
+        "manager": "Griffin B.",
+        "year": 2024
+      },
+      {
+        "efficiency": 0.8705,
+        "leftOnBench": 251.9,
+        "manager": "Jack C.",
+        "year": 2024
+      },
+      {
+        "efficiency": 0.9015,
+        "leftOnBench": 214.0,
+        "manager": "Liam H.",
+        "year": 2024
+      },
+      {
+        "efficiency": 0.8827,
+        "leftOnBench": 307.2,
+        "manager": "Max O.",
+        "year": 2024
+      },
+      {
+        "efficiency": 0.8676,
+        "leftOnBench": 269.0,
+        "manager": "Nathan M.",
+        "year": 2024
+      },
+      {
+        "efficiency": 0.9015,
+        "leftOnBench": 265.1,
+        "manager": "Olivia M.",
+        "year": 2024
+      },
+      {
+        "efficiency": 0.872,
+        "leftOnBench": 310.2,
+        "manager": "Spencer C.",
+        "year": 2024
+      },
+      {
+        "efficiency": 0.8923,
+        "leftOnBench": 311.1,
+        "manager": "Teddy C.",
+        "year": 2024
+      },
+      {
+        "efficiency": 0.8764,
+        "leftOnBench": 353.2,
+        "manager": "Tommy G.",
+        "year": 2024
+      },
+      {
+        "efficiency": 0.8476,
+        "leftOnBench": 302.6,
+        "manager": "Tyler S.",
+        "year": 2024
+      },
+      {
+        "efficiency": 0.8942,
+        "leftOnBench": 224.7,
+        "manager": "Griffin B.",
+        "year": 2025
+      },
+      {
+        "efficiency": 0.8436,
+        "leftOnBench": 337.2,
+        "manager": "Jack C.",
+        "year": 2025
+      },
+      {
+        "efficiency": 0.8625,
+        "leftOnBench": 375.9,
+        "manager": "Liam H.",
+        "year": 2025
+      },
+      {
+        "efficiency": 0.8852,
+        "leftOnBench": 321.3,
+        "manager": "Max O.",
+        "year": 2025
+      },
+      {
+        "efficiency": 0.8922,
+        "leftOnBench": 218.5,
+        "manager": "Nathan M.",
+        "year": 2025
+      },
+      {
+        "efficiency": 0.8909,
+        "leftOnBench": 246.8,
+        "manager": "Olivia M.",
+        "year": 2025
+      },
+      {
+        "efficiency": 0.9193,
+        "leftOnBench": 233.7,
+        "manager": "Spencer C.",
+        "year": 2025
+      },
+      {
+        "efficiency": 0.8446,
+        "leftOnBench": 430.9,
+        "manager": "Teddy C.",
+        "year": 2025
+      },
+      {
+        "efficiency": 0.8948,
+        "leftOnBench": 247.5,
+        "manager": "Tommy G.",
+        "year": 2025
+      },
+      {
+        "efficiency": 0.8833,
+        "leftOnBench": 266.9,
+        "manager": "Tyler S.",
+        "year": 2025
+      }
+    ],
+    "worstWeeks": [
+      {
+        "actual": 84.96,
+        "leftOnBench": 86.5,
+        "manager": "Griffin B.",
+        "optimal": 171.46,
+        "week": 16,
+        "year": 2022
+      },
+      {
+        "actual": 94.82,
+        "leftOnBench": 82.3,
+        "manager": "Teddy C.",
+        "optimal": 177.12,
+        "week": 1,
+        "year": 2019
+      },
+      {
+        "actual": 101.24,
+        "leftOnBench": 72.12,
+        "manager": "Jack C.",
+        "optimal": 173.36,
+        "week": 1,
+        "year": 2018
+      },
+      {
+        "actual": 121.08,
+        "leftOnBench": 71.9,
+        "manager": "Max O.",
+        "optimal": 192.98,
+        "week": 17,
+        "year": 2024
+      },
+      {
+        "actual": 97.96,
+        "leftOnBench": 71.38,
+        "manager": "Teddy C.",
+        "optimal": 169.34,
+        "week": 11,
+        "year": 2025
+      },
+      {
+        "actual": 97.3,
+        "leftOnBench": 69.84,
+        "manager": "Tyler S.",
+        "optimal": 167.14,
+        "week": 1,
+        "year": 2024
+      },
+      {
+        "actual": 100.28,
+        "leftOnBench": 65.7,
+        "manager": "Nathan M.",
+        "optimal": 165.98,
+        "week": 15,
+        "year": 2023
+      },
+      {
+        "actual": 92.52,
+        "leftOnBench": 65.3,
+        "manager": "Spencer C.",
+        "optimal": 157.82,
+        "week": 13,
+        "year": 2019
+      },
+      {
+        "actual": 69.5,
+        "leftOnBench": 61.24,
+        "manager": "Nathan M.",
+        "optimal": 130.74,
+        "week": 13,
+        "year": 2018
+      },
+      {
+        "actual": 89.46,
+        "leftOnBench": 60.26,
+        "manager": "Tyler S.",
+        "optimal": 149.72,
+        "week": 5,
+        "year": 2023
+      }
+    ]
+  },
+  "luck": {
+    "career": [
+      {
+        "actualWins": 67,
+        "expectedWins": 60.56,
+        "games": 109,
+        "luck": 6.44,
+        "manager": "Tommy G."
+      },
+      {
+        "actualWins": 69,
+        "expectedWins": 63.44,
+        "games": 109,
+        "luck": 5.56,
+        "manager": "Max O."
+      },
+      {
+        "actualWins": 59,
+        "expectedWins": 56.11,
+        "games": 109,
+        "luck": 2.89,
+        "manager": "Griffin B."
+      },
+      {
+        "actualWins": 10,
+        "expectedWins": 7.33,
+        "games": 13,
+        "luck": 2.67,
+        "manager": "Josh D."
+      },
+      {
+        "actualWins": 46,
+        "expectedWins": 44.56,
+        "games": 109,
+        "luck": 1.44,
+        "manager": "Teddy C."
+      },
+      {
+        "actualWins": 53,
+        "expectedWins": 53.67,
+        "games": 109,
+        "luck": -0.67,
+        "manager": "Spencer C."
+      },
+      {
+        "actualWins": 50,
+        "expectedWins": 51.0,
+        "games": 109,
+        "luck": -1.0,
+        "manager": "Tyler S."
+      },
+      {
+        "actualWins": 55,
+        "expectedWins": 57.22,
+        "games": 96,
+        "luck": -2.22,
+        "manager": "Olivia M."
+      },
+      {
+        "actualWins": 41,
+        "expectedWins": 44.44,
+        "games": 109,
+        "luck": -3.44,
+        "manager": "Nathan M."
+      },
+      {
+        "actualWins": 51,
+        "expectedWins": 55.11,
+        "games": 109,
+        "luck": -4.11,
+        "manager": "Liam H."
+      },
+      {
+        "actualWins": 44,
+        "expectedWins": 51.56,
+        "games": 109,
+        "luck": -7.56,
+        "manager": "Jack C."
+      }
+    ],
+    "seasons": [
+      {
+        "actualWins": 8,
+        "expectedWins": 7.44,
+        "luck": 0.56,
+        "manager": "Griffin B.",
+        "year": 2018
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 8.11,
+        "luck": -1.11,
+        "manager": "Jack C.",
+        "year": 2018
+      },
+      {
+        "actualWins": 10,
+        "expectedWins": 7.33,
+        "luck": 2.67,
+        "manager": "Josh D.",
+        "year": 2018
+      },
+      {
+        "actualWins": 5,
+        "expectedWins": 7.0,
+        "luck": -2.0,
+        "manager": "Liam H.",
+        "year": 2018
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 8.44,
+        "luck": -0.44,
+        "manager": "Max O.",
+        "year": 2018
+      },
+      {
+        "actualWins": 5,
+        "expectedWins": 5.0,
+        "luck": 0.0,
+        "manager": "Nathan M.",
+        "year": 2018
+      },
+      {
+        "actualWins": 4,
+        "expectedWins": 2.56,
+        "luck": 1.44,
+        "manager": "Spencer C.",
+        "year": 2018
+      },
+      {
+        "actualWins": 3,
+        "expectedWins": 3.11,
+        "luck": -0.11,
+        "manager": "Teddy C.",
+        "year": 2018
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 7.11,
+        "luck": 0.89,
+        "manager": "Tommy G.",
+        "year": 2018
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 8.89,
+        "luck": -1.89,
+        "manager": "Tyler S.",
+        "year": 2018
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 5.56,
+        "luck": 0.44,
+        "manager": "Griffin B.",
+        "year": 2019
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 7.56,
+        "luck": 0.44,
+        "manager": "Jack C.",
+        "year": 2019
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 7.89,
+        "luck": 0.11,
+        "manager": "Liam H.",
+        "year": 2019
+      },
+      {
+        "actualWins": 10,
+        "expectedWins": 8.11,
+        "luck": 1.89,
+        "manager": "Max O.",
+        "year": 2019
+      },
+      {
+        "actualWins": 1,
+        "expectedWins": 2.11,
+        "luck": -1.11,
+        "manager": "Nathan M.",
+        "year": 2019
+      },
+      {
+        "actualWins": 12,
+        "expectedWins": 11.0,
+        "luck": 1.0,
+        "manager": "Olivia M.",
+        "year": 2019
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 3.78,
+        "luck": 2.22,
+        "manager": "Spencer C.",
+        "year": 2019
+      },
+      {
+        "actualWins": 2,
+        "expectedWins": 3.11,
+        "luck": -1.11,
+        "manager": "Teddy C.",
+        "year": 2019
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 9.67,
+        "luck": -1.67,
+        "manager": "Tommy G.",
+        "year": 2019
+      },
+      {
+        "actualWins": 4,
+        "expectedWins": 6.22,
+        "luck": -2.22,
+        "manager": "Tyler S.",
+        "year": 2019
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 5.44,
+        "luck": 0.56,
+        "manager": "Griffin B.",
+        "year": 2020
+      },
+      {
+        "actualWins": 4,
+        "expectedWins": 4.89,
+        "luck": -0.89,
+        "manager": "Jack C.",
+        "year": 2020
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 7.56,
+        "luck": -1.56,
+        "manager": "Liam H.",
+        "year": 2020
+      },
+      {
+        "actualWins": 9,
+        "expectedWins": 8.33,
+        "luck": 0.67,
+        "manager": "Max O.",
+        "year": 2020
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 7.78,
+        "luck": -0.78,
+        "manager": "Nathan M.",
+        "year": 2020
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 6.78,
+        "luck": -0.78,
+        "manager": "Olivia M.",
+        "year": 2020
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 7.0,
+        "luck": -1.0,
+        "manager": "Spencer C.",
+        "year": 2020
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 6.33,
+        "luck": 1.67,
+        "manager": "Teddy C.",
+        "year": 2020
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 4.89,
+        "luck": 1.11,
+        "manager": "Tommy G.",
+        "year": 2020
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 6.0,
+        "luck": 1.0,
+        "manager": "Tyler S.",
+        "year": 2020
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 7.89,
+        "luck": 0.11,
+        "manager": "Griffin B.",
+        "year": 2021
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 9.33,
+        "luck": -3.33,
+        "manager": "Jack C.",
+        "year": 2021
+      },
+      {
+        "actualWins": 5,
+        "expectedWins": 6.33,
+        "luck": -1.33,
+        "manager": "Liam H.",
+        "year": 2021
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 6.11,
+        "luck": 0.89,
+        "manager": "Max O.",
+        "year": 2021
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 5.67,
+        "luck": 0.33,
+        "manager": "Nathan M.",
+        "year": 2021
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 8.89,
+        "luck": -0.89,
+        "manager": "Olivia M.",
+        "year": 2021
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 7.56,
+        "luck": 0.44,
+        "manager": "Spencer C.",
+        "year": 2021
+      },
+      {
+        "actualWins": 3,
+        "expectedWins": 4.22,
+        "luck": -1.22,
+        "manager": "Teddy C.",
+        "year": 2021
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 6.44,
+        "luck": 1.56,
+        "manager": "Tommy G.",
+        "year": 2021
+      },
+      {
+        "actualWins": 11,
+        "expectedWins": 7.56,
+        "luck": 3.44,
+        "manager": "Tyler S.",
+        "year": 2021
+      },
+      {
+        "actualWins": 9,
+        "expectedWins": 6.67,
+        "luck": 2.33,
+        "manager": "Griffin B.",
+        "year": 2022
+      },
+      {
+        "actualWins": 3,
+        "expectedWins": 4.33,
+        "luck": -1.33,
+        "manager": "Jack C.",
+        "year": 2022
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 5.56,
+        "luck": 0.44,
+        "manager": "Liam H.",
+        "year": 2022
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 7.0,
+        "luck": 1.0,
+        "manager": "Max O.",
+        "year": 2022
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 8.11,
+        "luck": -1.11,
+        "manager": "Nathan M.",
+        "year": 2022
+      },
+      {
+        "actualWins": 5,
+        "expectedWins": 7.33,
+        "luck": -2.33,
+        "manager": "Olivia M.",
+        "year": 2022
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 9.44,
+        "luck": -1.44,
+        "manager": "Spencer C.",
+        "year": 2022
+      },
+      {
+        "actualWins": 9,
+        "expectedWins": 6.44,
+        "luck": 2.56,
+        "manager": "Teddy C.",
+        "year": 2022
+      },
+      {
+        "actualWins": 11,
+        "expectedWins": 9.78,
+        "luck": 1.22,
+        "manager": "Tommy G.",
+        "year": 2022
+      },
+      {
+        "actualWins": 4,
+        "expectedWins": 5.33,
+        "luck": -1.33,
+        "manager": "Tyler S.",
+        "year": 2022
+      },
+      {
+        "actualWins": 10,
+        "expectedWins": 10.0,
+        "luck": 0.0,
+        "manager": "Griffin B.",
+        "year": 2023
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 8.44,
+        "luck": -0.44,
+        "manager": "Jack C.",
+        "year": 2023
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 7.11,
+        "luck": -0.11,
+        "manager": "Liam H.",
+        "year": 2023
+      },
+      {
+        "actualWins": 9,
+        "expectedWins": 8.89,
+        "luck": 0.11,
+        "manager": "Max O.",
+        "year": 2023
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 5.78,
+        "luck": 1.22,
+        "manager": "Nathan M.",
+        "year": 2023
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 7.22,
+        "luck": -1.22,
+        "manager": "Olivia M.",
+        "year": 2023
+      },
+      {
+        "actualWins": 5,
+        "expectedWins": 6.56,
+        "luck": -1.56,
+        "manager": "Spencer C.",
+        "year": 2023
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 5.44,
+        "luck": 0.56,
+        "manager": "Teddy C.",
+        "year": 2023
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 5.44,
+        "luck": 1.56,
+        "manager": "Tommy G.",
+        "year": 2023
+      },
+      {
+        "actualWins": 5,
+        "expectedWins": 5.11,
+        "luck": -0.11,
+        "manager": "Tyler S.",
+        "year": 2023
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 6.89,
+        "luck": 0.11,
+        "manager": "Griffin B.",
+        "year": 2024
+      },
+      {
+        "actualWins": 3,
+        "expectedWins": 3.44,
+        "luck": -0.44,
+        "manager": "Jack C.",
+        "year": 2024
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 7.67,
+        "luck": -1.67,
+        "manager": "Liam H.",
+        "year": 2024
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 6.78,
+        "luck": 1.22,
+        "manager": "Max O.",
+        "year": 2024
+      },
+      {
+        "actualWins": 4,
+        "expectedWins": 4.56,
+        "luck": -0.56,
+        "manager": "Nathan M.",
+        "year": 2024
+      },
+      {
+        "actualWins": 10,
+        "expectedWins": 9.44,
+        "luck": 0.56,
+        "manager": "Olivia M.",
+        "year": 2024
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 7.11,
+        "luck": -0.11,
+        "manager": "Spencer C.",
+        "year": 2024
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 9.22,
+        "luck": -2.22,
+        "manager": "Teddy C.",
+        "year": 2024
+      },
+      {
+        "actualWins": 12,
+        "expectedWins": 10.89,
+        "luck": 1.11,
+        "manager": "Tommy G.",
+        "year": 2024
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 4.0,
+        "luck": 2.0,
+        "manager": "Tyler S.",
+        "year": 2024
+      },
+      {
+        "actualWins": 5,
+        "expectedWins": 6.22,
+        "luck": -1.22,
+        "manager": "Griffin B.",
+        "year": 2025
+      },
+      {
+        "actualWins": 5,
+        "expectedWins": 5.44,
+        "luck": -0.44,
+        "manager": "Jack C.",
+        "year": 2025
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 6.0,
+        "luck": 2.0,
+        "manager": "Liam H.",
+        "year": 2025
+      },
+      {
+        "actualWins": 10,
+        "expectedWins": 9.78,
+        "luck": 0.22,
+        "manager": "Max O.",
+        "year": 2025
+      },
+      {
+        "actualWins": 4,
+        "expectedWins": 5.44,
+        "luck": -1.44,
+        "manager": "Nathan M.",
+        "year": 2025
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 6.56,
+        "luck": 1.44,
+        "manager": "Olivia M.",
+        "year": 2025
+      },
+      {
+        "actualWins": 9,
+        "expectedWins": 9.67,
+        "luck": -0.67,
+        "manager": "Spencer C.",
+        "year": 2025
+      },
+      {
+        "actualWins": 8,
+        "expectedWins": 6.67,
+        "luck": 1.33,
+        "manager": "Teddy C.",
+        "year": 2025
+      },
+      {
+        "actualWins": 7,
+        "expectedWins": 6.33,
+        "luck": 0.67,
+        "manager": "Tommy G.",
+        "year": 2025
+      },
+      {
+        "actualWins": 6,
+        "expectedWins": 7.89,
+        "luck": -1.89,
+        "manager": "Tyler S.",
+        "year": 2025
+      }
+    ]
+  },
+  "managers": [
+    {
+      "active": true,
+      "championships": 3,
+      "firstSeason": 2018,
+      "lastSeason": 2025,
+      "losses": 59,
+      "manager": "Liam H.",
+      "pointsAgainst": 15868.4,
+      "pointsFor": 15879.3,
+      "seasons": 8,
+      "winPct": 0.512,
+      "wins": 62
+    },
+    {
+      "active": true,
+      "championships": 1,
+      "firstSeason": 2018,
+      "lastSeason": 2025,
+      "losses": 50,
+      "manager": "Max O.",
+      "pointsAgainst": 16465.4,
+      "pointsFor": 17281.0,
+      "seasons": 8,
+      "winPct": 0.609,
+      "wins": 78
+    },
+    {
+      "active": true,
+      "championships": 1,
+      "firstSeason": 2019,
+      "lastSeason": 2025,
+      "losses": 45,
+      "manager": "Olivia M.",
+      "pointsAgainst": 13230.8,
+      "pointsFor": 14236.0,
+      "seasons": 7,
+      "winPct": 0.567,
+      "wins": 59
+    },
+    {
+      "active": true,
+      "championships": 1,
+      "firstSeason": 2018,
+      "lastSeason": 2025,
+      "losses": 59,
+      "manager": "Spencer C.",
+      "pointsAgainst": 14766.3,
+      "pointsFor": 14872.7,
+      "seasons": 8,
+      "winPct": 0.482,
+      "wins": 55
+    },
+    {
+      "active": true,
+      "championships": 1,
+      "firstSeason": 2018,
+      "lastSeason": 2025,
+      "losses": 66,
+      "manager": "Teddy C.",
+      "pointsAgainst": 15122.0,
+      "pointsFor": 14718.7,
+      "seasons": 8,
+      "winPct": 0.445,
+      "wins": 53
+    },
+    {
+      "active": true,
+      "championships": 1,
+      "firstSeason": 2018,
+      "lastSeason": 2025,
+      "losses": 70,
+      "manager": "Nathan M.",
+      "pointsAgainst": 15432.8,
+      "pointsFor": 13927.6,
+      "seasons": 8,
+      "winPct": 0.391,
+      "wins": 45
+    },
+    {
+      "active": false,
+      "championships": 0,
+      "firstSeason": 2018,
+      "lastSeason": 2018,
+      "losses": 4,
+      "manager": "Josh D.",
+      "pointsAgainst": 1670.7,
+      "pointsFor": 1896.5,
+      "seasons": 1,
+      "winPct": 0.733,
+      "wins": 11
+    },
+    {
+      "active": true,
+      "championships": 0,
+      "firstSeason": 2018,
+      "lastSeason": 2025,
+      "losses": 52,
+      "manager": "Tommy G.",
+      "pointsAgainst": 15334.7,
+      "pointsFor": 15816.2,
+      "seasons": 8,
+      "winPct": 0.567,
+      "wins": 68
+    },
+    {
+      "active": true,
+      "championships": 0,
+      "firstSeason": 2018,
+      "lastSeason": 2025,
+      "losses": 56,
+      "manager": "Griffin B.",
+      "pointsAgainst": 15248.3,
+      "pointsFor": 15606.3,
+      "seasons": 8,
+      "winPct": 0.529,
+      "wins": 63
+    },
+    {
+      "active": true,
+      "championships": 0,
+      "firstSeason": 2018,
+      "lastSeason": 2025,
+      "losses": 64,
+      "manager": "Tyler S.",
+      "pointsAgainst": 14982.4,
+      "pointsFor": 14522.6,
+      "seasons": 8,
+      "winPct": 0.443,
+      "wins": 51
+    },
+    {
+      "active": true,
+      "championships": 0,
+      "firstSeason": 2018,
+      "lastSeason": 2025,
+      "losses": 68,
+      "manager": "Jack C.",
+      "pointsAgainst": 15245.5,
+      "pointsFor": 14610.4,
+      "seasons": 8,
+      "winPct": 0.414,
+      "wins": 48
+    }
+  ],
+  "records": {
+    "bestSeason": {
+      "games": 13,
+      "manager": "Olivia M.",
+      "points": 1876.1,
+      "winPct": 0.923,
+      "wins": 12,
+      "year": 2019
+    },
+    "playoff": {
+      "biggestBlowout": {
+        "manager": "Spencer C.",
+        "opponent": "Teddy C.",
+        "score": "263.5 - 130.1",
+        "value": 133.44,
+        "week": 16,
+        "year": 2025
+      },
+      "highestWeek": {
+        "manager": "Spencer C.",
+        "opponent": "Teddy C.",
+        "score": "263.5 - 130.1",
+        "value": 263.54,
+        "week": 16,
+        "year": 2025
+      },
+      "lowestWeek": {
+        "manager": "Tyler S.",
+        "opponent": "Josh D.",
+        "score": "79.8 - 105.8",
+        "value": 79.82,
+        "week": 15,
+        "year": 2018
+      },
+      "mostPointsInALoss": {
+        "manager": "Tommy G.",
+        "opponent": "Teddy C.",
+        "score": "174.4 - 174.7",
+        "value": 174.38,
+        "week": 16,
+        "year": 2024
+      },
+      "narrowestWin": {
+        "manager": "Teddy C.",
+        "opponent": "Tommy G.",
+        "score": "174.7 - 174.4",
+        "value": 0.34,
+        "week": 16,
+        "year": 2024
+      }
+    },
+    "regular": {
+      "biggestBlowout": {
+        "manager": "Liam H.",
+        "opponent": "Teddy C.",
+        "score": "163.6 - 46.1",
+        "value": 117.46,
+        "week": 9,
+        "year": 2020
+      },
+      "highestWeek": {
+        "manager": "Griffin B.",
+        "opponent": "Olivia M.",
+        "score": "225.4 - 157.9",
+        "value": 225.4,
+        "week": 3,
+        "year": 2023
+      },
+      "lowestWeek": {
+        "manager": "Nathan M.",
+        "opponent": "Jack C.",
+        "score": "45.8 - 99.6",
+        "value": 45.8,
+        "week": 7,
+        "year": 2019
+      },
+      "mostPointsInALoss": {
+        "manager": "Nathan M.",
+        "opponent": "Max O.",
+        "score": "181.2 - 186.6",
+        "value": 181.24,
+        "week": 8,
+        "year": 2022
+      },
+      "narrowestWin": {
+        "manager": "Olivia M.",
+        "opponent": "Spencer C.",
+        "score": "143.8 - 143.7",
+        "value": 0.1,
+        "week": 10,
+        "year": 2025
+      }
+    },
+    "streaks": {
+      "longestLoseStreak": {
+        "length": 9,
+        "manager": "Nathan M.",
+        "through": "2019 wk5"
+      },
+      "longestWinStreak": {
+        "length": 10,
+        "manager": "Liam H.",
+        "through": "2024 wk4"
+      }
+    },
+    "worstSeason": {
+      "games": 13,
+      "manager": "Nathan M.",
+      "points": 1138.4,
+      "winPct": 0.077,
+      "wins": 1,
+      "year": 2019
+    }
+  },
+  "seasons": [
+    {
+      "champion": "Max O.",
+      "runnerUp": "Josh D.",
+      "standings": [
+        {
+          "losses": 5,
+          "manager": "Max O.",
+          "points": 1767.3,
+          "rank": 1,
+          "wins": 8
+        },
+        {
+          "losses": 3,
+          "manager": "Josh D.",
+          "points": 1669.9,
+          "rank": 2,
+          "wins": 10
+        },
+        {
+          "losses": 6,
+          "manager": "Jack C.",
+          "points": 1679.7,
+          "rank": 3,
+          "wins": 7
+        },
+        {
+          "losses": 6,
+          "manager": "Tyler S.",
+          "points": 1782.8,
+          "rank": 4,
+          "wins": 7
+        },
+        {
+          "losses": 5,
+          "manager": "Tommy G.",
+          "points": 1566.4,
+          "rank": 5,
+          "wins": 8
+        },
+        {
+          "losses": 5,
+          "manager": "Griffin B.",
+          "points": 1688.2,
+          "rank": 6,
+          "wins": 8
+        },
+        {
+          "losses": 8,
+          "manager": "Liam H.",
+          "points": 1624.8,
+          "rank": 7,
+          "wins": 5
+        },
+        {
+          "losses": 8,
+          "manager": "Nathan M.",
+          "points": 1417.2,
+          "rank": 8,
+          "wins": 5
+        },
+        {
+          "losses": 9,
+          "manager": "Spencer C.",
+          "points": 1258.5,
+          "rank": 9,
+          "wins": 4
+        },
+        {
+          "losses": 10,
+          "manager": "Teddy C.",
+          "points": 1280.0,
+          "rank": 10,
+          "wins": 3
+        }
+      ],
+      "year": 2018
+    },
+    {
+      "champion": "Liam H.",
+      "runnerUp": "Max O.",
+      "standings": [
+        {
+          "losses": 5,
+          "manager": "Liam H.",
+          "points": 1618.3,
+          "rank": 1,
+          "wins": 8
+        },
+        {
+          "losses": 3,
+          "manager": "Max O.",
+          "points": 1635.5,
+          "rank": 2,
+          "wins": 10
+        },
+        {
+          "losses": 1,
+          "manager": "Olivia M.",
+          "points": 1876.1,
+          "rank": 3,
+          "wins": 12
+        },
+        {
+          "losses": 5,
+          "manager": "Tommy G.",
+          "points": 1824.9,
+          "rank": 4,
+          "wins": 8
+        },
+        {
+          "losses": 5,
+          "manager": "Jack C.",
+          "points": 1524.7,
+          "rank": 5,
+          "wins": 8
+        },
+        {
+          "losses": 7,
+          "manager": "Griffin B.",
+          "points": 1487.4,
+          "rank": 6,
+          "wins": 6
+        },
+        {
+          "losses": 11,
+          "manager": "Teddy C.",
+          "points": 1212.8,
+          "rank": 7,
+          "wins": 2
+        },
+        {
+          "losses": 9,
+          "manager": "Tyler S.",
+          "points": 1505.1,
+          "rank": 8,
+          "wins": 4
+        },
+        {
+          "losses": 7,
+          "manager": "Spencer C.",
+          "points": 1261.3,
+          "rank": 9,
+          "wins": 6
+        },
+        {
+          "losses": 12,
+          "manager": "Nathan M.",
+          "points": 1138.4,
+          "rank": 10,
+          "wins": 1
+        }
+      ],
+      "year": 2019
+    },
+    {
+      "champion": "Liam H.",
+      "runnerUp": "Teddy C.",
+      "standings": [
+        {
+          "losses": 7,
+          "manager": "Liam H.",
+          "points": 1720.6,
+          "rank": 1,
+          "wins": 6
+        },
+        {
+          "losses": 5,
+          "manager": "Teddy C.",
+          "points": 1583.6,
+          "rank": 2,
+          "wins": 8
+        },
+        {
+          "losses": 6,
+          "manager": "Nathan M.",
+          "points": 1656.6,
+          "rank": 3,
+          "wins": 7
+        },
+        {
+          "losses": 4,
+          "manager": "Max O.",
+          "points": 1752.4,
+          "rank": 4,
+          "wins": 9
+        },
+        {
+          "losses": 6,
+          "manager": "Tyler S.",
+          "points": 1525.8,
+          "rank": 5,
+          "wins": 7
+        },
+        {
+          "losses": 7,
+          "manager": "Olivia M.",
+          "points": 1595.6,
+          "rank": 6,
+          "wins": 6
+        },
+        {
+          "losses": 7,
+          "manager": "Griffin B.",
+          "points": 1500.1,
+          "rank": 7,
+          "wins": 6
+        },
+        {
+          "losses": 7,
+          "manager": "Tommy G.",
+          "points": 1453.6,
+          "rank": 8,
+          "wins": 6
+        },
+        {
+          "losses": 9,
+          "manager": "Jack C.",
+          "points": 1432.4,
+          "rank": 9,
+          "wins": 4
+        },
+        {
+          "losses": 7,
+          "manager": "Spencer C.",
+          "points": 1594.2,
+          "rank": 10,
+          "wins": 6
+        }
+      ],
+      "year": 2020
+    },
+    {
+      "champion": "Olivia M.",
+      "runnerUp": "Griffin B.",
+      "standings": [
+        {
+          "losses": 6,
+          "manager": "Olivia M.",
+          "points": 1894.1,
+          "rank": 1,
+          "wins": 8
+        },
+        {
+          "losses": 6,
+          "manager": "Griffin B.",
+          "points": 1778.7,
+          "rank": 2,
+          "wins": 8
+        },
+        {
+          "losses": 7,
+          "manager": "Max O.",
+          "points": 1683.1,
+          "rank": 3,
+          "wins": 7
+        },
+        {
+          "losses": 3,
+          "manager": "Tyler S.",
+          "points": 1772.2,
+          "rank": 4,
+          "wins": 11
+        },
+        {
+          "losses": 6,
+          "manager": "Tommy G.",
+          "points": 1675.1,
+          "rank": 5,
+          "wins": 8
+        },
+        {
+          "losses": 6,
+          "manager": "Spencer C.",
+          "points": 1780.4,
+          "rank": 6,
+          "wins": 8
+        },
+        {
+          "losses": 8,
+          "manager": "Nathan M.",
+          "points": 1617.0,
+          "rank": 7,
+          "wins": 6
+        },
+        {
+          "losses": 8,
+          "manager": "Jack C.",
+          "points": 1900.5,
+          "rank": 8,
+          "wins": 6
+        },
+        {
+          "losses": 9,
+          "manager": "Liam H.",
+          "points": 1674.5,
+          "rank": 9,
+          "wins": 5
+        },
+        {
+          "losses": 11,
+          "manager": "Teddy C.",
+          "points": 1569.7,
+          "rank": 10,
+          "wins": 3
+        }
+      ],
+      "year": 2021
+    },
+    {
+      "champion": "Nathan M.",
+      "runnerUp": "Max O.",
+      "standings": [
+        {
+          "losses": 7,
+          "manager": "Nathan M.",
+          "points": 1978.8,
+          "rank": 1,
+          "wins": 7
+        },
+        {
+          "losses": 6,
+          "manager": "Max O.",
+          "points": 1867.1,
+          "rank": 2,
+          "wins": 8
+        },
+        {
+          "losses": 5,
+          "manager": "Griffin B.",
+          "points": 1897.5,
+          "rank": 3,
+          "wins": 9
+        },
+        {
+          "losses": 3,
+          "manager": "Tommy G.",
+          "points": 2058.6,
+          "rank": 4,
+          "wins": 11
+        },
+        {
+          "losses": 6,
+          "manager": "Spencer C.",
+          "points": 2089.0,
+          "rank": 5,
+          "wins": 8
+        },
+        {
+          "losses": 5,
+          "manager": "Teddy C.",
+          "points": 1806.9,
+          "rank": 6,
+          "wins": 9
+        },
+        {
+          "losses": 8,
+          "manager": "Liam H.",
+          "points": 1722.0,
+          "rank": 7,
+          "wins": 6
+        },
+        {
+          "losses": 9,
+          "manager": "Olivia M.",
+          "points": 1927.5,
+          "rank": 8,
+          "wins": 5
+        },
+        {
+          "losses": 10,
+          "manager": "Tyler S.",
+          "points": 1766.0,
+          "rank": 9,
+          "wins": 4
+        },
+        {
+          "losses": 11,
+          "manager": "Jack C.",
+          "points": 1670.6,
+          "rank": 10,
+          "wins": 3
+        }
+      ],
+      "year": 2022
+    },
+    {
+      "champion": "Liam H.",
+      "runnerUp": "Jack C.",
+      "standings": [
+        {
+          "losses": 7,
+          "manager": "Liam H.",
+          "points": 1855.6,
+          "rank": 1,
+          "wins": 7
+        },
+        {
+          "losses": 6,
+          "manager": "Jack C.",
+          "points": 2001.9,
+          "rank": 2,
+          "wins": 8
+        },
+        {
+          "losses": 4,
+          "manager": "Griffin B.",
+          "points": 2183.8,
+          "rank": 3,
+          "wins": 10
+        },
+        {
+          "losses": 5,
+          "manager": "Max O.",
+          "points": 2037.3,
+          "rank": 4,
+          "wins": 9
+        },
+        {
+          "losses": 7,
+          "manager": "Tommy G.",
+          "points": 1717.3,
+          "rank": 5,
+          "wins": 7
+        },
+        {
+          "losses": 7,
+          "manager": "Nathan M.",
+          "points": 1749.8,
+          "rank": 6,
+          "wins": 7
+        },
+        {
+          "losses": 8,
+          "manager": "Olivia M.",
+          "points": 1854.4,
+          "rank": 7,
+          "wins": 6
+        },
+        {
+          "losses": 9,
+          "manager": "Tyler S.",
+          "points": 1722.1,
+          "rank": 8,
+          "wins": 5
+        },
+        {
+          "losses": 9,
+          "manager": "Spencer C.",
+          "points": 1838.9,
+          "rank": 9,
+          "wins": 5
+        },
+        {
+          "losses": 8,
+          "manager": "Teddy C.",
+          "points": 1822.4,
+          "rank": 10,
+          "wins": 6
+        }
+      ],
+      "year": 2023
+    },
+    {
+      "champion": "Teddy C.",
+      "runnerUp": "Max O.",
+      "standings": [
+        {
+          "losses": 7,
+          "manager": "Teddy C.",
+          "points": 2058.9,
+          "rank": 1,
+          "wins": 7
+        },
+        {
+          "losses": 6,
+          "manager": "Max O.",
+          "points": 1917.3,
+          "rank": 2,
+          "wins": 8
+        },
+        {
+          "losses": 4,
+          "manager": "Olivia M.",
+          "points": 2126.8,
+          "rank": 3,
+          "wins": 10
+        },
+        {
+          "losses": 2,
+          "manager": "Tommy G.",
+          "points": 2202.4,
+          "rank": 4,
+          "wins": 12
+        },
+        {
+          "losses": 7,
+          "manager": "Spencer C.",
+          "points": 1982.8,
+          "rank": 5,
+          "wins": 7
+        },
+        {
+          "losses": 7,
+          "manager": "Griffin B.",
+          "points": 1967.8,
+          "rank": 6,
+          "wins": 7
+        },
+        {
+          "losses": 10,
+          "manager": "Nathan M.",
+          "points": 1763.5,
+          "rank": 7,
+          "wins": 4
+        },
+        {
+          "losses": 11,
+          "manager": "Jack C.",
+          "points": 1693.8,
+          "rank": 8,
+          "wins": 3
+        },
+        {
+          "losses": 8,
+          "manager": "Tyler S.",
+          "points": 1682.5,
+          "rank": 9,
+          "wins": 6
+        },
+        {
+          "losses": 8,
+          "manager": "Liam H.",
+          "points": 1958.2,
+          "rank": 10,
+          "wins": 6
+        }
+      ],
+      "year": 2024
+    },
+    {
+      "champion": "Spencer C.",
+      "runnerUp": "Liam H.",
+      "standings": [
+        {
+          "losses": 5,
+          "manager": "Spencer C.",
+          "points": 2236.4,
+          "rank": 1,
+          "wins": 9
+        },
+        {
+          "losses": 6,
+          "manager": "Liam H.",
+          "points": 1868.4,
+          "rank": 2,
+          "wins": 8
+        },
+        {
+          "losses": 6,
+          "manager": "Teddy C.",
+          "points": 1901.3,
+          "rank": 3,
+          "wins": 8
+        },
+        {
+          "losses": 4,
+          "manager": "Max O.",
+          "points": 2211.5,
+          "rank": 4,
+          "wins": 10
+        },
+        {
+          "losses": 7,
+          "manager": "Tommy G.",
+          "points": 1972.3,
+          "rank": 5,
+          "wins": 7
+        },
+        {
+          "losses": 6,
+          "manager": "Olivia M.",
+          "points": 1881.1,
+          "rank": 6,
+          "wins": 8
+        },
+        {
+          "losses": 9,
+          "manager": "Jack C.",
+          "points": 1818.4,
+          "rank": 7,
+          "wins": 5
+        },
+        {
+          "losses": 9,
+          "manager": "Griffin B.",
+          "points": 1898.3,
+          "rank": 8,
+          "wins": 5
+        },
+        {
+          "losses": 10,
+          "manager": "Nathan M.",
+          "points": 1808.4,
+          "rank": 9,
+          "wins": 4
+        },
+        {
+          "losses": 8,
+          "manager": "Tyler S.",
+          "points": 2019.1,
+          "rank": 10,
+          "wins": 6
+        }
+      ],
+      "year": 2025
+    }
+  ],
+  "trades": {
+    "bySeason": {
+      "2018": {
+        "TRADE_PROPOSAL": 4
+      },
+      "2019": {
+        "TRADE_ACCEPT": 1,
+        "TRADE_DECLINE": 6,
+        "TRADE_PROPOSAL": 18
+      },
+      "2020": {
+        "TRADE_DECLINE": 1,
+        "TRADE_PROPOSAL": 1
+      },
+      "2021": {
+        "TRADE_ACCEPT": 5,
+        "TRADE_DECLINE": 9,
+        "TRADE_PROPOSAL": 16,
+        "TRADE_VETO": 3
+      },
+      "2022": {
+        "TRADE_ACCEPT": 1,
+        "TRADE_DECLINE": 1,
+        "TRADE_PROPOSAL": 2,
+        "TRADE_UPHOLD": 1,
+        "TRADE_VETO": 1
+      },
+      "2023": {
+        "TRADE_ACCEPT": 2,
+        "TRADE_DECLINE": 6,
+        "TRADE_PROPOSAL": 8,
+        "TRADE_UPHOLD": 5,
+        "TRADE_VETO": 4
+      },
+      "2024": {
+        "TRADE_DECLINE": 2,
+        "TRADE_PROPOSAL": 1
+      },
+      "2025": {
+        "TRADE_DECLINE": 1,
+        "TRADE_PROPOSAL": 5
+      }
+    },
+    "totals": {
+      "TRADE_ACCEPT": 9,
+      "TRADE_DECLINE": 26,
+      "TRADE_PROPOSAL": 55,
+      "TRADE_UPHOLD": 6,
+      "TRADE_VETO": 8
+    }
+  }
+}
