@@ -10,7 +10,6 @@ back -- older seasons routinely drop draft detail, transactions and boxscores
 
 import argparse
 import json
-import sys
 
 from espn_client import EspnError, VIEWS, fetch_view, load_cookies
 
@@ -106,5 +105,4 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.path.insert(0, __import__("os").path.dirname(__file__))
     main()

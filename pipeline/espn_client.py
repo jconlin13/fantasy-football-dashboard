@@ -16,12 +16,16 @@ reports back which one worked. The probe script records those results so the
 rest of the pipeline can stop guessing.
 """
 
+import configparser
 import gzip
 import json
 import os
 import time
 import urllib.error
 import urllib.request
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+LEAGUE_INI = os.path.join(ROOT, "config", "league.ini")
 
 # Reads go to the dedicated read host; the older fantasy.espn.com host still
 # answers and is kept as a fallback for seasons that 404 on the new one.
@@ -49,9 +53,44 @@ VIEWS = (
     "mBoxscore",       # started vs benched -- needed for optimal-lineup analysis
 )
 
+# Views that describe a whole season and are fetched once per year.
+SEASON_VIEWS = (
+    "mSettings",
+    "mTeam",
+    "mRoster",
+    "mMatchup",
+    "mMatchupScore",
+    "mDraftDetail",
+)
+
+# Views that only answer for one week at a time.
+#
+# Both of these return an empty or lineup-less payload when asked for the season
+# as a whole -- mTransactions2 reports zero transactions, and mBoxscore omits
+# rosterForCurrentScoringPeriod -- so they must be requested once per scoring
+# period. This is not a documented behavior; it was found by probing the league.
+WEEKLY_VIEWS = (
+    "mBoxscore",
+    "mTransactions2",
+)
+
 
 class EspnError(Exception):
     pass
+
+
+def load_league():
+    """Read config/league.ini -> {id, name, first_season, current_season}."""
+    parser = configparser.ConfigParser()
+    if not parser.read(LEAGUE_INI):
+        raise EspnError("missing %s" % LEAGUE_INI)
+    section = parser["league"]
+    return {
+        "id": section.get("id"),
+        "name": section.get("name", ""),
+        "first_season": section.getint("first_season"),
+        "current_season": section.getint("current_season"),
+    }
 
 
 def load_cookies():
@@ -83,17 +122,18 @@ def load_cookies():
     return cookies
 
 
-def _candidate_urls(league_id, year, view):
+def _candidate_urls(league_id, year, view, scoring_period=None):
     """Every endpoint shape that might answer for this season, best guess first."""
+    week = "" if scoring_period is None else "&scoringPeriodId=%d" % scoring_period
     urls = []
     for host in HOSTS:
         urls.append(
-            "%s/apis/v3/games/ffl/seasons/%d/segments/0/leagues/%s?view=%s"
-            % (host, year, league_id, view)
+            "%s/apis/v3/games/ffl/seasons/%d/segments/0/leagues/%s?view=%s%s"
+            % (host, year, league_id, view, week)
         )
         urls.append(
-            "%s/apis/v3/games/ffl/leagueHistory/%s?seasonId=%d&view=%s"
-            % (host, league_id, year, view)
+            "%s/apis/v3/games/ffl/leagueHistory/%s?seasonId=%d&view=%s%s"
+            % (host, league_id, year, view, week)
         )
     return urls
 
@@ -114,8 +154,8 @@ def _get(url, cookies, timeout=30):
         return json.loads(raw.decode("utf-8"))
 
 
-def fetch_view(league_id, year, view, cookies=None, retries=3):
-    """Fetch one view for one season.
+def fetch_view(league_id, year, view, cookies=None, retries=3, scoring_period=None):
+    """Fetch one view for one season, optionally for a single scoring period.
 
     Returns (payload, url_that_worked). Raises EspnError if no candidate URL
     answers. The leagueHistory shape is unwrapped so callers always get an
@@ -124,7 +164,7 @@ def fetch_view(league_id, year, view, cookies=None, retries=3):
     cookies = cookies or {}
     last_error = None
 
-    for url in _candidate_urls(league_id, year, view):
+    for url in _candidate_urls(league_id, year, view, scoring_period):
         for attempt in range(retries):
             try:
                 payload = _get(url, cookies)
@@ -142,6 +182,12 @@ def fetch_view(league_id, year, view, cookies=None, retries=3):
                 last_error = "%s at %s" % (exc, url)
                 time.sleep(2 ** attempt)
                 continue
+            except (json.JSONDecodeError, UnicodeDecodeError) as exc:
+                # ESPN answers 200 with an HTML error page for seasons that
+                # predate the league. That is a dead candidate, not a transport
+                # problem -- move to the next URL instead of crashing the run.
+                last_error = "non-JSON body at %s (%s)" % (url, exc)
+                break
 
             if isinstance(payload, list):
                 if not payload:
