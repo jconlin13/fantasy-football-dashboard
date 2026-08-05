@@ -1,0 +1,14 @@
+{
+  "datetime": "",
+  "datetimeSource": null,
+  "dues": {
+    "amount": "TBD",
+    "venmoUrl": ""
+  },
+  "espnUrl": "https://fantasy.espn.com/football/draft?leagueId=1069983&seasonId=2026",
+  "kind": "Live Draft",
+  "label": "Draft Day 2026",
+  "location": "TBD",
+  "order": [],
+  "passphraseSha256": ""
+}

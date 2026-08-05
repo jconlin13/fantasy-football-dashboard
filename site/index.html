@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MHD Fantasy League</title>
+<meta name="description" content="Draft day details and all-time history for the MHD Fantasy League.">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header class="masthead">
+  <h1 class="wordmark">MHD<span>Fantasy Football League</span></h1>
+  <p class="updated" id="updated" hidden></p>
+</header>
+
+<main>
+  <!-- Every card below is hidden until the data says it has something to show,
+       so a half-filled config renders as a shorter page, not a broken one. -->
+
+  <section class="card hero" id="hero" hidden>
+    <h2 id="hero-label"></h2>
+    <p class="kind" id="hero-kind" hidden></p>
+  </section>
+
+  <div class="grid">
+    <section class="card countdown" id="countdown-card" hidden>
+      <h2>Countdown</h2>
+      <div class="clock" id="clock">
+        <div><b data-unit="days">--</b><small>Days</small></div>
+        <div><b data-unit="hours">--</b><small>Hrs</small></div>
+        <div><b data-unit="minutes">--</b><small>Min</small></div>
+        <div><b data-unit="seconds">--</b><small>Sec</small></div>
+      </div>
+    </section>
+
+    <section class="card" id="draft-card" hidden>
+      <h2 id="draft-kind">Draft</h2>
+      <p class="when" id="draft-when"></p>
+      <p class="where" id="draft-where" hidden></p>
+
+      <a class="btn" id="launch" href="#" hidden>Launch Draft</a>
+
+      <form class="gate" id="gate" hidden>
+        <input type="password" id="gate-input" placeholder="League password"
+               autocomplete="off" aria-label="League password">
+        <button class="btn" type="submit">Enter</button>
+      </form>
+      <p class="gate-note" id="gate-note" hidden></p>
+    </section>
+
+    <section class="card" id="dues-card" hidden>
+      <h2>Dues</h2>
+      <p class="amount" id="dues-amount"></p>
+      <a class="btn" id="venmo" href="#" hidden>Pay Dues</a>
+    </section>
+
+    <section class="card order" id="order-card" hidden>
+      <h2>Draft Order</h2>
+      <ol id="order-list"></ol>
+    </section>
+  </div>
+
+  <a class="tile" href="analysis.html">
+    <b>All-Time Analysis</b>
+    <span>Records, rivalries, luck, draft history &mdash; every season since 2018</span>
+  </a>
+</main>
+
+<footer>
+  <p>MHD Fantasy League &middot; built from ESPN&rsquo;s own data</p>
+</footer>
+
+<script src="js/home.js"></script>
+</body>
+</html>
