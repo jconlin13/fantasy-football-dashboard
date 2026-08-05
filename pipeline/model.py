@@ -59,8 +59,9 @@ def archived_years():
 
 
 class Season(object):
-    def __init__(self, year, settings, teams_payload, owners):
+    def __init__(self, year, settings, teams_payload, owners, team_overrides=None):
         self.year = year
+        team_overrides = team_overrides or {}
 
         schedule = (settings.get("settings") or {}).get("scheduleSettings") or {}
         status = settings.get("status") or {}
@@ -92,6 +93,12 @@ class Season(object):
                 resolved.insert(0, identity.resolve(primary, owners))
             if resolved:
                 self.manager_of[tid] = resolved[0]
+
+            # A stated override beats whatever ESPN recorded -- see
+            # identity.load_team_overrides().
+            override = team_overrides.get((year, tid))
+            if override:
+                self.manager_of[tid] = identity.resolve(override, owners)
 
             self.seed[tid] = team.get("playoffSeed")
             self.espn_rank[tid] = team.get("rankCalculatedFinal")
@@ -225,7 +232,7 @@ class History(object):
 
 def load_league_history(years=None):
     owners = identity.load_owners()
-    league = load_league()
+    team_overrides = identity.load_team_overrides()
     history = History()
 
     for year in years or archived_years():
@@ -235,8 +242,19 @@ def load_league_history(years=None):
         if not (settings and teams and matchups):
             continue
 
-        season = Season(year, settings, teams, owners)
+        season = Season(year, settings, teams, owners, team_overrides)
         history.seasons[year] = season
+
+        # Two teams resolving to one manager in a season means an ownership
+        # record is wrong, and it would silently sum two teams' results into
+        # one row. Loud, because it is invisible in the output otherwise.
+        counts = collections.Counter(season.manager_of.values())
+        for manager, total in counts.items():
+            if total > 1:
+                raise ValueError(
+                    "%d: %s owns %d teams -- add a [teams] override in owners.ini"
+                    % (year, manager, total)
+                )
 
         # Managers accumulate across every season they appear in, and are never
         # removed. Someone who left the league still has to exist, because

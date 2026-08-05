@@ -114,6 +114,10 @@ def save_local_identities(identities):
     return merged
 
 
+# Sections of owners.ini that describe something other than a manager.
+RESERVED_SECTIONS = ("teams",)
+
+
 def load_owners():
     """Read the committed display-name config.
 
@@ -126,11 +130,45 @@ def load_owners():
 
     owners = {}
     for section in parser.sections():
+        if section in RESERVED_SECTIONS:
+            continue
         owners[section] = {
             "display": parser.get(section, "display", fallback=section),
             "merge_into": parser.get(section, "merge_into", fallback=None) or None,
         }
     return owners
+
+
+def load_team_overrides():
+    """Read the [teams] section: which manager a team really belonged to.
+
+    ESPN records who held the account, which is not always who the team was.
+    A commissioner drafting on someone's behalf, or covering an unlinked
+    account, shows up in the data as owning two teams that season. There is
+    nothing in the payload that can distinguish that from genuinely running two
+    teams, so it is stated here instead of inferred.
+
+        [teams]
+        2018.8 = mgr_764438660ec6
+
+    Returns {(year, team_id): manager_id}.
+    """
+    parser = configparser.ConfigParser()
+    parser.optionxform = str
+    if os.path.exists(OWNERS_INI):
+        parser.read(OWNERS_INI)
+
+    overrides = {}
+    if not parser.has_section("teams"):
+        return overrides
+
+    for key, value in parser.items("teams"):
+        year, _, team = key.partition(".")
+        try:
+            overrides[(int(year), int(team))] = value.strip()
+        except ValueError:  # a malformed key should not take the build down
+            continue
+    return overrides
 
 
 def scaffold_owners(identities):

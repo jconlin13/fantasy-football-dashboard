@@ -88,7 +88,7 @@ in `league.ini`, so there is nothing to hide. **ESPN's own login is the real bou
 
 **Verified** at 375px and desktop, no console errors.
 
-## Phase 3 — Canonical league model ⬅ next
+## Phase 3 — Canonical league model ✅
 
 One normalized model that every analytic reads, so ESPN's quirks don't leak into eight
 different metrics.
@@ -110,14 +110,31 @@ last-name matches in the local identity map rather than guessed from display nam
 Rule 2 is a live trap: building the manager list from the current season's teams is the
 natural implementation and would silently erase every departed manager.
 
-**To build:** `pipeline/model.py` — plain dicts, no ESPN shapes: `managers`, `seasons`,
-`games` (one row per team-week: year, week, manager, opponent, points for/against,
-`is_playoff`, `is_bye` — **this single table powers records, H2H and luck**), `lineups`,
-`picks`, `transactions`.
+✅ `pipeline/model.py` — `managers`, `seasons`, and `games`: one row per team per week, two
+rows facing each other per matchup. Records, head-to-head and luck are all just different
+groupings of that one table.
 
-**Exit criteria:** a sanity script prints each season's champion and final standings and
-they match what the league remembers. Any season that disagrees gets investigated before a
-metric is built on it.
+**Consolation games do not count.** The league's rule is that only the regular season and
+games still played for the title are real — which excludes the third-place game, since both
+teams are already out of the title race. ESPN's own `playoffTierType` is null on every
+matchup here, so the championship bracket is reconstructed by walking it forward: playoff
+teams start alive, a game between two live teams is a championship game, its loser is out,
+a bye keeps you alive. Replaying 2025 reproduces ESPN's `rankCalculatedFinal` for all ten
+teams in order.
+
+**A third identity rule, learned the hard way:** ESPN records who held the *account*, which
+is not always who the *team* was. In 2018 the commissioner drafted on another manager's
+behalf using his own email, so ESPN shows one account owning two teams — indistinguishable
+in the payload from genuinely running two. The `[teams]` section of `owners.ini` states the
+truth per season, and `model.py` now raises rather than continues if two teams in a season
+resolve to one manager, because that silently sums two teams' results into one row.
+
+**Verified:** `pipeline/validate_model.py` checks computed records against ESPN's own stored
+`record.overall` — **80 of 80 team-seasons match.** It does not assume what ESPN counts; it
+computes both definitions and reports which agrees (the answer is regular season only,
+consistently). The champions the model derives are printed at the top of each season's
+block and still need confirming from memory — matching ESPN's records proves the arithmetic,
+not that the right team is named champion.
 
 ## Phase 4 — Records, head-to-head, luck
 
