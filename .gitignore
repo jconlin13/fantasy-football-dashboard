@@ -1,0 +1,7 @@
+# ESPN auth cookies -- never commit
+.env
+
+.DS_Store
+__pycache__/
+*.pyc
+probe-results.json
