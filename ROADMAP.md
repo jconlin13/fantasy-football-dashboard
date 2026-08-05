@@ -10,16 +10,17 @@ What this site is, what has been built, and what is left. Last revised 2026-08-0
 - [x] **Phase 3** — Canonical model, 80/80 team-seasons match ESPN, champions confirmed
 - [x] **Phase 4** — Records, head-to-head, luck vs. skill
   - [x] Third-place game counts; other consolation games do not
-- [ ] **Phase 5** — Lineups, draft, trades
+- [x] **Phase 5** — Lineups, draft, trades
   - [x] Starting-slot identification verified against team totals (60/60)
   - [x] Optimal-lineup solver + efficiency (exact assignment, 1,186 team-weeks, 0 violations)
-  - [ ] Draft ROI
-  - [ ] Trade retrospectives
+  - [x] Draft-pick return (labelled honestly — it tracks roster churn, not draft skill)
+  - [x] Trade market summary (full retrospectives not possible — see below)
 - [ ] **Phase 6** — All-Time Analysis pages on the site
 - [ ] **Phase 7** — Automation, GitHub Pages, launch
 - [ ] **Phase 8** — Backlog
 
-**Open questions for the commissioner:** none blocking.
+**Open questions for the commissioner:** whether to swap draft return for a season-total
+measure that isolates draft skill but only covers ~75% of picks.
 **Awaiting from the commissioner:** splash page values (location, dues, Venmo link,
 draft order once announced, passphrase or a decision to skip the gate).
 
