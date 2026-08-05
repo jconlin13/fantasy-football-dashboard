@@ -2,6 +2,27 @@
 
 What this site is, what has been built, and what is left. Last revised 2026-08-05.
 
+## Checklist
+
+- [x] **Phase 0** — Foundation: ESPN client, pseudonymization, probe
+- [x] **Phase 1** — Archive 2018–2026 to `data/raw` (320 files, 11 MB, 0 PII)
+- [x] **Phase 2** — Splash page: countdown, draft details, dues, order
+- [x] **Phase 3** — Canonical model, 80/80 team-seasons match ESPN, champions confirmed
+- [x] **Phase 4** — Records, head-to-head, luck vs. skill
+  - [x] Third-place game counts; other consolation games do not
+- [ ] **Phase 5** — Lineups, draft, trades
+  - [x] Starting-slot identification verified against team totals (60/60)
+  - [x] Optimal-lineup solver + efficiency (exact assignment, 1,186 team-weeks, 0 violations)
+  - [ ] Draft ROI
+  - [ ] Trade retrospectives
+- [ ] **Phase 6** — All-Time Analysis pages on the site
+- [ ] **Phase 7** — Automation, GitHub Pages, launch
+- [ ] **Phase 8** — Backlog
+
+**Open questions for the commissioner:** none blocking.
+**Awaiting from the commissioner:** splash page values (location, dues, Venmo link,
+draft order once announced, passphrase or a decision to skip the gate).
+
 ## Scope
 
 The governing rule: live scores and standings already exist in the ESPN app, so this site

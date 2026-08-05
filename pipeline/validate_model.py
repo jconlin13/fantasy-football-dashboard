@@ -64,11 +64,21 @@ def check_analytics_invariants(history):
     if abs(total_luck) > 0.05:
         problems.append("luck should sum to zero across the league, got %+.2f" % total_luck)
 
+    # The optimal lineup is chosen from a superset of what was started, so it
+    # can never score less. A too-low optimum would quietly flatter everyone's
+    # efficiency rather than announce itself.
+    import lineups
+
+    lineup_problems, lineup_stats = lineups.validate_lineups(history)
+    problems.extend(lineup_problems)
+
     print("analytics invariants: %s" % ("ok" if not problems else "FAILED"))
     for problem in problems:
         print("  - %s" % problem)
     print("  total wins %d of %d team-games, luck sums to %+.2f"
           % (total_wins, total_games, total_luck))
+    print("  %d team-week lineups solved, %d of them perfect"
+          % (lineup_stats["weeks"], lineup_stats["perfect"]))
     return problems
 
 
