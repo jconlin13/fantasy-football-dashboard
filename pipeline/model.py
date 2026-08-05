@@ -30,14 +30,19 @@ RAW = os.path.join(ROOT, "data", "raw")
 # What a postseason game was actually for.
 REGULAR = "regular"
 CHAMPIONSHIP = "championship"   # still alive for the title
+THIRD_PLACE = "third_place"     # the two teams knocked out in the semifinal
 CONSOLATION = "consolation"     # placement only
 
 # Games that count toward records, head-to-head and luck.
 #
-# The league's rule: consolation games do not count at all. Only the regular
-# season and games still played for the title are real. That excludes the
-# third-place game too -- both teams are already out of the title race by then.
-COUNTING_BRACKETS = (REGULAR, CHAMPIONSHIP)
+# The league's rule: consolation games do not count. The third-place game does
+# -- it is played by the two teams that were still alive going into the last
+# round, and the league takes it seriously in a way it does not take the fifth-
+# and seventh-place games.
+COUNTING_BRACKETS = (REGULAR, CHAMPIONSHIP, THIRD_PLACE)
+
+# The postseason brackets, for records that separate playoffs from the season.
+PLAYOFF_BRACKETS = (CHAMPIONSHIP, THIRD_PLACE)
 
 
 def read(year, view, week=None):
@@ -143,6 +148,8 @@ def classify_postseason(season, weeks):
     )
 
     brackets = {}
+    knocked_out_in = {}  # team -> the week it lost its championship game
+
     for week in sorted(weeks):
         if week <= season.regular_weeks:
             continue
@@ -164,6 +171,7 @@ def classify_postseason(season, weeks):
                 if winner is not None:
                     survivors.add(winner)
                     eliminated.add(loser)
+                    knocked_out_in[loser] = week
                 else:  # undecided -- keep both rather than invent an outcome
                     survivors.update((home, away))
             else:
@@ -172,10 +180,27 @@ def classify_postseason(season, weeks):
         # Teams that had a bye this week are still alive.
         alive = (alive - eliminated - played) | survivors
 
-    # The title game is the last championship game played; its winner is champ.
+    # The third-place game: in the same week as the final, between the two teams
+    # knocked out in the round immediately before it. That is what separates it
+    # from the fifth-place game, which is played by teams knocked out a round
+    # earlier -- both look identical if you only go by the week.
     championship_weeks = [w for (w, _h, _a), b in brackets.items() if b == CHAMPIONSHIP]
     if championship_weeks:
         final_week = max(championship_weeks)
+        semifinal_week = max(
+            [w for w in championship_weeks if w < final_week] or [final_week - 1]
+        )
+        for (week, home, away), bracket in list(brackets.items()):
+            if week != final_week or bracket != CONSOLATION:
+                continue
+            if (
+                knocked_out_in.get(home) == semifinal_week
+                and knocked_out_in.get(away) == semifinal_week
+            ):
+                brackets[(week, home, away)] = THIRD_PLACE
+
+    # The title game is the last championship game played; its winner is champ.
+    if championship_weeks:
         for (week, home, away), bracket in brackets.items():
             if week == final_week and bracket == CHAMPIONSHIP:
                 for matchup in weeks[week]:

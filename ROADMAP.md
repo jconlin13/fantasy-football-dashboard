@@ -114,9 +114,13 @@ natural implementation and would silently erase every departed manager.
 rows facing each other per matchup. Records, head-to-head and luck are all just different
 groupings of that one table.
 
-**Consolation games do not count.** The league's rule is that only the regular season and
-games still played for the title are real — which excludes the third-place game, since both
-teams are already out of the title race. ESPN's own `playoffTierType` is null on every
+**Consolation games do not count; the third-place game does.** Fifth- and seventh-place
+games are placement only, but the third-place game is contested by the two teams still alive
+going into the last round and the league takes it seriously. Those look identical if you
+only go by the week they are played, so they are told apart by *when each team was knocked
+out*: the third-place game is the one in the final week between two teams eliminated in the
+round immediately before it. That finds exactly one such game in each of the eight seasons,
+and 2025's (3rd vs 4th) matches ESPN's final ranks. ESPN's own `playoffTierType` is null on every
 matchup here, so the championship bracket is reconstructed by walking it forward: playoff
 teams start alive, a game between two live teams is a championship game, its loser is out,
 a bye keeps you alive. Replaying 2025 reproduces ESPN's `rankCalculatedFinal` for all ten

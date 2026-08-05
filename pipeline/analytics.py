@@ -8,14 +8,15 @@ Every number here has to be explainable in one sentence, because the whole
 point of this site is settling arguments. A stat nobody can explain just starts
 a new argument about the stat.
 
-Only counting games are used -- no byes, and no consolation games, per the
-league's rule that only the regular season and games still played for the title
-are real. See model.COUNTING_BRACKETS.
+Only counting games are used: no byes and no consolation games, per the league's
+rule. The third-place game does count -- it is contested by the two teams still
+alive going into the last round, unlike the fifth- and seventh-place games. See
+model.COUNTING_BRACKETS.
 """
 
 import collections
 
-from model import CHAMPIONSHIP, REGULAR
+from model import PLAYOFF_BRACKETS, REGULAR
 
 
 def _counting(history, brackets=None):
@@ -39,7 +40,7 @@ def records_book(history):
     """
     book = {}
 
-    for label, brackets in (("regular", (REGULAR,)), ("playoff", (CHAMPIONSHIP,))):
+    for label, brackets in (("regular", (REGULAR,)), ("playoff", PLAYOFF_BRACKETS)):
         games = list(_counting(history, brackets))
         if not games:
             continue
@@ -177,7 +178,7 @@ def head_to_head(history):
             row["wins"] += 1
         else:
             row["losses"] += 1
-        if game["bracket"] == CHAMPIONSHIP:
+        if game["bracket"] in PLAYOFF_BRACKETS:
             if game["won"]:
                 row["playoffWins"] += 1
             else:
