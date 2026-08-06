@@ -21,6 +21,9 @@ What this site is, what has been built, and what is left. Last revised 2026-08-0
   - [x] Validation gate in CI before any deploy
   - [x] Separate deploy workflow, needs no ESPN secrets
   - [ ] `SWID` / `ESPN_S2` in Actions secrets — **needs you**
+  - [ ] Pages deployment failing — reaches `in_progress` then fails with no reason given.
+        Check Settings → Pages is set to **GitHub Actions**, not "Deploy from a branch";
+        the API reports `build_type: workflow` but still carries a branch source.
 - [ ] **Phase 8** — Backlog
 
 **Open questions for the commissioner:** whether to swap draft return for a season-total
