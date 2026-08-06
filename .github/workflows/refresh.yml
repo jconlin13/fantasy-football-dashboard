@@ -26,6 +26,10 @@ jobs:
         with:
           python-version: "3.11"
 
+      # Steps run in order and the job stops at the first failure, which is the
+      # point: nothing below here should run on data that could not be fetched
+      # or that does not agree with ESPN's own records.
+
       # The pipeline is stdlib-only, so there is nothing to install.
       - name: Pull latest from ESPN
         env:
@@ -33,11 +37,19 @@ jobs:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
         run: python3 pipeline/fetch_raw.py --current-season-only
 
+      # The gate. Recomputes every completed season's records from the archive
+      # and compares them against the records ESPN itself stored, and checks the
+      # analytics invariants. A refresh that quietly corrupted the archive fails
+      # here instead of being published.
+      - name: Validate against ESPN's own records
+        run: python3 pipeline/validate_model.py
+
       - name: Rebuild site data
         run: python3 pipeline/build_site_data.py
 
       - name: Commit any changes
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/raw site/data

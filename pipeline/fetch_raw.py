@@ -95,6 +95,7 @@ class Fetcher:
         self.requests = 0
         self.written = 0
         self.skipped = 0
+        self.failures = []
         self.last_request = 0.0
 
     def _throttle(self):
@@ -169,6 +170,7 @@ def fetch_season(fetcher, year, is_current):
             fetcher.grab(year, view, season_path(year, view), refetch=refetch)
         except EspnError as exc:
             print("  %-16s FAIL %s" % (view, exc))
+            fetcher.failures.append("%d %s: %s" % (year, view, exc))
 
     weeks = season_weeks(settings)
     if not weeks:
@@ -188,6 +190,7 @@ def fetch_season(fetcher, year, is_current):
                 )
             except EspnError as exc:
                 print("  wk%-2d %-16s FAIL %s" % (week, view, exc))
+                fetcher.failures.append("%d wk%d %s: %s" % (year, week, view, exc))
 
 
 def archive_size():
@@ -235,6 +238,7 @@ def main():
             fetch_season(fetcher, year, is_current=(year == current))
         except EspnError as exc:
             print("  season failed: %s" % exc)
+            fetcher.failures.append("%d: %s" % (year, exc))
         print("")
 
     if fetcher.harvest:
@@ -253,6 +257,16 @@ def main():
             archive_size() / (1024.0 * 1024.0),
         )
     )
+
+    # Exit non-zero on any failure. The scheduled refresh runs unattended, and
+    # the dangerous outcome is not a crash -- it is expired cookies producing a
+    # run that fetches nothing, rebuilds from the existing archive and deploys
+    # a green tick over week-old data. Better to fail loudly and be fixed.
+    if fetcher.failures:
+        print("\n%d fetch failure(s):" % len(fetcher.failures))
+        for failure in fetcher.failures[:20]:
+            print("  %s" % failure)
+        return 1
     return 0
 
 

@@ -17,11 +17,16 @@ What this site is, what has been built, and what is left. Last revised 2026-08-0
   - [x] Trade market summary (full retrospectives not possible — see below)
 - [x] **Phase 6** — All-Time Analysis page (7 tabbed sections, mobile-verified)
 - [ ] **Phase 7** — Automation, GitHub Pages, launch
+  - [x] Fetcher exits non-zero on failure (was exiting 0 and deploying stale data)
+  - [x] Validation gate in CI before any deploy
+  - [x] Separate deploy workflow, needs no ESPN secrets
+  - [ ] `SWID` / `ESPN_S2` in Actions secrets — **needs you**
 - [ ] **Phase 8** — Backlog
 
 **Open questions for the commissioner:** whether to swap draft return for a season-total
 measure that isolates draft skill but only covers ~75% of picks.
-**Awaiting from the commissioner:** splash page values (location, dues, Venmo link,
+**Awaiting from the commissioner:** `SWID` and `ESPN_S2` in Settings → Secrets and
+variables → Actions (the weekly refresh cannot run without them); splash page values (location, dues, Venmo link,
 draft order once announced, passphrase or a decision to skip the gate).
 
 ## Scope

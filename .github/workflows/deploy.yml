@@ -1,0 +1,39 @@
+name: Deploy site
+
+# Publishing what is already committed is a different job from fetching new data
+# from ESPN, and keeping them separate matters: this one needs no cookies, no
+# secrets and no network access to ESPN, so the site can go live and stay live
+# even if the league's auth expires. refresh.yml does its own deploy at the end
+# of a successful refresh, because a commit pushed by a workflow does not
+# trigger another workflow.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch:
+
+permissions:
+  pages: write
+  id-token: write
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
