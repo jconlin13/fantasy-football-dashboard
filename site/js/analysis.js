@@ -133,17 +133,17 @@
       "are excluded; the third-place game counts."
     ));
 
-    [["regular", "Regular season"], ["playoff", "Playoffs"]].forEach(function (pair) {
+    [["regular", "Regular Season"], ["playoff", "Playoffs"]].forEach(function (pair) {
       var book = data.records[pair[0]];
       if (!book) { return; }
       frag.appendChild(el("h3", null, pair[1]));
 
       var labels = {
-        highestWeek: "Highest week",
-        lowestWeek: "Lowest week",
-        biggestBlowout: "Biggest blowout",
-        narrowestWin: "Narrowest win",
-        mostPointsInALoss: "Most points in a loss"
+        highestWeek: "Highest Week",
+        lowestWeek: "Lowest Week",
+        biggestBlowout: "Biggest Blowout",
+        narrowestWin: "Narrowest Win",
+        mostPointsInALoss: "Most Points in a Loss"
       };
       Object.keys(labels).forEach(function (key) {
         var rec = book[key];
@@ -151,7 +151,7 @@
         frag.appendChild(statRow(
           labels[key],
           rec.value.toFixed(1),
-          rec.manager + " · " + rec.year + " wk" + rec.week +
+          rec.manager + " | " + rec.year + " wk" + rec.week +
             (rec.opponent ? " vs " + rec.opponent : "")
         ));
       });
@@ -160,22 +160,22 @@
     var best = data.records.bestSeason;
     var worst = data.records.worstSeason;
     var streaks = data.records.streaks || {};
-    frag.appendChild(el("h3", null, "Seasons and streaks"));
+    frag.appendChild(el("h3", null, "Seasons and Streaks"));
     if (best) {
-      frag.appendChild(statRow("Best season", best.wins + "-" + (best.games - best.wins),
-        best.manager + " · " + best.year));
+      frag.appendChild(statRow("Best Season", best.wins + "-" + (best.games - best.wins),
+        best.manager + " | " + best.year));
     }
     if (worst) {
-      frag.appendChild(statRow("Worst season", worst.wins + "-" + (worst.games - worst.wins),
-        worst.manager + " · " + worst.year));
+      frag.appendChild(statRow("Worst Season", worst.wins + "-" + (worst.games - worst.wins),
+        worst.manager + " | " + worst.year));
     }
     if (streaks.longestWinStreak) {
-      frag.appendChild(statRow("Longest win streak", streaks.longestWinStreak.length,
-        streaks.longestWinStreak.manager + " · through " + streaks.longestWinStreak.through));
+      frag.appendChild(statRow("Longest Win Streak", streaks.longestWinStreak.length,
+        streaks.longestWinStreak.manager + " | through " + streaks.longestWinStreak.through));
     }
     if (streaks.longestLoseStreak) {
-      frag.appendChild(statRow("Longest losing streak", streaks.longestLoseStreak.length,
-        streaks.longestLoseStreak.manager + " · through " + streaks.longestLoseStreak.through));
+      frag.appendChild(statRow("Longest Losing Streak", streaks.longestLoseStreak.length,
+        streaks.longestLoseStreak.manager + " | through " + streaks.longestLoseStreak.through));
     }
     return frag;
   }
@@ -204,7 +204,7 @@
       var rows = data.headToHead.filter(function (r) { return r.manager === name; });
       rows.sort(function (a, b) { return (b.wins - b.losses) - (a.wins - a.losses); });
       host.appendChild(table(
-        ["Opponent", "Record", "Avg margin", "Playoffs"],
+        ["Opponent", "Record", "Avg Margin", "Playoffs"],
         rows.map(function (r) {
           var playoffs = (r.playoffWins || r.playoffLosses)
             ? r.playoffWins + "-" + r.playoffLosses : "—";
@@ -245,16 +245,16 @@
       "nine starters and one quarterback to eleven with two."
     ));
     frag.appendChild(table(
-      ["Manager", "Efficiency", "Points benched", "Weeks"],
+      ["Manager", "Efficiency", "Points Benched", "Weeks"],
       data.lineups.career.map(function (r) {
         return [r.manager, (r.efficiency * 100).toFixed(1) + "%",
                 Math.round(r.leftOnBench).toLocaleString(), r.weeks];
       })
     ));
 
-    frag.appendChild(el("h3", null, "Worst weeks ever"));
+    frag.appendChild(el("h3", null, "Worst Weeks Ever"));
     frag.appendChild(table(
-      ["Manager", "Season", "Started", "Could have", "Left"],
+      ["Manager", "Season", "Started", "Could Have", "Left"],
       data.lineups.worstWeeks.map(function (r) {
         return [r.manager, r.year + " wk" + r.week, r.actual.toFixed(1),
                 r.optimal.toFixed(1), r.leftOnBench.toFixed(1)];
@@ -272,15 +272,15 @@
       "tracks pick quality, so the weeks-held column sits right next to it."
     ));
     frag.appendChild(table(
-      ["Manager", "Vs slot", "Weeks held", "Picks"],
+      ["Manager", "Vs Slot", "Weeks Held", "Picks"],
       data.draft.byManager.map(function (r) {
         return [r.manager, signed(r.avgVsSlot, 1), r.avgWeeksHeld.toFixed(1), r.picks];
       })
     ));
 
-    frag.appendChild(el("h3", null, "Best picks ever"));
+    frag.appendChild(el("h3", null, "Best Picks Ever"));
     frag.appendChild(table(
-      ["Manager", "Season", "Pick", "Returned", "Vs slot"],
+      ["Manager", "Season", "Pick", "Returned", "Vs Slot"],
       data.draft.bestPicks.map(function (r) {
         return [r.manager, r.year, "#" + r.overall, r.returned.toFixed(1),
                 signed(r.vsSlot, 1)];
@@ -288,7 +288,7 @@
     ));
 
     var totals = data.trades.totals || {};
-    frag.appendChild(el("h3", null, "The trade market"));
+    frag.appendChild(el("h3", null, "The Trade Market"));
     frag.appendChild(explain(
       "There are no trade retrospectives here because there are barely any trades. " +
       "ESPN keeps the players involved for only two of them across eight seasons — " +

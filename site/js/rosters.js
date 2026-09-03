@@ -97,9 +97,9 @@
     var scroller = el("div", "scroller");
     var table = el("table");
 
-    var headers = ["Player", year + " pts", "Acquired"];
+    var headers = ["Player", year + " Pts", "Acquired"];
     if (hasOutlook) {
-      headers.push(nextYear + " pts (proj.)", nextYear + " rd (proj.)");
+      headers.push(nextYear + " Pts (Proj.)", nextYear + " Rd (Proj.)");
     }
 
     var thead = el("thead");
@@ -152,7 +152,7 @@
     panel.appendChild(managerPicker);
 
     var sortPicker = el("select");
-    [["points", "Sort: points"], ["acquired", "Sort: draft order"]].forEach(function (pair) {
+    [["points", "Sort: Points"], ["acquired", "Sort: Draft Order"]].forEach(function (pair) {
       var option = el("option", null, pair[1]);
       option.value = pair[0];
       sortPicker.appendChild(option);
