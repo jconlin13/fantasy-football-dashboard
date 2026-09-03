@@ -187,18 +187,16 @@ def build_rosters():
     Kept separate from analysis.json rather than folded in -- it is looked up
     completely differently (by manager, not by stat) and this keeps the main
     analysis feed from carrying every bench player's name on every page load.
+
+    Which seasons appear is decided inside rosters_by_season, gated on ESPN's
+    own draftDetail.drafted flag rather than a year cutoff computed here --
+    see its docstring for why that matters for 2026 specifically.
     """
     import rosters as roster_analytics
     from model import load_league_history
 
-    # Capped at last season, not the current one. Before a draft happens ESPN
-    # just carries last year's rosters forward untouched -- nothing has been
-    # decided yet, so showing it as "this year's roster" would be wrong, not
-    # merely early.
-    current_season = load_league()["current_season"]
-
     history = load_league_history()
-    by_year = roster_analytics.rosters_by_season(history, through_year=current_season - 1)
+    by_year = roster_analytics.rosters_by_season(history)
 
     return {
         "generated": datetime.date.today().isoformat(),

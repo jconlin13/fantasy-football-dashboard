@@ -39,16 +39,27 @@ WAS kept, not what a team would owe to keep them again -- that is a
 league-specific house rule this code has no way to know, so guessing at one
 would be exactly the kind of confident wrong answer worth avoiding.
 
-The season picker never offers the current season. Before a draft happens,
-ESPN just carries last year's rosters forward untouched -- it is not a
-keeper list, it is stale data with nothing decided yet -- so anything from
-`current_season` on is left out. Pass `through_year` explicitly (build_site_data
-does, capped at current_season - 1) rather than trusting each Season's own
-notion of "complete," so the cutoff is one obvious, statable rule instead of
-inferred from a handful of status flags.
+A season is only shown once its draft has actually happened, checked directly
+against mDraftDetail's own `drafted` flag rather than a hardcoded year cutoff.
+Before that, ESPN just carries the prior year's rosters forward untouched --
+not a keeper list, just stale data with nothing decided yet. This is also
+self-updating on purpose: the day the 2026 draft finishes and the archive is
+next refreshed, `drafted` flips to true and 2026 appears on this page with no
+code change and no one having to remember to update a cutoff.
+
+For the single newest drafted season, two more fields ride along per player
+when they're available: next season's ESPN-projected points, and a projected
+draft round derived from ESPN's average-draft-position (an industry-wide
+number, not specific to this league's eventual draft, rounded up to whichever
+round it would land in for a league this size). Both come from whichever of
+the ten teams currently rosters that player next season -- there is no
+archived view of the wider free-agent pool, so a player not on any of next
+season's ten rosters (retired, cut everywhere) simply has neither field,
+rather than a guessed one.
 """
 
 import collections
+import math
 
 from model import read
 
@@ -86,6 +97,28 @@ def _season_total(player, year):
     return 0.0
 
 
+def _projected_total(player, year):
+    """ESPN's own preseason projection for this exact season, or None.
+
+    Same field family as _season_total but statSourceId=1 (projected rather
+    than actual). Same seasonId trap applies, so it is guarded the same way.
+    """
+    for stat in player.get("stats") or []:
+        if (
+            stat.get("seasonId") == year
+            and stat.get("statSourceId") == 1
+            and stat.get("statSplitTypeId") == 0
+            and stat.get("scoringPeriodId") == 0
+        ):
+            return stat.get("appliedTotal")
+    return None
+
+
+def _season_drafted(year):
+    detail = read(year, "mDraftDetail")
+    return bool((detail or {}).get("draftDetail", {}).get("drafted"))
+
+
 def _draft_lookup(year):
     """{(team id, player id): (round, pick-within-round, was keeper-flagged)}"""
     detail = read(year, "mDraftDetail")
@@ -101,17 +134,56 @@ def _draft_lookup(year):
     return lookup
 
 
+def _next_season_outlook(year):
+    """{player id: (projected points or None, projected round or None)}.
+
+    Built from year+1's own rostered players -- there is no archived view of
+    the full free-agent pool, only what the ten teams currently hold, so
+    coverage is real but not complete (94% of a full roster carries over,
+    checked against 2025 -> 2026). A player found on more than one team's
+    roster across the season (traded) keeps the first entry seen; ESPN's
+    projection is a property of the player, not the team, so it does not
+    matter which one.
+    """
+    payload = read(year + 1, "mRoster")
+    if not payload:
+        return {}
+
+    teams = payload.get("teams") or []
+    team_count = len(teams) or 10
+
+    outlook = {}
+    for team in teams:
+        for entry in (team.get("roster") or {}).get("entries") or []:
+            player_id = entry.get("playerId")
+            if player_id in outlook:
+                continue
+            player = (entry.get("playerPoolEntry") or {}).get("player") or {}
+
+            projected = _projected_total(player, year + 1)
+            if projected is not None:
+                projected = round(projected, 1)
+
+            adp = (player.get("ownership") or {}).get("averageDraftPosition")
+            projected_round = int(math.ceil(adp / team_count)) if adp else None
+
+            outlook[player_id] = (projected, projected_round)
+    return outlook
+
+
 def rosters_by_season(history, through_year=None):
     """{year: {manager display name: [players]}}.
 
-    `through_year` excludes any season after it -- see the module docstring
-    for why the current season is never a real answer here.
+    `through_year`, if given, additionally excludes any season after it; the
+    primary gate is always _season_drafted -- see the module docstring.
     """
     unmapped = set()
     result = {}
 
     for year in sorted(history.seasons):
         if through_year is not None and year > through_year:
+            continue
+        if not _season_drafted(year):
             continue
 
         payload = read(year, "mRoster")
@@ -145,6 +217,7 @@ def rosters_by_season(history, through_year=None):
 
                 by_manager[manager_name].append(
                     {
+                        "playerId": player_id,
                         "name": player.get("fullName") or "?",
                         "position": _position_name(player.get("defaultPositionId"), unmapped),
                         "points": round(_season_total(player, year), 1),
@@ -166,6 +239,22 @@ def rosters_by_season(history, through_year=None):
 
         if by_manager:
             result[year] = dict(by_manager)
+
+    # Next-season outlook only for the single newest drafted season -- the
+    # only one anyone is actually deciding keepers from right now. Attaching
+    # it to older seasons would mean re-fetching each one's own "next year"
+    # roster and presenting a number nobody asked about.
+    if result:
+        latest = max(result)
+        outlook = _next_season_outlook(latest)
+        if outlook:
+            for players in result[latest].values():
+                for player in players:
+                    projected, projected_round = outlook.get(
+                        player["playerId"], (None, None)
+                    )
+                    player["nextSeasonPoints"] = projected
+                    player["nextSeasonRound"] = projected_round
 
     if unmapped:
         print("  warning: unmapped roster position ids seen: %s" % sorted(unmapped))

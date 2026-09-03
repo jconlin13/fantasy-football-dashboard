@@ -21,6 +21,10 @@
     return node;
   }
 
+  function dash(value) {
+    return value === null || value === undefined ? "—" : value;
+  }
+
   /* A player was drafted by this team whenever `round` is set -- true for
      both the Drafted and (never-seen-in-practice) Added/kept statuses, false
      for a Free Agent pickup. Sorting on that instead of the display string
@@ -63,24 +67,46 @@
       return;
     }
 
+    // Only the single newest season carries next-year outlook -- browsing an
+    // old roster has nothing to project forward from, so those two columns
+    // simply don't exist on the data for any other year.
+    var hasOutlook = Object.prototype.hasOwnProperty.call(players[0], "nextSeasonPoints");
+    var nextYear = Number(year) + 1;
+
+    if (hasOutlook) {
+      host.appendChild(el("p", "explain",
+        nextYear + " pts and round are ESPN's own projection and industry-wide " +
+        "average draft position, rounded up to a round for a " +
+        Object.keys(data.rosters[year]).length + "-team league -- not this " +
+        "league's actual future draft, which hasn't happened. A dash means the " +
+        "player isn't on any of next season's ten rosters yet."
+      ));
+    }
+
     var scroller = el("div", "scroller");
     var table = el("table");
 
+    var headers = ["Player", year + " pts", "Acquired"];
+    if (hasOutlook) {
+      headers.push(nextYear + " pts (proj.)", nextYear + " rd (proj.)");
+    }
+
     var thead = el("thead");
     var hr = el("tr");
-    ["Pos", "Player", "Season pts", "How acquired"].forEach(function (h) {
-      hr.appendChild(el("th", null, h));
-    });
+    headers.forEach(function (h) { hr.appendChild(el("th", null, h)); });
     thead.appendChild(hr);
     table.appendChild(thead);
 
     var tbody = el("tbody");
     sortPlayers(players).forEach(function (p) {
       var tr = el("tr");
-      tr.appendChild(el("td", null, p.position));
       tr.appendChild(el("td", null, p.name));
       tr.appendChild(el("td", null, p.points.toFixed(1)));
       tr.appendChild(el("td", null, acquiredLabel(p)));
+      if (hasOutlook) {
+        tr.appendChild(el("td", null, dash(p.nextSeasonPoints !== null && p.nextSeasonPoints !== undefined ? p.nextSeasonPoints.toFixed(1) : null)));
+        tr.appendChild(el("td", null, dash(p.nextSeasonRound)));
+      }
       tbody.appendChild(tr);
     });
     table.appendChild(tbody);
