@@ -595,7 +595,17 @@ footer {
   box-shadow: var(--shadow-accent);
 }
 
-/* ---------- tables ---------- */
+/* ---------- tables ----------
+ *
+ * Data columns are centered rather than right-aligned. Right-align is the
+ * textbook choice for a column of same-precision numbers -- it stacks the
+ * decimal points -- but these columns are not that: a badge next to a plain
+ * float next to a signed delta next to "#81" next to "2020 wk16". Forcing
+ * all of that against one shared right edge just staggers the *left* edge
+ * of every cell instead, which reads as uneven rather than aligned. Centered,
+ * each cell sits in the middle of its own lane regardless of format, and the
+ * table reads as organized even though the data itself is mixed.
+ */
 
 .scroller {
   margin: 0 -20px;
@@ -617,7 +627,7 @@ th {
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
   white-space: nowrap;
 }
 
@@ -629,7 +639,7 @@ td:first-child {
 td {
   padding: 10px 0;
   border-bottom: 1px solid var(--line);
-  text-align: right;
+  text-align: center;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -640,7 +650,7 @@ td:first-child {
 
 th + th,
 td + td {
-  padding-left: 14px;
+  padding-left: 20px;
 }
 
 tr:last-child td {
