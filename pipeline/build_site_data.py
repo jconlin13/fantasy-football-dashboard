@@ -181,6 +181,26 @@ def build_analysis():
     }
 
 
+def build_rosters():
+    """Everything the dedicated Rosters page needs: one JSON, keyed by season.
+
+    Kept separate from analysis.json rather than folded in -- it is looked up
+    completely differently (by manager, not by stat) and this keeps the main
+    analysis feed from carrying every bench player's name on every page load.
+    """
+    import rosters as roster_analytics
+    from model import load_league_history
+
+    history = load_league_history()
+    by_year = roster_analytics.rosters_by_season(history)
+
+    return {
+        "generated": datetime.date.today().isoformat(),
+        "seasons": sorted(by_year, reverse=True),
+        "rosters": {str(year): managers for year, managers in by_year.items()},
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -194,6 +214,7 @@ def main():
     changed = write_json("draft.json", build_draft())
     if not args.splash_only:
         changed = write_json("analysis.json", build_analysis()) or changed
+        changed = write_json("rosters.json", build_rosters()) or changed
     print("done%s" % ("" if changed else " (nothing changed)"))
     return 0
 
