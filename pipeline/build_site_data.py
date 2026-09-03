@@ -191,8 +191,14 @@ def build_rosters():
     import rosters as roster_analytics
     from model import load_league_history
 
+    # Capped at last season, not the current one. Before a draft happens ESPN
+    # just carries last year's rosters forward untouched -- nothing has been
+    # decided yet, so showing it as "this year's roster" would be wrong, not
+    # merely early.
+    current_season = load_league()["current_season"]
+
     history = load_league_history()
-    by_year = roster_analytics.rosters_by_season(history)
+    by_year = roster_analytics.rosters_by_season(history, through_year=current_season - 1)
 
     return {
         "generated": datetime.date.today().isoformat(),

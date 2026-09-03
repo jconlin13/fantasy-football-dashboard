@@ -99,11 +99,14 @@ main {
     grid-template-columns: 1fr 1fr;
     align-items: start;
   }
-  /* The draft order is a long list; let it own the right column and run the
-     full height of the stack next to it. */
-  .grid .order {
-    grid-column: 2;
-    grid-row: 1 / span 3;
+  /* Splash page only -- these ids exist nowhere else, so this can't leak into
+     the plain two-tile grids on the other pages.
+     Countdown spans the full width up top; draft and dues sit side by side
+     underneath it (auto-placed into row 2 in DOM order, no rule needed for
+     either); the order list spans full width again below both. */
+  #countdown-card,
+  #order-card {
+    grid-column: 1 / -1;
   }
 }
 

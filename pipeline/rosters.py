@@ -17,13 +17,35 @@ a deliberate, simpler definition; a fantasy-team-scoped total is a different
 stat (see draft.py's `returned`, which is exactly that) and mixing the two on
 one page would need two different labels to stay honest.
 
-Deliberately NOT attempted: keeper cost. ESPN's `keeper` flag on a draft pick
-says whether a player WAS kept into that draft, not what a team would owe to
-keep them again -- that is a league-specific rule (round penalty, salary,
-etc.) this code has no way to know, so guessing at one would be exactly the
-kind of confident wrong answer worth avoiding. What is shown instead is
-provenance: whether this season's roster spot was Drafted, Kept (drafted with
-ESPN's own keeper flag set), or Added (waiver, free agency, or a trade).
+How a player got onto the roster:
+
+    Drafted      picked in this team's own draft. Shown with round.pick-in-round
+                 (e.g. "1.4" is round 1, pick 4 of that round) -- never the
+                 overall pick number, which mixes rounds together and is a
+                 worse answer to "where did I get him."
+    Free Agent   not in this team's draft picks -- added off waivers, free
+                 agency, or by trade. The archive cannot tell those three
+                 apart (see draft.py's trade-market findings: real trade
+                 participants are recoverable for 2 of 8 seasons' trades), so
+                 they are not claimed to be told apart here either.
+    Added        drafted AND flagged by ESPN's own `keeper` bit. Worth calling
+                 out only because this league's `keeperCount` setting is 0 and
+                 that bit has never once been true across 2018-2026 -- so in
+                 practice this status never appears. Kept in the code rather
+                 than deleted, in case a future season actually uses it.
+
+Deliberately NOT attempted: keeper cost. ESPN's `keeper` flag says a player
+WAS kept, not what a team would owe to keep them again -- that is a
+league-specific house rule this code has no way to know, so guessing at one
+would be exactly the kind of confident wrong answer worth avoiding.
+
+The season picker never offers the current season. Before a draft happens,
+ESPN just carries last year's rosters forward untouched -- it is not a
+keeper list, it is stale data with nothing decided yet -- so anything from
+`current_season` on is left out. Pass `through_year` explicitly (build_site_data
+does, capped at current_season - 1) rather than trusting each Season's own
+notion of "complete," so the cutoff is one obvious, statable rule instead of
+inferred from a handful of status flags.
 """
 
 import collections
@@ -65,22 +87,33 @@ def _season_total(player, year):
 
 
 def _draft_lookup(year):
-    """{(team id, player id): (round, overall, was a flagged keeper)}"""
+    """{(team id, player id): (round, pick-within-round, was keeper-flagged)}"""
     detail = read(year, "mDraftDetail")
     picks = (detail or {}).get("draftDetail", {}).get("picks") or []
     lookup = {}
     for pick in picks:
         key = (pick.get("teamId"), pick.get("playerId"))
-        lookup[key] = (pick.get("roundId"), pick.get("overallPickNumber"), bool(pick.get("keeper")))
+        lookup[key] = (
+            pick.get("roundId"),
+            pick.get("roundPickNumber"),
+            bool(pick.get("keeper")),
+        )
     return lookup
 
 
-def rosters_by_season(history):
-    """{year: {manager display name: [players]}} for every archived season."""
+def rosters_by_season(history, through_year=None):
+    """{year: {manager display name: [players]}}.
+
+    `through_year` excludes any season after it -- see the module docstring
+    for why the current season is never a real answer here.
+    """
     unmapped = set()
     result = {}
 
     for year in sorted(history.seasons):
+        if through_year is not None and year > through_year:
+            continue
+
         payload = read(year, "mRoster")
         if not payload:
             continue
@@ -102,11 +135,13 @@ def rosters_by_season(history):
 
                 pick = draft.get((team_id, player_id))
                 if pick is None:
-                    status = "Added"
-                    round_, overall = None, None
+                    status = "Free Agent"
+                    round_, round_pick = None, None
                 else:
-                    round_, overall, kept = pick
-                    status = "Kept" if kept else "Drafted"
+                    round_, round_pick, kept = pick
+                    # kept never fires in this league's archive (see module
+                    # docstring) but the label is worth having ready either way.
+                    status = "Added" if kept else "Drafted"
 
                 by_manager[manager_name].append(
                     {
@@ -115,6 +150,7 @@ def rosters_by_season(history):
                         "points": round(_season_total(player, year), 1),
                         "status": status,
                         "round": round_,
+                        "roundPick": round_pick,
                     }
                 )
 

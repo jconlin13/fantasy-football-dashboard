@@ -1,8 +1,9 @@
 /* Rosters. Reads site/data/rosters.json: who closed each season on which team.
  *
- * Two pickers rather than one big table -- ten teams times ~18 players is 180
- * rows, unreadable at phone width. Pick a season, pick a manager, see their
- * roster. Same pattern as the Head-to-Head tab on the analysis page.
+ * Three pickers rather than one big table -- ten teams times ~18 players is
+ * 180 rows, unreadable at phone width. Pick a season, pick a manager, pick a
+ * sort, see their roster. Same season/manager pattern as the Head-to-Head tab
+ * on the analysis page.
  */
 
 (function () {
@@ -11,6 +12,7 @@
   var $ = function (id) { return document.getElementById(id); };
   var panel = $("panel");
   var data = null;
+  var sortMode = "points";
 
   function el(tag, className, text) {
     var node = document.createElement(tag);
@@ -19,7 +21,37 @@
     return node;
   }
 
-  var STATUS_CLASS = { Kept: "paid", Drafted: null, Added: null };
+  /* A player was drafted by this team whenever `round` is set -- true for
+     both the Drafted and (never-seen-in-practice) Added/kept statuses, false
+     for a Free Agent pickup. Sorting on that instead of the display string
+     keeps the two concerns separate: what a row says vs. where it belongs. */
+  function wasDrafted(p) {
+    return p.round !== null && p.round !== undefined;
+  }
+
+  function acquiredLabel(p) {
+    if (wasDrafted(p) && p.status === "Drafted") {
+      return "Drafted " + p.round + "." + p.roundPick;
+    }
+    return p.status; // "Free Agent", or the rare flagged-keeper "Added"
+  }
+
+  function sortPlayers(players) {
+    var copy = players.slice();
+    if (sortMode === "points") {
+      copy.sort(function (a, b) { return b.points - a.points; });
+      return copy;
+    }
+    // "Draft order": every drafted player first, round 1 to last, then every
+    // free agent after, highest-scoring first within each group.
+    copy.sort(function (a, b) {
+      var aDrafted = wasDrafted(a), bDrafted = wasDrafted(b);
+      if (aDrafted !== bDrafted) { return aDrafted ? -1 : 1; }
+      if (aDrafted) { return a.round - b.round; }
+      return b.points - a.points;
+    });
+    return copy;
+  }
 
   function renderRoster(year, manager) {
     var host = $("roster-host");
@@ -29,13 +61,6 @@
     if (!players.length) {
       host.appendChild(el("p", "explain", "No archived roster for " + manager + " in " + year + "."));
       return;
-    }
-
-    if (players.every(function (p) { return p.points === 0; })) {
-      host.appendChild(el("p", "explain",
-        year + " hasn't kicked off yet, so season points read 0.0 for " +
-        "everyone -- this is the roster as it stands today, going into the draft."
-      ));
     }
 
     var scroller = el("div", "scroller");
@@ -50,22 +75,12 @@
     table.appendChild(thead);
 
     var tbody = el("tbody");
-    players.forEach(function (p) {
+    sortPlayers(players).forEach(function (p) {
       var tr = el("tr");
       tr.appendChild(el("td", null, p.position));
       tr.appendChild(el("td", null, p.name));
       tr.appendChild(el("td", null, p.points.toFixed(1)));
-
-      var statusCell = el("td");
-      var label = p.status + (p.round ? " (rd " + p.round + ")" : "");
-      if (STATUS_CLASS[p.status]) {
-        var badge = el("span", "badge " + STATUS_CLASS[p.status], label);
-        statusCell.appendChild(badge);
-      } else {
-        statusCell.textContent = label;
-      }
-      tr.appendChild(statusCell);
-
+      tr.appendChild(el("td", null, acquiredLabel(p)));
       tbody.appendChild(tr);
     });
     table.appendChild(tbody);
@@ -76,10 +91,8 @@
   function renderPickers() {
     panel.textContent = "";
     panel.appendChild(el("p", "explain",
-      "Every manager's roster at the end of a season -- exactly who they had, " +
-      "useful for keeper calls. “Season pts” is a player’s full real-world " +
-      "season total, the same number on any ESPN player card, not just what " +
-      "they scored while on this roster."
+      "End-of-season rosters. “Season points” includes a free agent’s " +
+      "points from before they were added to this team."
     ));
 
     var yearPicker = el("select");
@@ -92,6 +105,14 @@
 
     var managerPicker = el("select");
     panel.appendChild(managerPicker);
+
+    var sortPicker = el("select");
+    [["points", "Sort: points"], ["acquired", "Sort: draft order"]].forEach(function (pair) {
+      var option = el("option", null, pair[1]);
+      option.value = pair[0];
+      sortPicker.appendChild(option);
+    });
+    panel.appendChild(sortPicker);
 
     var host = el("div");
     host.id = "roster-host";
@@ -112,6 +133,10 @@
       fillManagers(Number(yearPicker.value));
     });
     managerPicker.addEventListener("change", function () {
+      renderRoster(Number(yearPicker.value), managerPicker.value);
+    });
+    sortPicker.addEventListener("change", function () {
+      sortMode = sortPicker.value;
       renderRoster(Number(yearPicker.value), managerPicker.value);
     });
 
