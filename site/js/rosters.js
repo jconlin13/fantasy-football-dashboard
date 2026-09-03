@@ -40,6 +40,17 @@
     return p.status; // "Free Agent", or the rare flagged-keeper "Added"
   }
 
+  /* A drafted pick carries real data worth a badge; a free-agent add is the
+     "nothing eventful happened" case and stays plain text, so the badges
+     that do appear are worth glancing at rather than covering every row. */
+  function acquiredCell(p) {
+    var label = acquiredLabel(p);
+    if (wasDrafted(p) && p.status === "Drafted") {
+      return el("span", "badge drafted", label);
+    }
+    return document.createTextNode(label);
+  }
+
   function sortPlayers(players) {
     var copy = players.slice();
     if (sortMode === "points") {
@@ -102,7 +113,9 @@
       var tr = el("tr");
       tr.appendChild(el("td", null, p.name));
       tr.appendChild(el("td", null, p.points.toFixed(1)));
-      tr.appendChild(el("td", null, acquiredLabel(p)));
+      var acquiredTd = el("td");
+      acquiredTd.appendChild(acquiredCell(p));
+      tr.appendChild(acquiredTd);
       if (hasOutlook) {
         var hasProj = p.nextSeasonPoints !== null && p.nextSeasonPoints !== undefined;
         tr.appendChild(el("td", null, dash(hasProj ? p.nextSeasonPoints.toFixed(1) : null)));

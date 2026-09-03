@@ -133,9 +133,10 @@
 
       if (entry.status) {
         var badge = document.createElement("span");
-        // Only a clean "paid" earns the accent color; anything else is shown
-        // verbatim, so "mostly paid" stays honest instead of rounding up.
-        badge.className = entry.status === "paid" ? "badge paid" : "badge";
+        // Only a clean "paid" earns the solid accent treatment; anything
+        // else -- "mostly paid", etc -- gets the gold in-progress tone
+        // rather than rounding up to fully paid, and is shown verbatim.
+        badge.className = "badge " + (entry.status === "paid" ? "paid" : "partial");
         badge.textContent = entry.status === "paid" ? "Paid ✓" : entry.status;
         li.appendChild(badge);
       }

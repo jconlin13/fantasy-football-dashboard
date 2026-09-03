@@ -1,32 +1,70 @@
 /* Design system for the whole site.
  *
  * Mobile-first: everything is a single stacked column until 720px, because the
- * league opens this on phones from a group chat. Cards on a soft field, one
- * accent color, big numbers with small uppercase labels -- the point is that a
- * stat should be readable at arm's length without anyone squinting.
+ * league opens this on phones from a group chat. Cards on a soft field, big
+ * numbers with small uppercase labels -- the point is that a stat should be
+ * readable at arm's length without anyone squinting.
+ *
+ * Two accents, used on purpose rather than decoratively: emerald marks
+ * anything interactive -- a link, a button, a control, a paid badge -- so a
+ * border color alone tells you whether something responds to a tap. Gold
+ * marks a highlight that is not a link -- a superlative stat, a champion, a
+ * drafted-from-the-draft badge. Everything else stays neutral ink-on-white,
+ * which is what keeps two spot colors from turning into visual noise.
  */
 
 :root {
-  --bg: #ecedf0;
+  --bg: #eef0f2;
   --card: #ffffff;
-  --ink: #111418;
-  --muted: #6c7480;
-  --line: #e3e6ea;
+  --ink: #10141a;
+  --muted: #667085;
+  --line: #e2e5ea;
+
   --accent: #34d399;
+  --accent-strong: #0ea472;
   --accent-ink: #04291b;
-  --shadow: 0 1px 2px rgba(17, 20, 24, 0.06);
+  --accent-soft: rgba(16, 163, 115, 0.09);
+  --accent-soft-strong: rgba(16, 163, 115, 0.16);
+
+  --gold: #c8891f;
+  --gold-strong: #a3700f;
+  --gold-ink: #3a2705;
+  --gold-soft: rgba(200, 137, 31, 0.10);
+  --gold-soft-strong: rgba(200, 137, 31, 0.18);
+
+  --danger: #dc2626;
+
+  --shadow: 0 1px 2px rgba(16, 20, 26, 0.05), 0 1px 1px rgba(16, 20, 26, 0.04);
+  --shadow-lg: 0 10px 24px -8px rgba(16, 20, 26, 0.16);
+  --shadow-accent: 0 8px 20px -6px rgba(16, 163, 115, 0.35);
+
   --radius: 18px;
   --gap: 14px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0f1216;
-    --card: #181c22;
+    --bg: #0d1013;
+    --card: #171b21;
     --ink: #f2f4f7;
-    --muted: #99a2ad;
-    --line: #262c34;
-    --shadow: none;
+    --muted: #9aa4b1;
+    --line: #272e37;
+
+    --accent: #34d399;
+    --accent-strong: #5eead4;
+    --accent-ink: #04291b;
+    --accent-soft: rgba(52, 211, 153, 0.10);
+    --accent-soft-strong: rgba(52, 211, 153, 0.18);
+
+    --gold: #e8b04b;
+    --gold-strong: #f4c669;
+    --gold-ink: #2c1e02;
+    --gold-soft: rgba(232, 176, 75, 0.12);
+    --gold-soft-strong: rgba(232, 176, 75, 0.2);
+
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 12px 28px -10px rgba(0, 0, 0, 0.6);
+    --shadow-accent: 0 0 0 1px rgba(52, 211, 153, 0.25), 0 8px 24px -6px rgba(52, 211, 153, 0.25);
   }
 }
 
@@ -72,6 +110,19 @@ body {
   color: var(--muted);
 }
 
+/* A short two-tone underline ties every page back to the same two accents
+   without needing a logo -- the field-and-trophy pairing shows up before any
+   content does. */
+.wordmark::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 4px;
+  margin: 14px auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+}
+
 .masthead .updated {
   margin: 14px 0 0;
   font-size: 11px;
@@ -112,6 +163,9 @@ main {
 
 /* ---------- cards ---------- */
 
+/* Informational by default: a quiet neutral border. Nothing here responds to
+   a tap, so nothing here borrows the accent color -- that's reserved for
+   things that do. */
 .card {
   background: var(--card);
   border: 1px solid var(--line);
@@ -128,7 +182,7 @@ main {
 .card h2 {
   margin: 0 0 14px;
   padding-bottom: 12px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 2px solid var(--line);
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -139,6 +193,7 @@ main {
 .hero {
   text-align: center;
   padding: 26px 20px;
+  background: linear-gradient(180deg, var(--accent-soft), transparent 65%);
 }
 
 .hero h2 {
@@ -158,7 +213,7 @@ main {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--accent-strong);
 }
 
 /* ---------- countdown ---------- */
@@ -179,6 +234,7 @@ main {
   font-weight: 800;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.02em;
+  color: var(--accent-strong);
 }
 
 .clock small {
@@ -218,7 +274,7 @@ main {
   padding: 14px 18px;
   border: 0;
   border-radius: 999px;
-  background: var(--accent);
+  background: linear-gradient(180deg, var(--accent), var(--accent-strong));
   color: var(--accent-ink);
   font: inherit;
   font-size: 14px;
@@ -228,16 +284,24 @@ main {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  box-shadow: var(--shadow-accent);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
 }
 
 .btn:active {
   transform: translateY(1px);
+  box-shadow: none;
 }
 
 .btn.secondary {
   background: transparent;
   border: 2px solid var(--line);
   color: var(--ink);
+  box-shadow: none;
 }
 
 /* ---------- dues ---------- */
@@ -303,8 +367,42 @@ main {
 }
 
 .badge.paid {
-  background: var(--accent);
+  background: var(--accent-soft-strong);
   color: var(--accent-ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge.paid {
+    color: var(--accent-strong);
+  }
+}
+
+/* A partial-payment state gets its own tone rather than the same gray as
+   "nothing has happened yet" -- gold reads as "in progress," not "done" and
+   not "ignored." */
+.badge.partial {
+  background: var(--gold-soft-strong);
+  color: var(--gold-ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge.partial {
+    color: var(--gold-strong);
+  }
+}
+
+/* A drafted pick carries real data (round.pick) worth setting apart from a
+   free-agent add, which didn't come from an event worth marking. */
+.badge.drafted {
+  background: var(--gold-soft);
+  color: var(--gold-ink);
+  border: 1px solid var(--gold-soft-strong);
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge.drafted {
+    color: var(--gold-strong);
+  }
 }
 
 /* ---------- gate ---------- */
@@ -327,6 +425,11 @@ main {
   font-size: 15px;
 }
 
+.gate input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
 .gate .btn {
   width: auto;
   margin-top: 0;
@@ -341,23 +444,37 @@ main {
 }
 
 .gate-note.error {
-  color: #dc2626;
+  color: var(--danger);
   font-weight: 700;
 }
 
 /* ---------- big link tile ---------- */
 
+/* Interactive, so it borrows the same accent language as a button: a real
+   border in the accent color instead of the neutral line a plain card gets,
+   plus a hover lift so a pointer confirms what the border already implied. */
 .tile {
   display: block;
   margin-top: 26px;
   padding: 26px 20px;
-  border: 1px solid var(--line);
+  border: 2px solid var(--accent-soft-strong);
   border-radius: var(--radius);
   background: var(--card);
   box-shadow: var(--shadow);
   color: inherit;
   text-align: center;
   text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.tile:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.tile:active {
+  transform: translateY(0);
 }
 
 .tile b {
@@ -365,6 +482,20 @@ main {
   font-size: clamp(22px, 6vw, 30px);
   font-weight: 800;
   letter-spacing: -0.01em;
+}
+
+/* A plain arrow rather than a phrase -- the affordance is the glyph and the
+   border, not a line of copy explaining that a link is a link. */
+.tile b::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--accent-strong);
+  transition: transform 0.15s ease;
+}
+
+.tile:hover b::after {
+  transform: translateX(3px);
 }
 
 .tile span {
@@ -418,12 +549,19 @@ footer {
   letter-spacing: 0.04em;
   white-space: nowrap;
   cursor: pointer;
+  transition: border-color 0.12s ease, color 0.12s ease;
+}
+
+.tabs button:hover {
+  border-color: var(--accent);
+  color: var(--ink);
 }
 
 .tabs button[aria-selected="true"] {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: var(--bg);
+  background: linear-gradient(180deg, var(--accent), var(--accent-strong));
+  border-color: transparent;
+  color: var(--accent-ink);
+  box-shadow: var(--shadow-accent);
 }
 
 /* ---------- tables ---------- */
@@ -442,7 +580,7 @@ table {
 
 th {
   padding: 0 0 8px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 2px solid var(--line);
   color: var(--muted);
   font-size: 10px;
   font-weight: 800;
@@ -478,13 +616,21 @@ tr:last-child td {
   border-bottom: 0;
 }
 
+tbody tr {
+  transition: background-color 0.1s ease;
+}
+
+tbody tr:hover {
+  background: var(--accent-soft);
+}
+
 .pos {
-  color: #0f9d58;
+  color: var(--accent-strong);
   font-weight: 700;
 }
 
 .neg {
-  color: #dc2626;
+  color: var(--danger);
   font-weight: 700;
 }
 
@@ -495,8 +641,9 @@ tr:last-child td {
   align-items: baseline;
   justify-content: space-between;
   gap: 14px;
-  padding: 13px 0;
+  padding: 13px 0 13px 14px;
   border-bottom: 1px solid var(--line);
+  border-left: 3px solid var(--gold-soft-strong);
 }
 
 .stat:last-child {
@@ -514,6 +661,13 @@ tr:last-child td {
   font-weight: 800;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.01em;
+  color: var(--gold-strong);
+}
+
+@media (prefers-color-scheme: dark) {
+  .stat .value {
+    color: var(--gold);
+  }
 }
 
 .stat .who {
@@ -533,7 +687,8 @@ tr:last-child td {
   margin: 0 0 16px;
   padding: 12px 14px;
   border-radius: 12px;
-  background: var(--bg);
+  border: 1px solid var(--line);
+  background: var(--accent-soft);
   font-size: 13px;
   line-height: 1.5;
   color: var(--muted);
@@ -541,17 +696,31 @@ tr:last-child td {
 
 /* ---------- picker ---------- */
 
+/* Interactive controls get the accent border too, same language as a tile or
+   a button -- the whole point is that "has an accent border" reliably means
+   "does something when you touch it," everywhere on the site. */
 select {
   width: 100%;
   margin-bottom: 16px;
   padding: 12px 14px;
-  border: 2px solid var(--line);
+  border: 2px solid var(--accent-soft-strong);
   border-radius: 12px;
   background: var(--card);
   color: var(--ink);
   font: inherit;
   font-size: 16px;
   font-weight: 700;
+  transition: border-color 0.12s ease;
+}
+
+select:hover {
+  border-color: var(--accent);
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft-strong);
 }
 
 /* ---------- champions ---------- */
@@ -560,8 +729,14 @@ select {
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 12px 0;
+  padding: 12px 14px;
   border-bottom: 1px solid var(--line);
+  border-radius: 10px;
+  transition: background-color 0.12s ease;
+}
+
+.champ:hover {
+  background: var(--gold-soft);
 }
 
 .champ:last-child {
@@ -610,4 +785,12 @@ select {
 
 .champ .rings .badge {
   margin-left: 8px;
+  background: var(--gold-soft-strong);
+  color: var(--gold-ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  .champ .rings .badge {
+    color: var(--gold-strong);
+  }
 }
