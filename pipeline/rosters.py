@@ -190,18 +190,16 @@ def _next_season_outlook(year):
     return outlook
 
 
-def rosters_by_season(history, through_year=None):
+def rosters_by_season(history):
     """{year: {manager display name: [players]}}.
 
-    `through_year`, if given, additionally excludes any season after it; the
-    primary gate is always _season_drafted -- see the module docstring.
+    Which seasons are included is decided entirely by _season_drafted -- see
+    the module docstring.
     """
     unmapped = set()
     result = {}
 
     for year in sorted(history.seasons):
-        if through_year is not None and year > through_year:
-            continue
         if not _season_drafted(year):
             continue
 

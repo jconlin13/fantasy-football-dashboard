@@ -522,6 +522,13 @@ main.no-masthead {
   transform: translateX(3px);
 }
 
+/* The Home link already carries its own literal "←" -- appending the
+   forward arrow on top of that reads as "go both ways," so it's suppressed
+   here rather than on every tile that's actually pointing forward. */
+.tile.back b::after {
+  content: none;
+}
+
 .tile span {
   display: block;
   margin-top: 8px;

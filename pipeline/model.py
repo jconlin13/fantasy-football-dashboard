@@ -22,7 +22,6 @@ import json
 import os
 
 import identity
-from espn_client import load_league
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 RAW = os.path.join(ROOT, "data", "raw")
