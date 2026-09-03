@@ -139,6 +139,13 @@ main {
   margin: 0 auto;
 }
 
+/* The splash page has no masthead above it -- the hero card is the page's
+   only header now -- so it needs its own top breathing room instead of
+   inheriting it from .masthead's padding the way the other two pages do. */
+main.no-masthead {
+  padding-top: 28px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;

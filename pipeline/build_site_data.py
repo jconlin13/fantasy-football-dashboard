@@ -132,8 +132,10 @@ def build_draft():
     elif not override:
         print("  draft not scheduled in ESPN yet -- page will say Not set")
 
+    label_text = get(draft, "label") or "Draft Day"
+
     return {
-        "label": get(draft, "label") or "Draft Day",
+        "label": "%s %d" % (label_text, year),
         "kind": get(draft, "kind"),
         "datetime": when,
         "datetimeSource": "config" if override else ("espn" if from_espn else None),
