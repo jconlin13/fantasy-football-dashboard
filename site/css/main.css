@@ -703,6 +703,13 @@ tbody tr:hover {
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.01em;
   color: var(--gold-strong);
+  /* Matches .who's text-align. Both live in an unclassed wrapper sized to
+     its widest line -- usually the "who" text -- so without this, a short
+     value like "0.1" defaults left while the longer who-line beneath it
+     sits right, and the two drift apart by a different amount every row
+     depending on how long that row's names happen to be. Right-aligning
+     both pins them to the same edge regardless. */
+  text-align: right;
 }
 
 @media (prefers-color-scheme: dark) {
