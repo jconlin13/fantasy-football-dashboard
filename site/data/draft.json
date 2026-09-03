@@ -1,14 +1,14 @@
 {
-  "datetime": "2026-09-08T23:00:00+00:00",
+  "datetime": "2026-09-08T19:00:00-04:00",
   "datetimeSource": "espn",
   "dues": {
-    "amount": "TBD",
-    "venmoUrl": ""
+    "amount": "$50",
+    "venmoUrl": "https://venmo.com/u/jackconlin"
   },
   "espnUrl": "https://fantasy.espn.com/football/draft?leagueId=1069983&seasonId=2026",
   "kind": "Live Draft",
   "label": "Draft Day 2026",
-  "location": "TBD",
+  "location": "Zoom",
   "order": [],
   "passphraseSha256": ""
 }
