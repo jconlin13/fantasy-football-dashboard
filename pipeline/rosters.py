@@ -135,7 +135,7 @@ def _draft_lookup(year):
 
 
 def _next_season_outlook(year):
-    """{player id: (projected points or None, projected round or None)}.
+    """{player id: (projected points or None, projected round or None, projected pick or None)}.
 
     Built from year+1's own rostered players -- there is no archived view of
     the full free-agent pool, only what the ten teams currently hold, so
@@ -144,6 +144,20 @@ def _next_season_outlook(year):
     roster across the season (traded) keeps the first entry seen; ESPN's
     projection is a property of the player, not the team, so it does not
     matter which one.
+
+    ESPN's averageDraftPosition is a single continuous number across the
+    whole overall draft (e.g. 11.85), not round-and-pick -- so round.pick is
+    computed the same way an overall pick number becomes one for a real
+    draft, round = ceil(overall / team_count), and never just the raw ADP
+    printed with a decimal point. That distinction is not cosmetic: an ADP of
+    1.33 formatted carelessly reads exactly like round-1-pick-33, which does
+    not exist in a 10-team league. Properly split, 1.33 is round 1, and 1.33
+    positions into round 1 (no subtraction needed since it is under the team
+    count), rounded to the nearest whole pick -> pick 1. A raw ADP of 11.85
+    becomes round ceil(11.85/10)=2, position 11.85-10=1.85 into that round,
+    nearest pick 2 -> "2.2". The pick half is clamped to [1, team_count] so
+    float edge cases at a round boundary can never spill into a pick number
+    that does not exist in this league.
     """
     payload = read(year + 1, "mRoster")
     if not payload:
@@ -165,9 +179,14 @@ def _next_season_outlook(year):
                 projected = round(projected, 1)
 
             adp = (player.get("ownership") or {}).get("averageDraftPosition")
-            projected_round = int(math.ceil(adp / team_count)) if adp else None
+            projected_round = None
+            projected_pick = None
+            if adp:
+                projected_round = int(math.ceil(adp / team_count))
+                position_in_round = adp - (projected_round - 1) * team_count
+                projected_pick = max(1, min(team_count, round(position_in_round)))
 
-            outlook[player_id] = (projected, projected_round)
+            outlook[player_id] = (projected, projected_round, projected_pick)
     return outlook
 
 
@@ -250,11 +269,12 @@ def rosters_by_season(history, through_year=None):
         if outlook:
             for players in result[latest].values():
                 for player in players:
-                    projected, projected_round = outlook.get(
-                        player["playerId"], (None, None)
+                    projected, projected_round, projected_pick = outlook.get(
+                        player["playerId"], (None, None, None)
                     )
                     player["nextSeasonPoints"] = projected
                     player["nextSeasonRound"] = projected_round
+                    player["nextSeasonPick"] = projected_pick
 
     if unmapped:
         print("  warning: unmapped roster position ids seen: %s" % sorted(unmapped))

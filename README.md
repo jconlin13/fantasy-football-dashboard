@@ -92,7 +92,7 @@ Rebuild the site's JSON from the archive and config (no network):
 python3 pipeline/build_site_data.py
 ```
 
-Set the passphrase for the Launch Draft button (prompts hidden, prints a hash to
+Set the passphrase for the League Home button (prompts hidden, prints a hash to
 paste into `config/draft.ini`):
 
 ```bash

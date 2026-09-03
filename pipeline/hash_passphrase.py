@@ -7,9 +7,9 @@ prompt, is never written to disk, and never appears in your shell history.
 
 Worth knowing what this does and does not do. The site is static, so the check
 happens in the visitor's browser: the hash is public and someone determined
-could guess the word offline. It is a speed bump that keeps the Launch Draft
+could guess the word offline. It is a speed bump that keeps the League Home
 button out of the way of people who are not in the league -- ESPN's own login is
-what actually stops a stranger from entering the draft room.
+what actually stops a stranger from getting anywhere useful once they click it.
 """
 
 import getpass

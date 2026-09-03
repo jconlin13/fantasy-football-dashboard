@@ -12,7 +12,7 @@
   var $ = function (id) { return document.getElementById(id); };
   var panel = $("panel");
   var data = null;
-  var sortMode = "points";
+  var sortMode = "acquired";
 
   function el(tag, className, text) {
     var node = document.createElement(tag);
@@ -75,8 +75,8 @@
 
     if (hasOutlook) {
       host.appendChild(el("p", "explain",
-        nextYear + " pts and round are ESPN's own projection and industry-wide " +
-        "average draft position, rounded up to a round for a " +
+        nextYear + " pts is ESPN's own projection. " + nextYear + " round.pick is " +
+        "split from ESPN's industry-wide average draft position for a " +
         Object.keys(data.rosters[year]).length + "-team league -- not this " +
         "league's actual future draft, which hasn't happened. A dash means the " +
         "player isn't on any of next season's ten rosters yet."
@@ -104,8 +104,14 @@
       tr.appendChild(el("td", null, p.points.toFixed(1)));
       tr.appendChild(el("td", null, acquiredLabel(p)));
       if (hasOutlook) {
-        tr.appendChild(el("td", null, dash(p.nextSeasonPoints !== null && p.nextSeasonPoints !== undefined ? p.nextSeasonPoints.toFixed(1) : null)));
-        tr.appendChild(el("td", null, dash(p.nextSeasonRound)));
+        var hasProj = p.nextSeasonPoints !== null && p.nextSeasonPoints !== undefined;
+        tr.appendChild(el("td", null, dash(hasProj ? p.nextSeasonPoints.toFixed(1) : null)));
+        // round.pick, matching the Drafted column's format -- never the raw
+        // ADP float, which would print things like "1.33" and read exactly
+        // like round 1 pick 33, nonsensical in a 10-team league.
+        var hasAdpRound = p.nextSeasonRound !== null && p.nextSeasonRound !== undefined
+          && p.nextSeasonPick !== null && p.nextSeasonPick !== undefined;
+        tr.appendChild(el("td", null, dash(hasAdpRound ? p.nextSeasonRound + "." + p.nextSeasonPick : null)));
       }
       tbody.appendChild(tr);
     });
@@ -138,6 +144,7 @@
       option.value = pair[0];
       sortPicker.appendChild(option);
     });
+    sortPicker.value = sortMode;
     panel.appendChild(sortPicker);
 
     var host = el("div");
