@@ -9,6 +9,7 @@ back -- older seasons routinely drop draft detail, transactions and boxscores
 """
 
 import argparse
+import datetime
 import json
 
 from espn_client import EspnError, VIEWS, fetch_view, load_cookies
@@ -70,7 +71,11 @@ def main():
         required=True,
         help="earliest season to probe",
     )
-    parser.add_argument("--to", dest="end_year", type=int, default=2025)
+    # A hardcoded year here would go stale every January -- default to
+    # whatever year it actually is when the probe runs.
+    parser.add_argument(
+        "--to", dest="end_year", type=int, default=datetime.date.today().year
+    )
     parser.add_argument("--out", default=None, help="write results as JSON here")
     args = parser.parse_args()
 
