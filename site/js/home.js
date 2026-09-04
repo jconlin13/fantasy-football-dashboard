@@ -148,6 +148,12 @@
   }
 
   function render(data) {
+    if (data.leagueName) {
+      document.title = data.leagueName + " · Draft Day";
+      var footerLeague = $("footer-league");
+      if (footerLeague) { footerLeague.textContent = data.leagueName; }
+    }
+
     if (data.label) {
       $("hero-label").textContent = data.label;
       if (data.kind) {
@@ -178,10 +184,23 @@
     var dues = data.dues || {};
     if (dues.amount || dues.venmoUrl) {
       $("dues-amount").textContent = dues.amount || "TBD";
+      var venmo = $("venmo");
+      var venmoHint = $("venmo-hint");
       if (dues.venmoUrl) {
-        $("venmo").href = dues.venmoUrl;
-        show($("venmo"));
+        venmo.href = dues.venmoUrl;
+        venmo.textContent = "Pay Dues";
+        venmo.className = "btn";
+      } else {
+        // A missing Venmo link is worth surfacing, not hiding -- an owner
+        // who forgot to set it should see the gap here, not hear about it
+        // from the group chat instead. Not a working link: href="#" just
+        // scrolls to the top of the page rather than going anywhere wrong.
+        venmo.href = "#";
+        venmo.textContent = "Add Venmo";
+        venmo.className = "btn secondary";
+        show(venmoHint);
       }
+      show(venmo);
       show($("dues-card"));
     }
 

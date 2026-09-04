@@ -7,7 +7,8 @@
   },
   "espnUrl": "https://fantasy.espn.com/football/league?leagueId=1069983&seasonId=2026",
   "kind": "",
-  "label": "MHD Fantasy Football 2026",
+  "label": "MHD Fantasy League 2026",
+  "leagueName": "MHD Fantasy League",
   "location": "Zoom",
   "order": [],
   "passphraseSha256": ""

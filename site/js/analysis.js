@@ -331,8 +331,12 @@
   }
 
   function render() {
+    var leagueName = data.leagueName || "Fantasy League";
     $("span-years").textContent =
-      "MHD Fantasy League · " + data.firstSeason + "–" + data.lastSeason;
+      leagueName + " · " + data.firstSeason + "–" + data.lastSeason;
+    document.title = "All-Time Analysis · " + leagueName;
+    var footerLeague = $("footer-league");
+    if (footerLeague) { footerLeague.textContent = leagueName; }
     $("generated").textContent = "updated " + data.generated;
 
     var tabs = $("tabs");

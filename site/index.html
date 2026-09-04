@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MHD Fantasy League</title>
-<meta name="description" content="Draft day details and all-time history for the MHD Fantasy League.">
+<title>Fantasy Draft Day</title>
+<meta name="description" content="Draft day details and all-time history for your fantasy football league.">
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -48,6 +48,10 @@
       <h2>Dues</h2>
       <p class="amount" id="dues-amount"></p>
       <a class="btn" id="venmo" href="#" hidden>Pay Dues</a>
+      <p class="gate-note" id="venmo-hint" hidden>
+        Set <code>venmo_username</code> in <code>config/draft.ini</code> &mdash;
+        just the part after the @.
+      </p>
     </section>
 
     <section class="card order" id="order-card" hidden>
@@ -69,7 +73,7 @@
 </main>
 
 <footer>
-  <p>MHD Fantasy League &middot; built from ESPN&rsquo;s own data</p>
+  <p><span id="footer-league">Fantasy League</span> &middot; built from ESPN&rsquo;s own data</p>
 </footer>
 
 <script src="js/home.js"></script>

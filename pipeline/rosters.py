@@ -164,7 +164,11 @@ def _next_season_outlook(year):
         return {}
 
     teams = payload.get("teams") or []
-    team_count = len(teams) or 10
+    # No "or 10" fallback: whenever team_count is actually used below, the
+    # loop it's used in has already confirmed teams is non-empty, so a
+    # fallback here could never be reached by a real case -- it would just be
+    # a hardcoded number quietly implying a safety net that isn't one.
+    team_count = len(teams)
 
     outlook = {}
     for team in teams:

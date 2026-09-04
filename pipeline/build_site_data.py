@@ -101,6 +101,43 @@ def espn_draft_datetime(year):
     return moment.isoformat()
 
 
+def espn_league_name(year):
+    """The league's name exactly as its commissioner set it in ESPN.
+
+    settings.name -- the same field every other view already carries, so no
+    extra request. Read once here rather than hand-typed into config, because
+    a name typed in two places (ESPN's own settings and a local config file)
+    is two places for it to quietly drift apart. Returns None if that
+    season's archive does not exist yet.
+    """
+    path = os.path.join(RAW, str(year), "mSettings.json.gz")
+    if not os.path.exists(path):
+        return None
+    with gzip.open(path, "rb") as handle:
+        payload = json.loads(handle.read().decode("utf-8"))
+    name = (payload.get("settings") or {}).get("name")
+    return name.strip() if name else None
+
+
+def venmo_url(dues):
+    """Build a Venmo profile link from just a handle -- config/draft.ini holds
+    `venmo_username`, not a full URL, because everyone already knows their own
+    handle as "@something" (that's how Venmo shows it everywhere) and nobody
+    should have to go work out the URL pattern themselves.
+
+    Forgiving of how people actually type it: a leading @ (stripped), or the
+    full profile URL pasted in instead of just the handle (the handle is
+    pulled back out of it). Empty in, empty out.
+    """
+    raw = (dues.get("venmo_username", "") if dues else "").strip()
+    if not raw:
+        return ""
+    if "venmo.com/u/" in raw:
+        raw = raw.rsplit("venmo.com/u/", 1)[-1]
+    raw = raw.strip("/ ").lstrip("@")
+    return "https://venmo.com/u/%s" % raw if raw else ""
+
+
 def build_draft():
     parser = configparser.ConfigParser()
     if not parser.read(os.path.join(CONFIG, "draft.ini")):
@@ -120,7 +157,8 @@ def build_draft():
     # The config value is only an override, for announcing a date before it is
     # set in ESPN. Neither one present means the draft genuinely is not
     # scheduled, and the page says so rather than counting down to a guess.
-    year = load_league()["current_season"]
+    league = load_league()
+    year = league["current_season"]
     from_espn = espn_draft_datetime(year)
     override = get(draft, "datetime")
     when = override or from_espn or ""
@@ -132,17 +170,33 @@ def build_draft():
     elif not override:
         print("  draft not scheduled in ESPN yet -- page will say Not set")
 
-    label_text = get(draft, "label") or "Draft Day"
+    # Same pattern as the date: ESPN's own league name wins by default, and
+    # `label` in draft.ini only overrides it for someone who wants a headline
+    # different from what they typed into ESPN's league settings. Nobody has
+    # to type their league's name anywhere for the default case to work.
+    league_name = espn_league_name(year)
+    label_text = get(draft, "label") or league_name or "Fantasy Football"
+
+    # Deliberately no teamId in this URL -- .../team?...&teamId=1 would send
+    # every visitor to whichever team happens to own that id, regardless of
+    # who is logged in. The plain league URL resolves to whoever is actually
+    # signed in. Built from league.ini rather than typed by hand, so it can
+    # never drift out of sync with the league id configured there.
+    espn_url = "https://fantasy.espn.com/football/league?leagueId=%s&seasonId=%d" % (
+        league["id"],
+        year,
+    )
 
     return {
         "label": "%s %d" % (label_text, year),
+        "leagueName": league_name,
         "kind": get(draft, "kind"),
         "datetime": when,
         "datetimeSource": "config" if override else ("espn" if from_espn else None),
         "location": get(draft, "location"),
-        "espnUrl": get(draft, "espn_url"),
+        "espnUrl": espn_url,
         "passphraseSha256": get(draft, "passphrase_sha256").lower(),
-        "dues": {"amount": get(dues, "amount"), "venmoUrl": get(dues, "venmo_url")},
+        "dues": {"amount": get(dues, "amount"), "venmoUrl": venmo_url(dues)},
         "order": parse_order(parser),
     }
 
@@ -167,6 +221,7 @@ def build_analysis():
 
     return {
         "generated": datetime.date.today().isoformat(),
+        "leagueName": espn_league_name(load_league()["current_season"]),
         "firstSeason": min(history.seasons) if history.seasons else None,
         "lastSeason": max(
             (year for year, season in history.seasons.items() if season.complete),
@@ -202,6 +257,7 @@ def build_rosters():
 
     return {
         "generated": datetime.date.today().isoformat(),
+        "leagueName": espn_league_name(load_league()["current_season"]),
         "seasons": sorted(by_year, reverse=True),
         "rosters": {str(year): managers for year, managers in by_year.items()},
     }

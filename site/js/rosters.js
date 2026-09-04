@@ -196,6 +196,12 @@
     })
     .then(function (payload) {
       data = payload;
+      var leagueName = data.leagueName || "Fantasy League";
+      document.title = "Rosters · " + leagueName;
+      var spanLeague = $("span-league");
+      if (spanLeague) { spanLeague.textContent = leagueName; }
+      var footerLeague = $("footer-league");
+      if (footerLeague) { footerLeague.textContent = leagueName; }
       $("generated").textContent = "updated " + data.generated;
       renderPickers();
     })
