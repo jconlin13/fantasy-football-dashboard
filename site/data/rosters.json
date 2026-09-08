@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03",
+  "generated": "2026-09-08",
   "leagueName": "MHD Fantasy League",
   "rosters": {
     "2018": {
@@ -10663,7 +10663,7 @@
       "Griffin B.": [
         {
           "name": "Jalen Hurts",
-          "nextSeasonPick": 5,
+          "nextSeasonPick": 4,
           "nextSeasonPoints": 319.8,
           "nextSeasonRound": 6,
           "playerId": 4040715,
@@ -10676,7 +10676,7 @@
         {
           "name": "Jordan Love",
           "nextSeasonPick": 5,
-          "nextSeasonPoints": 263.4,
+          "nextSeasonPoints": 262.6,
           "nextSeasonRound": 16,
           "playerId": 4036378,
           "points": 235.1,
@@ -10699,7 +10699,7 @@
         },
         {
           "name": "Jaylen Warren",
-          "nextSeasonPick": 7,
+          "nextSeasonPick": 5,
           "nextSeasonPoints": 194.0,
           "nextSeasonRound": 9,
           "playerId": 4569987,
@@ -10711,7 +10711,7 @@
         },
         {
           "name": "Rico Dowdle",
-          "nextSeasonPick": 5,
+          "nextSeasonPick": 7,
           "nextSeasonPoints": 188.3,
           "nextSeasonRound": 10,
           "playerId": 4038815,
@@ -10723,7 +10723,7 @@
         },
         {
           "name": "Kenneth Walker III",
-          "nextSeasonPick": 5,
+          "nextSeasonPick": 4,
           "nextSeasonPoints": 273.1,
           "nextSeasonRound": 3,
           "playerId": 4567048,
@@ -10735,8 +10735,8 @@
         },
         {
           "name": "Bucky Irving",
-          "nextSeasonPick": 7,
-          "nextSeasonPoints": 207.1,
+          "nextSeasonPick": 6,
+          "nextSeasonPoints": 206.9,
           "nextSeasonRound": 6,
           "playerId": 4596448,
           "points": 138.5,
@@ -10748,7 +10748,7 @@
         {
           "name": "Amon-Ra St. Brown",
           "nextSeasonPick": 8,
-          "nextSeasonPoints": 324.4,
+          "nextSeasonPoints": 324.0,
           "nextSeasonRound": 1,
           "playerId": 4374302,
           "points": 324.0,
@@ -10771,7 +10771,7 @@
         },
         {
           "name": "Quentin Johnston",
-          "nextSeasonPick": 1,
+          "nextSeasonPick": 5,
           "nextSeasonPoints": 165.4,
           "nextSeasonRound": 14,
           "playerId": 4429025,
@@ -10783,7 +10783,7 @@
         },
         {
           "name": "Brian Thomas Jr.",
-          "nextSeasonPick": 4,
+          "nextSeasonPick": 3,
           "nextSeasonPoints": 176.7,
           "nextSeasonRound": 12,
           "playerId": 4432773,
@@ -10795,8 +10795,8 @@
         },
         {
           "name": "Jordan Addison",
-          "nextSeasonPick": 1,
-          "nextSeasonPoints": 171.1,
+          "nextSeasonPick": 5,
+          "nextSeasonPoints": 170.7,
           "nextSeasonRound": 13,
           "playerId": 4429205,
           "points": 135.1,
@@ -10808,7 +10808,7 @@
         {
           "name": "Jayden Reed",
           "nextSeasonPick": 10,
-          "nextSeasonPoints": 173.7,
+          "nextSeasonPoints": 173.4,
           "nextSeasonRound": 14,
           "playerId": 4362249,
           "points": 48.5,
@@ -10831,8 +10831,8 @@
         },
         {
           "name": "Dalton Kincaid",
-          "nextSeasonPick": 1,
-          "nextSeasonPoints": 155.6,
+          "nextSeasonPick": 2,
+          "nextSeasonPoints": 155.5,
           "nextSeasonRound": 14,
           "playerId": 4385690,
           "points": 126.1,
@@ -10844,7 +10844,7 @@
         {
           "name": "Chase McLaughlin",
           "nextSeasonPick": 1,
-          "nextSeasonPoints": 142.2,
+          "nextSeasonPoints": 142.1,
           "nextSeasonRound": 18,
           "playerId": 3150744,
           "points": 150.0,
@@ -10880,7 +10880,7 @@
         {
           "name": "Colts D/ST",
           "nextSeasonPick": 1,
-          "nextSeasonPoints": 101.5,
+          "nextSeasonPoints": 99.4,
           "nextSeasonRound": 18,
           "playerId": -16011,
           "points": 103.0,
@@ -10893,8 +10893,8 @@
       "Jack C.": [
         {
           "name": "Caleb Williams",
-          "nextSeasonPick": 10,
-          "nextSeasonPoints": 281.9,
+          "nextSeasonPick": 5,
+          "nextSeasonPoints": 281.0,
           "nextSeasonRound": 9,
           "playerId": 4431611,
           "points": 318.2,
@@ -10905,7 +10905,7 @@
         },
         {
           "name": "Bo Nix",
-          "nextSeasonPick": 3,
+          "nextSeasonPick": 4,
           "nextSeasonPoints": 295.7,
           "nextSeasonRound": 11,
           "playerId": 4426338,
@@ -10917,8 +10917,8 @@
         },
         {
           "name": "Tyler Shough",
-          "nextSeasonPick": 2,
-          "nextSeasonPoints": 265.6,
+          "nextSeasonPick": 3,
+          "nextSeasonPoints": 265.1,
           "nextSeasonRound": 16,
           "playerId": 4360689,
           "points": 158.0,
@@ -10954,7 +10954,7 @@
         {
           "name": "Breece Hall",
           "nextSeasonPick": 6,
-          "nextSeasonPoints": 274.5,
+          "nextSeasonPoints": 274.1,
           "nextSeasonRound": 4,
           "playerId": 4427366,
           "points": 207.7,
@@ -10977,7 +10977,7 @@
         },
         {
           "name": "DeVonta Smith",
-          "nextSeasonPick": 7,
+          "nextSeasonPick": 6,
           "nextSeasonPoints": 239.1,
           "nextSeasonRound": 4,
           "playerId": 4241478,
@@ -11013,7 +11013,7 @@
         },
         {
           "name": "Xavier Worthy",
-          "nextSeasonPick": 1,
+          "nextSeasonPick": 3,
           "nextSeasonPoints": 173.0,
           "nextSeasonRound": 14,
           "playerId": 4683062,
@@ -11037,8 +11037,8 @@
         },
         {
           "name": "Trey McBride",
-          "nextSeasonPick": 3,
-          "nextSeasonPoints": 241.7,
+          "nextSeasonPick": 4,
+          "nextSeasonPoints": 241.6,
           "nextSeasonRound": 3,
           "playerId": 4361307,
           "points": 315.9,
@@ -11050,7 +11050,7 @@
         {
           "name": "Kyle Pitts Sr.",
           "nextSeasonPick": 9,
-          "nextSeasonPoints": 185.1,
+          "nextSeasonPoints": 185.0,
           "nextSeasonRound": 7,
           "playerId": 4360248,
           "points": 210.8,
@@ -11086,7 +11086,7 @@
         {
           "name": "Panthers D/ST",
           "nextSeasonPick": 10,
-          "nextSeasonPoints": 96.9,
+          "nextSeasonPoints": 94.8,
           "nextSeasonRound": 17,
           "playerId": -16029,
           "points": 113.0,
@@ -11098,7 +11098,7 @@
         {
           "name": "Ravens D/ST",
           "nextSeasonPick": 4,
-          "nextSeasonPoints": 142.0,
+          "nextSeasonPoints": 141.0,
           "nextSeasonRound": 14,
           "playerId": -16033,
           "points": 105.0,
@@ -11111,7 +11111,7 @@
       "Liam H.": [
         {
           "name": "Jaxson Dart",
-          "nextSeasonPick": 4,
+          "nextSeasonPick": 2,
           "nextSeasonPoints": 299.5,
           "nextSeasonRound": 9,
           "playerId": 4689114,
@@ -11123,7 +11123,7 @@
         },
         {
           "name": "Lamar Jackson",
-          "nextSeasonPick": 5,
+          "nextSeasonPick": 3,
           "nextSeasonPoints": 322.5,
           "nextSeasonRound": 4,
           "playerId": 3916387,
@@ -11135,7 +11135,7 @@
         },
         {
           "name": "Joe Burrow",
-          "nextSeasonPick": 4,
+          "nextSeasonPick": 3,
           "nextSeasonPoints": 304.3,
           "nextSeasonRound": 6,
           "playerId": 3915511,
@@ -11147,7 +11147,7 @@
         },
         {
           "name": "Chase Brown",
-          "nextSeasonPick": 7,
+          "nextSeasonPick": 8,
           "nextSeasonPoints": 271.6,
           "nextSeasonRound": 2,
           "playerId": 4362238,
@@ -11159,9 +11159,9 @@
         },
         {
           "name": "Travis Etienne Jr.",
-          "nextSeasonPick": 1,
-          "nextSeasonPoints": 246.7,
-          "nextSeasonRound": 5,
+          "nextSeasonPick": 9,
+          "nextSeasonPoints": 246.4,
+          "nextSeasonRound": 4,
           "playerId": 4239996,
           "points": 253.9,
           "position": "RB",
@@ -11171,7 +11171,7 @@
         },
         {
           "name": "Tony Pollard",
-          "nextSeasonPick": 8,
+          "nextSeasonPick": 6,
           "nextSeasonPoints": 185.5,
           "nextSeasonRound": 9,
           "playerId": 3916148,
@@ -11208,7 +11208,7 @@
         {
           "name": "Jameson Williams",
           "nextSeasonPick": 4,
-          "nextSeasonPoints": 208.6,
+          "nextSeasonPoints": 208.3,
           "nextSeasonRound": 7,
           "playerId": 4426388,
           "points": 219.9,
@@ -11220,7 +11220,7 @@
         {
           "name": "Jauan Jennings",
           "nextSeasonPick": 1,
-          "nextSeasonPoints": 115.0,
+          "nextSeasonPoints": 114.7,
           "nextSeasonRound": 18,
           "playerId": 3886598,
           "points": 173.3,
@@ -11232,7 +11232,7 @@
         {
           "name": "Mike Evans",
           "nextSeasonPick": 4,
-          "nextSeasonPoints": 180.1,
+          "nextSeasonPoints": 180.0,
           "nextSeasonRound": 9,
           "playerId": 16737,
           "points": 84.8,
@@ -11243,7 +11243,7 @@
         },
         {
           "name": "Travis Kelce",
-          "nextSeasonPick": 5,
+          "nextSeasonPick": 4,
           "nextSeasonPoints": 177.2,
           "nextSeasonRound": 10,
           "playerId": 15847,
@@ -11279,9 +11279,9 @@
         },
         {
           "name": "Harrison Mevis",
-          "nextSeasonPick": 6,
+          "nextSeasonPick": 9,
           "nextSeasonPoints": 159.4,
-          "nextSeasonRound": 14,
+          "nextSeasonRound": 13,
           "playerId": 4574716,
           "points": 81.0,
           "position": "K",
@@ -11316,7 +11316,7 @@
         {
           "name": "Cowboys D/ST",
           "nextSeasonPick": 7,
-          "nextSeasonPoints": 103.8,
+          "nextSeasonPoints": 102.7,
           "nextSeasonRound": 17,
           "playerId": -16006,
           "points": 71.0,
@@ -11342,7 +11342,7 @@
         {
           "name": "Bryce Young",
           "nextSeasonPick": 9,
-          "nextSeasonPoints": 238.2,
+          "nextSeasonPoints": 237.7,
           "nextSeasonRound": 17,
           "playerId": 4685720,
           "points": 218.0,
@@ -11366,7 +11366,7 @@
         {
           "name": "Jahmyr Gibbs",
           "nextSeasonPick": 1,
-          "nextSeasonPoints": 365.7,
+          "nextSeasonPoints": 369.1,
           "nextSeasonRound": 1,
           "playerId": 4429795,
           "points": 366.9,
@@ -11377,8 +11377,8 @@
         },
         {
           "name": "De'Von Achane",
-          "nextSeasonPick": 2,
-          "nextSeasonPoints": 293.6,
+          "nextSeasonPick": 3,
+          "nextSeasonPoints": 293.2,
           "nextSeasonRound": 2,
           "playerId": 4429160,
           "points": 322.8,
@@ -11390,7 +11390,7 @@
         {
           "name": "TreVeyon Henderson",
           "nextSeasonPick": 8,
-          "nextSeasonPoints": 197.9,
+          "nextSeasonPoints": 187.5,
           "nextSeasonRound": 8,
           "playerId": 4432710,
           "points": 206.2,
@@ -11401,7 +11401,7 @@
         },
         {
           "name": "Quinshon Judkins",
-          "nextSeasonPick": 9,
+          "nextSeasonPick": 8,
           "nextSeasonPoints": 226.7,
           "nextSeasonRound": 5,
           "playerId": 4685702,
@@ -11425,7 +11425,7 @@
         },
         {
           "name": "Michael Wilson",
-          "nextSeasonPick": 3,
+          "nextSeasonPick": 5,
           "nextSeasonPoints": 176.4,
           "nextSeasonRound": 11,
           "playerId": 4360761,
@@ -11438,7 +11438,7 @@
         {
           "name": "Drake London",
           "nextSeasonPick": 1,
-          "nextSeasonPoints": 269.8,
+          "nextSeasonPoints": 269.5,
           "nextSeasonRound": 3,
           "playerId": 4426502,
           "points": 201.9,
@@ -11449,8 +11449,8 @@
         },
         {
           "name": "Alec Pierce",
-          "nextSeasonPick": 9,
-          "nextSeasonPoints": 185.4,
+          "nextSeasonPick": 5,
+          "nextSeasonPoints": 185.3,
           "nextSeasonRound": 11,
           "playerId": 4360078,
           "points": 183.3,
@@ -11474,7 +11474,7 @@
         {
           "name": "Christian Watson",
           "nextSeasonPick": 9,
-          "nextSeasonPoints": 188.8,
+          "nextSeasonPoints": 188.5,
           "nextSeasonRound": 9,
           "playerId": 4248528,
           "points": 132.4,
@@ -11497,8 +11497,8 @@
         },
         {
           "name": "Juwan Johnson",
-          "nextSeasonPick": 8,
-          "nextSeasonPoints": 146.9,
+          "nextSeasonPick": 7,
+          "nextSeasonPoints": 146.7,
           "nextSeasonRound": 16,
           "playerId": 3929645,
           "points": 179.9,
@@ -11509,7 +11509,7 @@
         },
         {
           "name": "Brandon Aubrey",
-          "nextSeasonPick": 5,
+          "nextSeasonPick": 1,
           "nextSeasonPoints": 171.5,
           "nextSeasonRound": 9,
           "playerId": 3953687,
@@ -11560,7 +11560,7 @@
         {
           "name": "Josh Allen",
           "nextSeasonPick": 9,
-          "nextSeasonPoints": 370.6,
+          "nextSeasonPoints": 370.0,
           "nextSeasonRound": 2,
           "playerId": 3918298,
           "points": 364.6,
@@ -11583,7 +11583,7 @@
         },
         {
           "name": "Derrick Henry",
-          "nextSeasonPick": 7,
+          "nextSeasonPick": 6,
           "nextSeasonPoints": 277.8,
           "nextSeasonRound": 2,
           "playerId": 3043078,
@@ -11595,8 +11595,8 @@
         },
         {
           "name": "Rhamondre Stevenson",
-          "nextSeasonPick": 9,
-          "nextSeasonPoints": 203.3,
+          "nextSeasonPick": 7,
+          "nextSeasonPoints": 206.7,
           "nextSeasonRound": 8,
           "playerId": 4569173,
           "points": 178.8,
@@ -11619,8 +11619,8 @@
         },
         {
           "name": "Rachaad White",
-          "nextSeasonPick": 5,
-          "nextSeasonPoints": 164.3,
+          "nextSeasonPick": 9,
+          "nextSeasonPoints": 164.1,
           "nextSeasonRound": 13,
           "playerId": 4697815,
           "points": 143.0,
@@ -11631,8 +11631,8 @@
         },
         {
           "name": "Aaron Jones Sr.",
-          "nextSeasonPick": 4,
-          "nextSeasonPoints": 178.0,
+          "nextSeasonPick": 7,
+          "nextSeasonPoints": 178.2,
           "nextSeasonRound": 12,
           "playerId": 3042519,
           "points": 118.7,
@@ -11643,8 +11643,8 @@
         },
         {
           "name": "Keenan Allen",
-          "nextSeasonPick": 5,
-          "nextSeasonPoints": 124.2,
+          "nextSeasonPick": 6,
+          "nextSeasonPoints": 124.1,
           "nextSeasonRound": 17,
           "playerId": 15818,
           "points": 182.7,
@@ -11655,9 +11655,9 @@
         },
         {
           "name": "Khalil Shakir",
-          "nextSeasonPick": 1,
-          "nextSeasonPoints": 171.3,
-          "nextSeasonRound": 15,
+          "nextSeasonPick": 9,
+          "nextSeasonPoints": 171.2,
+          "nextSeasonRound": 14,
           "playerId": 4373678,
           "points": 166.4,
           "position": "WR",
@@ -11679,8 +11679,8 @@
         },
         {
           "name": "Chris Godwin Jr.",
-          "nextSeasonPick": 2,
-          "nextSeasonPoints": 157.3,
+          "nextSeasonPick": 5,
+          "nextSeasonPoints": 157.2,
           "nextSeasonRound": 13,
           "playerId": 3116165,
           "points": 83.0,
@@ -11691,8 +11691,8 @@
         },
         {
           "name": "Matthew Golden",
-          "nextSeasonPick": 3,
-          "nextSeasonPoints": 188.9,
+          "nextSeasonPick": 5,
+          "nextSeasonPoints": 188.6,
           "nextSeasonRound": 12,
           "playerId": 4701936,
           "points": 70.0,
@@ -11703,9 +11703,9 @@
         },
         {
           "name": "Calvin Ridley",
-          "nextSeasonPick": 9,
+          "nextSeasonPick": 1,
           "nextSeasonPoints": 135.3,
-          "nextSeasonRound": 17,
+          "nextSeasonRound": 18,
           "playerId": 3925357,
           "points": 47.3,
           "position": "WR",
@@ -11715,7 +11715,7 @@
         },
         {
           "name": "Mark Andrews",
-          "nextSeasonPick": 7,
+          "nextSeasonPick": 6,
           "nextSeasonPoints": 169.1,
           "nextSeasonRound": 13,
           "playerId": 3116365,
@@ -11751,8 +11751,8 @@
         },
         {
           "name": "Chargers D/ST",
-          "nextSeasonPick": 6,
-          "nextSeasonPoints": 120.2,
+          "nextSeasonPick": 5,
+          "nextSeasonPoints": 120.1,
           "nextSeasonRound": 17,
           "playerId": -16024,
           "points": 136.0,
@@ -11764,7 +11764,7 @@
         {
           "name": "Lions D/ST",
           "nextSeasonPick": 5,
-          "nextSeasonPoints": 133.1,
+          "nextSeasonPoints": 133.0,
           "nextSeasonRound": 16,
           "playerId": -16008,
           "points": 118.0,
@@ -11801,8 +11801,8 @@
         },
         {
           "name": "Jayden Daniels",
-          "nextSeasonPick": 3,
-          "nextSeasonPoints": 317.5,
+          "nextSeasonPick": 2,
+          "nextSeasonPoints": 317.0,
           "nextSeasonRound": 6,
           "playerId": 4426348,
           "points": 114.3,
@@ -11814,7 +11814,7 @@
         {
           "name": "Jonathan Taylor",
           "nextSeasonPick": 6,
-          "nextSeasonPoints": 316.3,
+          "nextSeasonPoints": 315.9,
           "nextSeasonRound": 1,
           "playerId": 4242335,
           "points": 362.3,
@@ -11825,7 +11825,7 @@
         },
         {
           "name": "Chris Rodriguez Jr.",
-          "nextSeasonPick": 4,
+          "nextSeasonPick": 5,
           "nextSeasonPoints": 72.0,
           "nextSeasonRound": 17,
           "playerId": 4362619,
@@ -11838,7 +11838,7 @@
         {
           "name": "Sean Tucker",
           "nextSeasonPick": 1,
-          "nextSeasonPoints": 37.0,
+          "nextSeasonPoints": 36.9,
           "nextSeasonRound": 18,
           "playerId": 4430871,
           "points": 91.4,
@@ -11849,7 +11849,7 @@
         },
         {
           "name": "Courtland Sutton",
-          "nextSeasonPick": 1,
+          "nextSeasonPick": 2,
           "nextSeasonPoints": 204.1,
           "nextSeasonRound": 9,
           "playerId": 3128429,
@@ -11861,7 +11861,7 @@
         },
         {
           "name": "Tee Higgins",
-          "nextSeasonPick": 1,
+          "nextSeasonPick": 3,
           "nextSeasonPoints": 218.9,
           "nextSeasonRound": 6,
           "playerId": 4239993,
@@ -11873,8 +11873,8 @@
         },
         {
           "name": "Justin Jefferson",
-          "nextSeasonPick": 3,
-          "nextSeasonPoints": 294.7,
+          "nextSeasonPick": 2,
+          "nextSeasonPoints": 293.9,
           "nextSeasonRound": 2,
           "playerId": 4262921,
           "points": 201.5,
@@ -11885,9 +11885,9 @@
         },
         {
           "name": "DJ Moore",
-          "nextSeasonPick": 1,
-          "nextSeasonPoints": 209.7,
-          "nextSeasonRound": 7,
+          "nextSeasonPick": 8,
+          "nextSeasonPoints": 209.6,
+          "nextSeasonRound": 6,
           "playerId": 3915416,
           "points": 170.2,
           "position": "WR",
@@ -11898,7 +11898,7 @@
         {
           "name": "Terry McLaurin",
           "nextSeasonPick": 1,
-          "nextSeasonPoints": 218.2,
+          "nextSeasonPoints": 218.0,
           "nextSeasonRound": 7,
           "playerId": 3121422,
           "points": 114.2,
@@ -11910,7 +11910,7 @@
         {
           "name": "Colston Loveland",
           "nextSeasonPick": 2,
-          "nextSeasonPoints": 206.9,
+          "nextSeasonPoints": 206.6,
           "nextSeasonRound": 5,
           "playerId": 4723086,
           "points": 165.1,
@@ -11922,7 +11922,7 @@
         {
           "name": "Cade Otton",
           "nextSeasonPick": 1,
-          "nextSeasonPoints": 102.1,
+          "nextSeasonPoints": 102.0,
           "nextSeasonRound": 18,
           "playerId": 4243331,
           "points": 122.2,
@@ -11933,8 +11933,8 @@
         },
         {
           "name": "Sam LaPorta",
-          "nextSeasonPick": 4,
-          "nextSeasonPoints": 188.9,
+          "nextSeasonPick": 5,
+          "nextSeasonPoints": 188.7,
           "nextSeasonRound": 8,
           "playerId": 4430027,
           "points": 106.9,
@@ -11945,9 +11945,9 @@
         },
         {
           "name": "Cameron Dicker",
-          "nextSeasonPick": 3,
+          "nextSeasonPick": 9,
           "nextSeasonPoints": 161.9,
-          "nextSeasonRound": 12,
+          "nextSeasonRound": 11,
           "playerId": 4362081,
           "points": 167.0,
           "position": "K",
@@ -11982,7 +11982,7 @@
         {
           "name": "Seahawks D/ST",
           "nextSeasonPick": 3,
-          "nextSeasonPoints": 142.8,
+          "nextSeasonPoints": 142.9,
           "nextSeasonRound": 12,
           "playerId": -16026,
           "points": 201.0,
@@ -12007,7 +12007,7 @@
         },
         {
           "name": "Trevor Lawrence",
-          "nextSeasonPick": 1,
+          "nextSeasonPick": 4,
           "nextSeasonPoints": 289.5,
           "nextSeasonRound": 11,
           "playerId": 4360310,
@@ -12020,7 +12020,7 @@
         {
           "name": "Bijan Robinson",
           "nextSeasonPick": 2,
-          "nextSeasonPoints": 352.8,
+          "nextSeasonPoints": 352.4,
           "nextSeasonRound": 1,
           "playerId": 4430807,
           "points": 370.8,
@@ -12032,7 +12032,7 @@
         {
           "name": "James Cook III",
           "nextSeasonPick": 1,
-          "nextSeasonPoints": 280.3,
+          "nextSeasonPoints": 280.0,
           "nextSeasonRound": 2,
           "playerId": 4379399,
           "points": 302.2,
@@ -12043,7 +12043,7 @@
         },
         {
           "name": "Zach Charbonnet",
-          "nextSeasonPick": 3,
+          "nextSeasonPick": 6,
           "nextSeasonPoints": 134.0,
           "nextSeasonRound": 16,
           "playerId": 4426385,
@@ -12091,8 +12091,8 @@
         },
         {
           "name": "Chris Olave",
-          "nextSeasonPick": 9,
-          "nextSeasonPoints": 249.8,
+          "nextSeasonPick": 10,
+          "nextSeasonPoints": 249.6,
           "nextSeasonRound": 3,
           "playerId": 4361370,
           "points": 268.0,
@@ -12104,7 +12104,7 @@
         {
           "name": "A.J. Brown",
           "nextSeasonPick": 1,
-          "nextSeasonPoints": 249.7,
+          "nextSeasonPoints": 249.4,
           "nextSeasonRound": 3,
           "playerId": 4047646,
           "points": 220.3,
@@ -12115,9 +12115,9 @@
         },
         {
           "name": "George Kittle",
-          "nextSeasonPick": 4,
-          "nextSeasonPoints": 193.4,
-          "nextSeasonRound": 8,
+          "nextSeasonPick": 9,
+          "nextSeasonPoints": 193.3,
+          "nextSeasonRound": 7,
           "playerId": 3040151,
           "points": 161.5,
           "position": "TE",
@@ -12211,8 +12211,8 @@
         },
         {
           "name": "Steelers D/ST",
-          "nextSeasonPick": 2,
-          "nextSeasonPoints": 148.1,
+          "nextSeasonPick": 1,
+          "nextSeasonPoints": 149.2,
           "nextSeasonRound": 13,
           "playerId": -16023,
           "points": 146.0,
@@ -12226,7 +12226,7 @@
         {
           "name": "Drake Maye",
           "nextSeasonPick": 7,
-          "nextSeasonPoints": 320.2,
+          "nextSeasonPoints": 319.8,
           "nextSeasonRound": 5,
           "playerId": 4431452,
           "points": 352.0,
@@ -12237,8 +12237,8 @@
         },
         {
           "name": "Baker Mayfield",
-          "nextSeasonPick": 6,
-          "nextSeasonPoints": 264.7,
+          "nextSeasonPick": 8,
+          "nextSeasonPoints": 264.3,
           "nextSeasonRound": 15,
           "playerId": 3052587,
           "points": 271.9,
@@ -12261,7 +12261,7 @@
         },
         {
           "name": "Javonte Williams",
-          "nextSeasonPick": 3,
+          "nextSeasonPick": 2,
           "nextSeasonPoints": 259.5,
           "nextSeasonRound": 4,
           "playerId": 4361579,
@@ -12273,9 +12273,9 @@
         },
         {
           "name": "Josh Jacobs",
-          "nextSeasonPick": 2,
-          "nextSeasonPoints": 164.4,
-          "nextSeasonRound": 8,
+          "nextSeasonPick": 1,
+          "nextSeasonPoints": 164.0,
+          "nextSeasonRound": 11,
           "playerId": 4047365,
           "points": 237.1,
           "position": "RB",
@@ -12286,7 +12286,7 @@
         {
           "name": "Kenneth Gainwell",
           "nextSeasonPick": 1,
-          "nextSeasonPoints": 177.9,
+          "nextSeasonPoints": 177.7,
           "nextSeasonRound": 11,
           "playerId": 4371733,
           "points": 221.3,
@@ -12309,7 +12309,7 @@
         },
         {
           "name": "J.K. Dobbins",
-          "nextSeasonPick": 2,
+          "nextSeasonPick": 1,
           "nextSeasonPoints": 174.8,
           "nextSeasonRound": 12,
           "playerId": 4241985,
@@ -12333,8 +12333,8 @@
         },
         {
           "name": "Tetairoa McMillan",
-          "nextSeasonPick": 2,
-          "nextSeasonPoints": 236.2,
+          "nextSeasonPick": 3,
+          "nextSeasonPoints": 235.9,
           "nextSeasonRound": 5,
           "playerId": 4685472,
           "points": 211.4,
@@ -12345,9 +12345,9 @@
         },
         {
           "name": "Michael Pittman Jr.",
-          "nextSeasonPick": 10,
+          "nextSeasonPick": 1,
           "nextSeasonPoints": 197.2,
-          "nextSeasonRound": 9,
+          "nextSeasonRound": 10,
           "playerId": 4035687,
           "points": 202.4,
           "position": "WR",
@@ -12357,7 +12357,7 @@
         },
         {
           "name": "DK Metcalf",
-          "nextSeasonPick": 5,
+          "nextSeasonPick": 6,
           "nextSeasonPoints": 195.8,
           "nextSeasonRound": 9,
           "playerId": 4047650,
@@ -12369,8 +12369,8 @@
         },
         {
           "name": "Rome Odunze",
-          "nextSeasonPick": 5,
-          "nextSeasonPoints": 213.6,
+          "nextSeasonPick": 8,
+          "nextSeasonPoints": 213.2,
           "nextSeasonRound": 7,
           "playerId": 4431299,
           "points": 146.1,
@@ -12393,7 +12393,7 @@
         },
         {
           "name": "Dallas Goedert",
-          "nextSeasonPick": 4,
+          "nextSeasonPick": 1,
           "nextSeasonPoints": 176.9,
           "nextSeasonRound": 11,
           "playerId": 3121023,
@@ -12405,8 +12405,8 @@
         },
         {
           "name": "T.J. Hockenson",
-          "nextSeasonPick": 2,
-          "nextSeasonPoints": 158.9,
+          "nextSeasonPick": 4,
+          "nextSeasonPoints": 158.4,
           "nextSeasonRound": 16,
           "playerId": 4036133,
           "points": 112.8,
@@ -12417,7 +12417,7 @@
         },
         {
           "name": "Tyler Loop",
-          "nextSeasonPick": 6,
+          "nextSeasonPick": 5,
           "nextSeasonPoints": 145.9,
           "nextSeasonRound": 17,
           "playerId": 4697745,
@@ -12455,7 +12455,7 @@
       "Tommy G.": [
         {
           "name": "Justin Herbert",
-          "nextSeasonPick": 6,
+          "nextSeasonPick": 5,
           "nextSeasonPoints": 283.6,
           "nextSeasonRound": 9,
           "playerId": 4038941,
@@ -12467,7 +12467,7 @@
         },
         {
           "name": "Sam Darnold",
-          "nextSeasonPick": 2,
+          "nextSeasonPick": 3,
           "nextSeasonPoints": 242.5,
           "nextSeasonRound": 17,
           "playerId": 3912547,
@@ -12479,9 +12479,9 @@
         },
         {
           "name": "Brock Purdy",
-          "nextSeasonPick": 1,
-          "nextSeasonPoints": 292.0,
-          "nextSeasonRound": 12,
+          "nextSeasonPick": 9,
+          "nextSeasonPoints": 291.6,
+          "nextSeasonRound": 11,
           "playerId": 4361741,
           "points": 177.4,
           "position": "QB",
@@ -12492,7 +12492,7 @@
         {
           "name": "Christian McCaffrey",
           "nextSeasonPick": 8,
-          "nextSeasonPoints": 341.9,
+          "nextSeasonPoints": 341.5,
           "nextSeasonRound": 1,
           "playerId": 3117251,
           "points": 416.6,
@@ -12515,8 +12515,8 @@
         },
         {
           "name": "Kyle Monangai",
-          "nextSeasonPick": 4,
-          "nextSeasonPoints": 175.2,
+          "nextSeasonPick": 5,
+          "nextSeasonPoints": 174.7,
           "nextSeasonRound": 13,
           "playerId": 4608686,
           "points": 146.7,
@@ -12527,9 +12527,9 @@
         },
         {
           "name": "Jordan Mason",
-          "nextSeasonPick": 9,
-          "nextSeasonPoints": 151.7,
-          "nextSeasonRound": 14,
+          "nextSeasonPick": 1,
+          "nextSeasonPoints": 152.3,
+          "nextSeasonRound": 15,
           "playerId": 4360569,
           "points": 128.9,
           "position": "RB",
@@ -12539,8 +12539,8 @@
         },
         {
           "name": "Alvin Kamara",
-          "nextSeasonPick": 1,
-          "nextSeasonPoints": 113.4,
+          "nextSeasonPick": 4,
+          "nextSeasonPoints": 113.3,
           "nextSeasonRound": 17,
           "playerId": 3054850,
           "points": 100.7,
@@ -12563,7 +12563,7 @@
         },
         {
           "name": "Wan'Dale Robinson",
-          "nextSeasonPick": 3,
+          "nextSeasonPick": 2,
           "nextSeasonPoints": 174.8,
           "nextSeasonRound": 12,
           "playerId": 4569587,
@@ -12575,8 +12575,8 @@
         },
         {
           "name": "Deebo Samuel",
-          "nextSeasonPick": 3,
-          "nextSeasonPoints": 149.6,
+          "nextSeasonPick": 5,
+          "nextSeasonPoints": 149.5,
           "nextSeasonRound": 15,
           "playerId": 3126486,
           "points": 188.2,
@@ -12587,8 +12587,8 @@
         },
         {
           "name": "Romeo Doubs",
-          "nextSeasonPick": 8,
-          "nextSeasonPoints": 150.6,
+          "nextSeasonPick": 9,
+          "nextSeasonPoints": 150.4,
           "nextSeasonRound": 15,
           "playerId": 4361432,
           "points": 165.4,
@@ -12611,8 +12611,8 @@
         },
         {
           "name": "Tyler Warren",
-          "nextSeasonPick": 2,
-          "nextSeasonPoints": 210.6,
+          "nextSeasonPick": 1,
+          "nextSeasonPoints": 210.5,
           "nextSeasonRound": 6,
           "playerId": 4431459,
           "points": 188.5,
@@ -12623,8 +12623,8 @@
         },
         {
           "name": "Jake Bates",
-          "nextSeasonPick": 7,
-          "nextSeasonPoints": 146.1,
+          "nextSeasonPick": 6,
+          "nextSeasonPoints": 145.9,
           "nextSeasonRound": 16,
           "playerId": 4689936,
           "points": 145.0,
@@ -12647,7 +12647,7 @@
         },
         {
           "name": "Broncos D/ST",
-          "nextSeasonPick": 10,
+          "nextSeasonPick": 8,
           "nextSeasonPoints": 149.8,
           "nextSeasonRound": 10,
           "playerId": -16007,
@@ -12659,8 +12659,8 @@
         },
         {
           "name": "Jaguars D/ST",
-          "nextSeasonPick": 8,
-          "nextSeasonPoints": 104.2,
+          "nextSeasonPick": 7,
+          "nextSeasonPoints": 103.1,
           "nextSeasonRound": 17,
           "playerId": -16030,
           "points": 159.0,
@@ -12673,8 +12673,8 @@
       "Tyler S.": [
         {
           "name": "Jared Goff",
-          "nextSeasonPick": 6,
-          "nextSeasonPoints": 269.1,
+          "nextSeasonPick": 8,
+          "nextSeasonPoints": 268.3,
           "nextSeasonRound": 14,
           "playerId": 3046779,
           "points": 297.1,
@@ -12698,7 +12698,7 @@
         {
           "name": "Kyler Murray",
           "nextSeasonPick": 7,
-          "nextSeasonPoints": 283.4,
+          "nextSeasonPoints": 283.1,
           "nextSeasonRound": 14,
           "playerId": 3917315,
           "points": 77.8,
@@ -12710,7 +12710,7 @@
         {
           "name": "Tyrod Taylor",
           "nextSeasonPick": 10,
-          "nextSeasonPoints": 9.5,
+          "nextSeasonPoints": 9.4,
           "nextSeasonRound": 17,
           "playerId": 14163,
           "points": 59.5,
@@ -12721,8 +12721,8 @@
         },
         {
           "name": "D'Andre Swift",
-          "nextSeasonPick": 2,
-          "nextSeasonPoints": 210.5,
+          "nextSeasonPick": 3,
+          "nextSeasonPoints": 209.9,
           "nextSeasonRound": 6,
           "playerId": 4259545,
           "points": 228.6,
@@ -12733,7 +12733,7 @@
         },
         {
           "name": "RJ Harvey",
-          "nextSeasonPick": 6,
+          "nextSeasonPick": 9,
           "nextSeasonPoints": 149.4,
           "nextSeasonRound": 13,
           "playerId": 4568490,
@@ -12781,8 +12781,8 @@
         },
         {
           "name": "Stefon Diggs",
-          "nextSeasonPick": 2,
-          "nextSeasonPoints": 173.1,
+          "nextSeasonPick": 4,
+          "nextSeasonPoints": 172.9,
           "nextSeasonRound": 11,
           "playerId": 2976212,
           "points": 210.3,
@@ -12793,8 +12793,8 @@
         },
         {
           "name": "Jaylen Waddle",
-          "nextSeasonPick": 2,
-          "nextSeasonPoints": 213.1,
+          "nextSeasonPick": 3,
+          "nextSeasonPoints": 213.0,
           "nextSeasonRound": 6,
           "playerId": 4372016,
           "points": 194.1,
@@ -12817,7 +12817,7 @@
         },
         {
           "name": "Jakobi Meyers",
-          "nextSeasonPick": 3,
+          "nextSeasonPick": 1,
           "nextSeasonPoints": 181.9,
           "nextSeasonRound": 13,
           "playerId": 3916433,
@@ -12830,7 +12830,7 @@
         {
           "name": "Hunter Henry",
           "nextSeasonPick": 3,
-          "nextSeasonPoints": 150.3,
+          "nextSeasonPoints": 150.1,
           "nextSeasonRound": 16,
           "playerId": 3046439,
           "points": 178.8,
@@ -12853,7 +12853,7 @@
         },
         {
           "name": "Jason Myers",
-          "nextSeasonPick": 5,
+          "nextSeasonPick": 2,
           "nextSeasonPoints": 158.5,
           "nextSeasonRound": 12,
           "playerId": 2473037,
@@ -12877,7 +12877,7 @@
         },
         {
           "name": "Texans D/ST",
-          "nextSeasonPick": 3,
+          "nextSeasonPick": 2,
           "nextSeasonPoints": 154.6,
           "nextSeasonRound": 10,
           "playerId": -16034,
@@ -12889,8 +12889,8 @@
         },
         {
           "name": "Packers D/ST",
-          "nextSeasonPick": 9,
-          "nextSeasonPoints": 115.2,
+          "nextSeasonPick": 10,
+          "nextSeasonPoints": 114.5,
           "nextSeasonRound": 17,
           "playerId": -16009,
           "points": 91.0,
