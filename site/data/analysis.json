@@ -11,57 +11,57 @@
         "year": 2022
       },
       {
-        "baseline": 108.42,
+        "baseline": 108.82,
         "manager": "Tyler S.",
         "overall": 81,
         "returned": 357.26,
         "round": 9,
-        "vsSlot": 248.84,
+        "vsSlot": 248.44,
         "year": 2020
       },
       {
-        "baseline": 168.3,
+        "baseline": 170.49,
         "manager": "Tyler S.",
         "overall": 61,
         "returned": 412.9,
         "round": 7,
-        "vsSlot": 244.6,
+        "vsSlot": 242.41,
         "year": 2021
       },
       {
-        "baseline": 64.96,
+        "baseline": 65.51,
         "manager": "Olivia M.",
         "overall": 153,
         "returned": 300.32,
         "round": 16,
-        "vsSlot": 235.36,
+        "vsSlot": 234.81,
         "year": 2024
       },
       {
-        "baseline": 155.06,
+        "baseline": 157.0,
         "manager": "Max O.",
         "overall": 1,
         "returned": 373.76,
         "round": 1,
-        "vsSlot": 218.7,
+        "vsSlot": 216.76,
         "year": 2022
       },
       {
-        "baseline": 111.79,
+        "baseline": 112.67,
         "manager": "Griffin B.",
         "overall": 128,
         "returned": 325.64,
         "round": 13,
-        "vsSlot": 213.85,
+        "vsSlot": 212.97,
         "year": 2018
       },
       {
-        "baseline": 166.49,
+        "baseline": 166.88,
         "manager": "Liam H.",
         "overall": 117,
         "returned": 376.8,
         "round": 12,
-        "vsSlot": 210.31,
+        "vsSlot": 209.92,
         "year": 2020
       },
       {
@@ -74,121 +74,121 @@
         "year": 2018
       },
       {
-        "baseline": 94.06,
+        "baseline": 94.81,
         "manager": "Jack C.",
         "overall": 75,
         "returned": 300.0,
         "round": 8,
-        "vsSlot": 205.94,
+        "vsSlot": 205.19,
         "year": 2021
       },
       {
-        "baseline": 138.26,
+        "baseline": 139.04,
         "manager": "Tyler S.",
         "overall": 100,
         "returned": 344.16,
         "round": 10,
-        "vsSlot": 205.9,
+        "vsSlot": 205.12,
         "year": 2024
       }
     ],
     "byManager": [
       {
-        "avgVsSlot": 33.35,
+        "avgVsSlot": 32.1,
         "avgWeeksHeld": 13.75,
         "manager": "Josh D.",
         "picks": 16,
-        "totalVsSlot": 533.7
+        "totalVsSlot": 513.5
       },
       {
-        "avgVsSlot": 10.95,
-        "avgWeeksHeld": 12.63,
+        "avgVsSlot": 11.08,
+        "avgWeeksHeld": 12.73,
         "manager": "Tommy G.",
         "picks": 150,
-        "totalVsSlot": 1642.6
+        "totalVsSlot": 1662.5
       },
       {
-        "avgVsSlot": 5.99,
-        "avgWeeksHeld": 11.46,
+        "avgVsSlot": 5.74,
+        "avgWeeksHeld": 11.57,
         "manager": "Olivia M.",
         "picks": 134,
-        "totalVsSlot": 802.5
+        "totalVsSlot": 769.5
       },
       {
-        "avgVsSlot": 4.81,
-        "avgWeeksHeld": 13.31,
+        "avgVsSlot": 4.93,
+        "avgWeeksHeld": 13.43,
         "manager": "Teddy C.",
         "picks": 150,
-        "totalVsSlot": 721.1
+        "totalVsSlot": 740.1
       },
       {
-        "avgVsSlot": 4.5,
-        "avgWeeksHeld": 11.45,
+        "avgVsSlot": 4.66,
+        "avgWeeksHeld": 11.57,
         "manager": "Spencer C.",
         "picks": 150,
-        "totalVsSlot": 674.9
+        "totalVsSlot": 699.4
       },
       {
-        "avgVsSlot": 2.45,
-        "avgWeeksHeld": 11.28,
+        "avgVsSlot": 2.39,
+        "avgWeeksHeld": 11.37,
         "manager": "Jack C.",
         "picks": 150,
-        "totalVsSlot": 367.6
+        "totalVsSlot": 358.7
       },
       {
-        "avgVsSlot": -0.11,
-        "avgWeeksHeld": 10.83,
+        "avgVsSlot": -0.2,
+        "avgWeeksHeld": 10.92,
         "manager": "Griffin B.",
         "picks": 150,
-        "totalVsSlot": -16.9
+        "totalVsSlot": -30.5
       },
       {
-        "avgVsSlot": -2.25,
-        "avgWeeksHeld": 12.05,
+        "avgVsSlot": -1.98,
+        "avgWeeksHeld": 12.16,
         "manager": "Nathan M.",
         "picks": 150,
-        "totalVsSlot": -337.6
+        "totalVsSlot": -296.5
       },
       {
-        "avgVsSlot": -4.56,
-        "avgWeeksHeld": 10.09,
+        "avgVsSlot": -4.28,
+        "avgWeeksHeld": 10.19,
         "manager": "Max O.",
         "picks": 150,
-        "totalVsSlot": -684.7
+        "totalVsSlot": -642.4
       },
       {
-        "avgVsSlot": -12.27,
-        "avgWeeksHeld": 10.36,
+        "avgVsSlot": -12.44,
+        "avgWeeksHeld": 10.47,
         "manager": "Tyler S.",
         "picks": 150,
-        "totalVsSlot": -1840.4
+        "totalVsSlot": -1866.3
       },
       {
-        "avgVsSlot": -12.42,
-        "avgWeeksHeld": 10.0,
+        "avgVsSlot": -12.72,
+        "avgWeeksHeld": 10.08,
         "manager": "Liam H.",
         "picks": 150,
-        "totalVsSlot": -1862.7
+        "totalVsSlot": -1908.7
       }
     ],
     "bySlot": [
       {
-        "avgReturn": 155.06,
+        "avgReturn": 157.0,
         "overall": 1,
         "picks": 9
       },
       {
-        "avgReturn": 210.68,
+        "avgReturn": 212.95,
         "overall": 2,
         "picks": 9
       },
       {
-        "avgReturn": 261.18,
+        "avgReturn": 263.93,
         "overall": 3,
         "picks": 9
       },
       {
-        "avgReturn": 239.52,
+        "avgReturn": 239.71,
         "overall": 4,
         "picks": 9
       },
@@ -198,62 +198,62 @@
         "picks": 9
       },
       {
-        "avgReturn": 237.84,
+        "avgReturn": 240.24,
         "overall": 6,
         "picks": 9
       },
       {
-        "avgReturn": 300.81,
+        "avgReturn": 305.41,
         "overall": 7,
         "picks": 9
       },
       {
-        "avgReturn": 265.21,
+        "avgReturn": 267.46,
         "overall": 8,
         "picks": 9
       },
       {
-        "avgReturn": 212.61,
+        "avgReturn": 213.94,
         "overall": 9,
         "picks": 9
       },
       {
-        "avgReturn": 167.04,
+        "avgReturn": 170.96,
         "overall": 10,
         "picks": 9
       },
       {
-        "avgReturn": 245.86,
+        "avgReturn": 246.44,
         "overall": 11,
         "picks": 9
       },
       {
-        "avgReturn": 215.92,
+        "avgReturn": 218.43,
         "overall": 12,
         "picks": 9
       },
       {
-        "avgReturn": 216.02,
+        "avgReturn": 218.18,
         "overall": 13,
         "picks": 9
       },
       {
-        "avgReturn": 210.68,
+        "avgReturn": 212.43,
         "overall": 14,
         "picks": 9
       },
       {
-        "avgReturn": 191.28,
+        "avgReturn": 192.69,
         "overall": 15,
         "picks": 9
       },
       {
-        "avgReturn": 199.13,
+        "avgReturn": 201.57,
         "overall": 16,
         "picks": 9
       },
       {
-        "avgReturn": 191.25,
+        "avgReturn": 193.36,
         "overall": 17,
         "picks": 9
       },
@@ -263,27 +263,27 @@
         "picks": 9
       },
       {
-        "avgReturn": 216.95,
+        "avgReturn": 217.95,
         "overall": 19,
         "picks": 9
       },
       {
-        "avgReturn": 174.55,
+        "avgReturn": 177.23,
         "overall": 20,
         "picks": 9
       },
       {
-        "avgReturn": 211.71,
+        "avgReturn": 214.15,
         "overall": 21,
         "picks": 9
       },
       {
-        "avgReturn": 249.33,
+        "avgReturn": 249.95,
         "overall": 22,
         "picks": 9
       },
       {
-        "avgReturn": 238.45,
+        "avgReturn": 241.52,
         "overall": 23,
         "picks": 9
       },
@@ -293,22 +293,22 @@
         "picks": 9
       },
       {
-        "avgReturn": 157.0,
+        "avgReturn": 158.02,
         "overall": 25,
         "picks": 9
       },
       {
-        "avgReturn": 200.72,
+        "avgReturn": 203.88,
         "overall": 26,
         "picks": 9
       },
       {
-        "avgReturn": 184.86,
+        "avgReturn": 186.23,
         "overall": 27,
         "picks": 9
       },
       {
-        "avgReturn": 220.17,
+        "avgReturn": 222.2,
         "overall": 28,
         "picks": 9
       },
@@ -318,42 +318,42 @@
         "picks": 9
       },
       {
-        "avgReturn": 179.57,
+        "avgReturn": 180.57,
         "overall": 30,
         "picks": 9
       },
       {
-        "avgReturn": 199.26,
+        "avgReturn": 201.45,
         "overall": 31,
         "picks": 9
       },
       {
-        "avgReturn": 181.8,
+        "avgReturn": 182.79,
         "overall": 32,
         "picks": 9
       },
       {
-        "avgReturn": 153.6,
+        "avgReturn": 154.02,
         "overall": 33,
         "picks": 9
       },
       {
-        "avgReturn": 151.15,
+        "avgReturn": 153.47,
         "overall": 34,
         "picks": 9
       },
       {
-        "avgReturn": 183.01,
+        "avgReturn": 184.7,
         "overall": 35,
         "picks": 9
       },
       {
-        "avgReturn": 148.47,
+        "avgReturn": 149.31,
         "overall": 36,
         "picks": 9
       },
       {
-        "avgReturn": 210.53,
+        "avgReturn": 212.3,
         "overall": 37,
         "picks": 9
       },
@@ -363,67 +363,67 @@
         "picks": 9
       },
       {
-        "avgReturn": 152.21,
+        "avgReturn": 154.04,
         "overall": 39,
         "picks": 9
       },
       {
-        "avgReturn": 191.19,
+        "avgReturn": 192.13,
         "overall": 40,
         "picks": 9
       },
       {
-        "avgReturn": 174.89,
+        "avgReturn": 177.31,
         "overall": 41,
         "picks": 9
       },
       {
-        "avgReturn": 172.61,
+        "avgReturn": 173.79,
         "overall": 42,
         "picks": 9
       },
       {
-        "avgReturn": 205.17,
+        "avgReturn": 206.56,
         "overall": 43,
         "picks": 9
       },
       {
-        "avgReturn": 91.74,
+        "avgReturn": 95.67,
         "overall": 44,
         "picks": 9
       },
       {
-        "avgReturn": 119.38,
+        "avgReturn": 120.8,
         "overall": 45,
         "picks": 9
       },
       {
-        "avgReturn": 155.04,
+        "avgReturn": 156.76,
         "overall": 46,
         "picks": 9
       },
       {
-        "avgReturn": 146.43,
+        "avgReturn": 149.91,
         "overall": 47,
         "picks": 9
       },
       {
-        "avgReturn": 166.34,
+        "avgReturn": 168.54,
         "overall": 48,
         "picks": 9
       },
       {
-        "avgReturn": 145.31,
+        "avgReturn": 148.28,
         "overall": 49,
         "picks": 9
       },
       {
-        "avgReturn": 176.94,
+        "avgReturn": 179.09,
         "overall": 50,
         "picks": 9
       },
       {
-        "avgReturn": 165.37,
+        "avgReturn": 166.63,
         "overall": 51,
         "picks": 9
       },
@@ -433,17 +433,17 @@
         "picks": 9
       },
       {
-        "avgReturn": 118.32,
+        "avgReturn": 118.73,
         "overall": 53,
         "picks": 9
       },
       {
-        "avgReturn": 143.34,
+        "avgReturn": 144.59,
         "overall": 54,
         "picks": 9
       },
       {
-        "avgReturn": 173.07,
+        "avgReturn": 174.27,
         "overall": 55,
         "picks": 9
       },
@@ -453,112 +453,112 @@
         "picks": 9
       },
       {
-        "avgReturn": 158.4,
+        "avgReturn": 159.19,
         "overall": 57,
         "picks": 9
       },
       {
-        "avgReturn": 144.4,
+        "avgReturn": 146.77,
         "overall": 58,
         "picks": 9
       },
       {
-        "avgReturn": 191.63,
+        "avgReturn": 193.69,
         "overall": 59,
         "picks": 9
       },
       {
-        "avgReturn": 135.78,
+        "avgReturn": 138.08,
         "overall": 60,
         "picks": 9
       },
       {
-        "avgReturn": 168.3,
+        "avgReturn": 170.49,
         "overall": 61,
         "picks": 9
       },
       {
-        "avgReturn": 163.78,
+        "avgReturn": 164.76,
         "overall": 62,
         "picks": 9
       },
       {
-        "avgReturn": 169.19,
+        "avgReturn": 170.29,
         "overall": 63,
         "picks": 9
       },
       {
-        "avgReturn": 167.64,
+        "avgReturn": 169.08,
         "overall": 64,
         "picks": 9
       },
       {
-        "avgReturn": 179.2,
+        "avgReturn": 180.83,
         "overall": 65,
         "picks": 9
       },
       {
-        "avgReturn": 186.62,
+        "avgReturn": 188.96,
         "overall": 66,
         "picks": 9
       },
       {
-        "avgReturn": 75.06,
+        "avgReturn": 77.97,
         "overall": 67,
         "picks": 9
       },
       {
-        "avgReturn": 101.36,
+        "avgReturn": 102.18,
         "overall": 68,
         "picks": 9
       },
       {
-        "avgReturn": 145.75,
+        "avgReturn": 145.92,
         "overall": 69,
         "picks": 9
       },
       {
-        "avgReturn": 145.92,
+        "avgReturn": 146.79,
         "overall": 70,
         "picks": 9
       },
       {
-        "avgReturn": 111.6,
+        "avgReturn": 114.28,
         "overall": 71,
         "picks": 9
       },
       {
-        "avgReturn": 147.36,
+        "avgReturn": 147.49,
         "overall": 72,
         "picks": 9
       },
       {
-        "avgReturn": 86.53,
+        "avgReturn": 88.73,
         "overall": 73,
         "picks": 9
       },
       {
-        "avgReturn": 89.82,
+        "avgReturn": 90.53,
         "overall": 74,
         "picks": 9
       },
       {
-        "avgReturn": 94.06,
+        "avgReturn": 94.81,
         "overall": 75,
         "picks": 9
       },
       {
-        "avgReturn": 130.11,
+        "avgReturn": 131.52,
         "overall": 76,
         "picks": 9
       },
       {
-        "avgReturn": 119.08,
+        "avgReturn": 119.73,
         "overall": 77,
         "picks": 9
       },
       {
-        "avgReturn": 112.93,
+        "avgReturn": 114.82,
         "overall": 78,
         "picks": 9
       },
@@ -568,72 +568,72 @@
         "picks": 9
       },
       {
-        "avgReturn": 94.18,
+        "avgReturn": 94.93,
         "overall": 80,
         "picks": 9
       },
       {
-        "avgReturn": 108.42,
+        "avgReturn": 108.82,
         "overall": 81,
         "picks": 9
       },
       {
-        "avgReturn": 155.01,
+        "avgReturn": 157.52,
         "overall": 82,
         "picks": 9
       },
       {
-        "avgReturn": 94.98,
+        "avgReturn": 96.42,
         "overall": 83,
         "picks": 9
       },
       {
-        "avgReturn": 140.65,
+        "avgReturn": 143.29,
         "overall": 84,
         "picks": 9
       },
       {
-        "avgReturn": 85.37,
+        "avgReturn": 86.19,
         "overall": 85,
         "picks": 9
       },
       {
-        "avgReturn": 140.65,
+        "avgReturn": 141.69,
         "overall": 86,
         "picks": 9
       },
       {
-        "avgReturn": 94.49,
+        "avgReturn": 95.8,
         "overall": 87,
         "picks": 9
       },
       {
-        "avgReturn": 81.09,
+        "avgReturn": 81.79,
         "overall": 88,
         "picks": 9
       },
       {
-        "avgReturn": 105.18,
+        "avgReturn": 107.47,
         "overall": 89,
         "picks": 9
       },
       {
-        "avgReturn": 161.9,
+        "avgReturn": 163.24,
         "overall": 90,
         "picks": 9
       },
       {
-        "avgReturn": 118.86,
+        "avgReturn": 119.71,
         "overall": 91,
         "picks": 9
       },
       {
-        "avgReturn": 118.75,
+        "avgReturn": 119.48,
         "overall": 92,
         "picks": 9
       },
       {
-        "avgReturn": 77.57,
+        "avgReturn": 78.45,
         "overall": 93,
         "picks": 9
       },
@@ -643,12 +643,12 @@
         "picks": 9
       },
       {
-        "avgReturn": 127.29,
+        "avgReturn": 128.4,
         "overall": 95,
         "picks": 9
       },
       {
-        "avgReturn": 94.03,
+        "avgReturn": 95.7,
         "overall": 96,
         "picks": 9
       },
@@ -663,67 +663,67 @@
         "picks": 9
       },
       {
-        "avgReturn": 98.68,
+        "avgReturn": 99.12,
         "overall": 99,
         "picks": 9
       },
       {
-        "avgReturn": 138.26,
+        "avgReturn": 139.04,
         "overall": 100,
         "picks": 9
       },
       {
-        "avgReturn": 76.17,
+        "avgReturn": 77.47,
         "overall": 101,
         "picks": 9
       },
       {
-        "avgReturn": 91.82,
+        "avgReturn": 93.98,
         "overall": 102,
         "picks": 9
       },
       {
-        "avgReturn": 93.93,
+        "avgReturn": 94.37,
         "overall": 103,
         "picks": 9
       },
       {
-        "avgReturn": 66.48,
+        "avgReturn": 68.81,
         "overall": 104,
         "picks": 9
       },
       {
-        "avgReturn": 105.6,
+        "avgReturn": 106.27,
         "overall": 105,
         "picks": 9
       },
       {
-        "avgReturn": 79.42,
+        "avgReturn": 80.94,
         "overall": 106,
         "picks": 9
       },
       {
-        "avgReturn": 71.19,
+        "avgReturn": 72.19,
         "overall": 107,
         "picks": 9
       },
       {
-        "avgReturn": 66.1,
+        "avgReturn": 67.62,
         "overall": 108,
         "picks": 9
       },
       {
-        "avgReturn": 114.26,
+        "avgReturn": 115.63,
         "overall": 109,
         "picks": 9
       },
       {
-        "avgReturn": 102.56,
+        "avgReturn": 103.56,
         "overall": 110,
         "picks": 9
       },
       {
-        "avgReturn": 62.18,
+        "avgReturn": 62.52,
         "overall": 111,
         "picks": 9
       },
@@ -733,47 +733,47 @@
         "picks": 9
       },
       {
-        "avgReturn": 111.88,
+        "avgReturn": 112.08,
         "overall": 113,
         "picks": 9
       },
       {
-        "avgReturn": 91.31,
+        "avgReturn": 91.68,
         "overall": 114,
         "picks": 9
       },
       {
-        "avgReturn": 93.96,
+        "avgReturn": 94.31,
         "overall": 115,
         "picks": 9
       },
       {
-        "avgReturn": 101.09,
+        "avgReturn": 101.65,
         "overall": 116,
         "picks": 9
       },
       {
-        "avgReturn": 166.49,
+        "avgReturn": 166.88,
         "overall": 117,
         "picks": 9
       },
       {
-        "avgReturn": 124.02,
+        "avgReturn": 125.36,
         "overall": 118,
         "picks": 9
       },
       {
-        "avgReturn": 71.09,
+        "avgReturn": 73.93,
         "overall": 119,
         "picks": 9
       },
       {
-        "avgReturn": 89.71,
+        "avgReturn": 90.52,
         "overall": 120,
         "picks": 9
       },
       {
-        "avgReturn": 41.58,
+        "avgReturn": 43.12,
         "overall": 121,
         "picks": 9
       },
@@ -783,12 +783,12 @@
         "picks": 9
       },
       {
-        "avgReturn": 137.6,
+        "avgReturn": 138.65,
         "overall": 123,
         "picks": 9
       },
       {
-        "avgReturn": 66.46,
+        "avgReturn": 66.91,
         "overall": 124,
         "picks": 9
       },
@@ -798,17 +798,17 @@
         "picks": 9
       },
       {
-        "avgReturn": 102.86,
+        "avgReturn": 103.46,
         "overall": 126,
         "picks": 9
       },
       {
-        "avgReturn": 70.48,
+        "avgReturn": 71.7,
         "overall": 127,
         "picks": 9
       },
       {
-        "avgReturn": 111.79,
+        "avgReturn": 112.67,
         "overall": 128,
         "picks": 9
       },
@@ -823,22 +823,22 @@
         "picks": 9
       },
       {
-        "avgReturn": 106.32,
+        "avgReturn": 106.93,
         "overall": 131,
         "picks": 9
       },
       {
-        "avgReturn": 50.56,
+        "avgReturn": 50.98,
         "overall": 132,
         "picks": 9
       },
       {
-        "avgReturn": 20.79,
+        "avgReturn": 22.57,
         "overall": 133,
         "picks": 9
       },
       {
-        "avgReturn": 53.4,
+        "avgReturn": 56.3,
         "overall": 134,
         "picks": 9
       },
@@ -853,22 +853,22 @@
         "picks": 9
       },
       {
-        "avgReturn": 87.25,
+        "avgReturn": 87.69,
         "overall": 137,
         "picks": 9
       },
       {
-        "avgReturn": 114.5,
+        "avgReturn": 115.17,
         "overall": 138,
         "picks": 9
       },
       {
-        "avgReturn": 59.94,
+        "avgReturn": 60.72,
         "overall": 139,
         "picks": 9
       },
       {
-        "avgReturn": 117.02,
+        "avgReturn": 118.21,
         "overall": 140,
         "picks": 9
       },
@@ -883,7 +883,7 @@
         "picks": 9
       },
       {
-        "avgReturn": 72.58,
+        "avgReturn": 73.17,
         "overall": 143,
         "picks": 9
       },
@@ -893,37 +893,37 @@
         "picks": 9
       },
       {
-        "avgReturn": 126.7,
+        "avgReturn": 127.48,
         "overall": 145,
         "picks": 9
       },
       {
-        "avgReturn": 29.7,
+        "avgReturn": 29.75,
         "overall": 146,
         "picks": 9
       },
       {
-        "avgReturn": 35.89,
+        "avgReturn": 37.47,
         "overall": 147,
         "picks": 9
       },
       {
-        "avgReturn": 41.81,
+        "avgReturn": 44.03,
         "overall": 148,
         "picks": 9
       },
       {
-        "avgReturn": 102.6,
+        "avgReturn": 103.03,
         "overall": 149,
         "picks": 9
       },
       {
-        "avgReturn": 51.15,
+        "avgReturn": 51.26,
         "overall": 150,
         "picks": 9
       },
       {
-        "avgReturn": 54.91,
+        "avgReturn": 56.14,
         "overall": 151,
         "picks": 9
       },
@@ -933,7 +933,7 @@
         "picks": 9
       },
       {
-        "avgReturn": 64.96,
+        "avgReturn": 65.51,
         "overall": 153,
         "picks": 9
       },
@@ -948,7 +948,7 @@
         "picks": 9
       },
       {
-        "avgReturn": 44.95,
+        "avgReturn": 45.27,
         "overall": 156,
         "picks": 9
       },
@@ -963,17 +963,17 @@
         "picks": 9
       },
       {
-        "avgReturn": 51.7,
+        "avgReturn": 52.62,
         "overall": 159,
         "picks": 9
       },
       {
-        "avgReturn": 78.33,
+        "avgReturn": 79.0,
         "overall": 160,
         "picks": 9
       },
       {
-        "avgReturn": 17.44,
+        "avgReturn": 20.24,
         "overall": 161,
         "picks": 5
       },
@@ -983,7 +983,7 @@
         "picks": 5
       },
       {
-        "avgReturn": 63.94,
+        "avgReturn": 64.94,
         "overall": 163,
         "picks": 5
       },
@@ -993,12 +993,12 @@
         "picks": 5
       },
       {
-        "avgReturn": 18.68,
+        "avgReturn": 19.3,
         "overall": 165,
         "picks": 5
       },
       {
-        "avgReturn": 70.81,
+        "avgReturn": 76.34,
         "overall": 166,
         "picks": 5
       },
@@ -1013,12 +1013,12 @@
         "picks": 5
       },
       {
-        "avgReturn": 8.84,
+        "avgReturn": 10.44,
         "overall": 169,
         "picks": 5
       },
       {
-        "avgReturn": 18.92,
+        "avgReturn": 23.46,
         "overall": 170,
         "picks": 5
       },
@@ -1075,40 +1075,13 @@
     ],
     "worstPicks": [
       {
-        "baseline": 261.18,
+        "baseline": 263.93,
         "manager": "Griffin B.",
         "overall": 3,
         "returned": 15.4,
         "round": 1,
-        "vsSlot": -245.78,
+        "vsSlot": -248.53,
         "year": 2020
-      },
-      {
-        "baseline": 300.81,
-        "manager": "Max O.",
-        "overall": 7,
-        "returned": 56.9,
-        "round": 1,
-        "vsSlot": -243.91,
-        "year": 2026
-      },
-      {
-        "baseline": 238.45,
-        "manager": "Griffin B.",
-        "overall": 23,
-        "returned": 0.0,
-        "round": 3,
-        "vsSlot": -238.45,
-        "year": 2026
-      },
-      {
-        "baseline": 261.18,
-        "manager": "Griffin B.",
-        "overall": 3,
-        "returned": 29.7,
-        "round": 1,
-        "vsSlot": -231.48,
-        "year": 2026
       },
       {
         "baseline": 238.63,
@@ -1120,54 +1093,81 @@
         "year": 2026
       },
       {
-        "baseline": 249.33,
+        "baseline": 249.95,
         "manager": "Jack C.",
         "overall": 22,
-        "returned": 25.8,
+        "returned": 31.4,
         "round": 3,
-        "vsSlot": -223.53,
+        "vsSlot": -218.55,
         "year": 2026
       },
       {
-        "baseline": 239.52,
+        "baseline": 239.71,
         "manager": "Tyler S.",
         "overall": 4,
-        "returned": 22.9,
+        "returned": 24.6,
         "round": 1,
-        "vsSlot": -216.62,
+        "vsSlot": -215.11,
         "year": 2026
       },
       {
-        "baseline": 265.21,
-        "manager": "Teddy C.",
-        "overall": 8,
-        "returned": 50.7,
-        "round": 1,
-        "vsSlot": -214.51,
+        "baseline": 241.52,
+        "manager": "Griffin B.",
+        "overall": 23,
+        "returned": 27.6,
+        "round": 3,
+        "vsSlot": -213.92,
         "year": 2026
       },
       {
-        "baseline": 245.86,
+        "baseline": 263.93,
+        "manager": "Griffin B.",
+        "overall": 3,
+        "returned": 54.5,
+        "round": 1,
+        "vsSlot": -209.43,
+        "year": 2026
+      },
+      {
+        "baseline": 305.41,
+        "manager": "Max O.",
+        "overall": 7,
+        "returned": 98.3,
+        "round": 1,
+        "vsSlot": -207.11,
+        "year": 2026
+      },
+      {
+        "baseline": 246.44,
         "manager": "Spencer C.",
         "overall": 11,
-        "returned": 39.7,
+        "returned": 44.9,
         "round": 2,
-        "vsSlot": -206.16,
+        "vsSlot": -201.54,
         "year": 2026
       },
       {
-        "baseline": 216.95,
+        "baseline": 201.45,
+        "manager": "Josh D.",
+        "overall": 31,
+        "returned": 0,
+        "round": 4,
+        "vsSlot": -201.45,
+        "year": 2018
+      },
+      {
+        "baseline": 217.95,
         "manager": "Jack C.",
         "overall": 19,
-        "returned": 12.0,
+        "returned": 21.0,
         "round": 2,
-        "vsSlot": -204.95,
+        "vsSlot": -196.95,
         "year": 2026
       }
     ]
   },
   "firstSeason": 2018,
-  "generated": "2026-09-22",
+  "generated": "2026-09-29",
   "headToHead": [
     {
       "avgMargin": 8.38,
@@ -1220,14 +1220,14 @@
       "wins": 11
     },
     {
-      "avgMargin": -16.64,
+      "avgMargin": -14.53,
       "losses": 11,
       "manager": "Griffin B.",
-      "meetings": 15,
+      "meetings": 16,
       "opponent": "Olivia M.",
       "playoffLosses": 1,
       "playoffWins": 0,
-      "wins": 4
+      "wins": 5
     },
     {
       "avgMargin": 4.6,
@@ -1340,14 +1340,14 @@
       "wins": 2
     },
     {
-      "avgMargin": -8.12,
+      "avgMargin": -7.54,
       "losses": 8,
       "manager": "Jack C.",
-      "meetings": 16,
+      "meetings": 17,
       "opponent": "Teddy C.",
       "playoffLosses": 0,
       "playoffWins": 0,
-      "wins": 8
+      "wins": 9
     },
     {
       "avgMargin": -3.93,
@@ -1520,10 +1520,10 @@
       "wins": 3
     },
     {
-      "avgMargin": -6.24,
-      "losses": 8,
+      "avgMargin": -6.67,
+      "losses": 9,
       "manager": "Liam H.",
-      "meetings": 14,
+      "meetings": 15,
       "opponent": "Spencer C.",
       "playoffLosses": 1,
       "playoffWins": 0,
@@ -1650,14 +1650,14 @@
       "wins": 13
     },
     {
-      "avgMargin": 14.42,
+      "avgMargin": 15.73,
       "losses": 5,
       "manager": "Max O.",
-      "meetings": 17,
+      "meetings": 18,
       "opponent": "Tyler S.",
       "playoffLosses": 0,
       "playoffWins": 1,
-      "wins": 12
+      "wins": 13
     },
     {
       "avgMargin": -6.12,
@@ -1740,14 +1740,14 @@
       "wins": 7
     },
     {
-      "avgMargin": -28.3,
+      "avgMargin": -26.57,
       "losses": 12,
       "manager": "Nathan M.",
-      "meetings": 16,
+      "meetings": 17,
       "opponent": "Tommy G.",
       "playoffLosses": 0,
       "playoffWins": 0,
-      "wins": 4
+      "wins": 5
     },
     {
       "avgMargin": -1.77,
@@ -1760,10 +1760,10 @@
       "wins": 7
     },
     {
-      "avgMargin": 16.64,
-      "losses": 4,
+      "avgMargin": 14.53,
+      "losses": 5,
       "manager": "Olivia M.",
-      "meetings": 15,
+      "meetings": 16,
       "opponent": "Griffin B.",
       "playoffLosses": 0,
       "playoffWins": 1,
@@ -1880,14 +1880,14 @@
       "wins": 0
     },
     {
-      "avgMargin": 6.24,
+      "avgMargin": 6.67,
       "losses": 6,
       "manager": "Spencer C.",
-      "meetings": 14,
+      "meetings": 15,
       "opponent": "Liam H.",
       "playoffLosses": 0,
       "playoffWins": 1,
-      "wins": 8
+      "wins": 9
     },
     {
       "avgMargin": -9.8,
@@ -1960,10 +1960,10 @@
       "wins": 2
     },
     {
-      "avgMargin": 8.12,
-      "losses": 8,
+      "avgMargin": 7.54,
+      "losses": 9,
       "manager": "Teddy C.",
-      "meetings": 16,
+      "meetings": 17,
       "opponent": "Jack C.",
       "playoffLosses": 0,
       "playoffWins": 0,
@@ -2100,10 +2100,10 @@
       "wins": 3
     },
     {
-      "avgMargin": 28.3,
-      "losses": 4,
+      "avgMargin": 26.57,
+      "losses": 5,
       "manager": "Tommy G.",
-      "meetings": 16,
+      "meetings": 17,
       "opponent": "Nathan M.",
       "playoffLosses": 0,
       "playoffWins": 0,
@@ -2190,10 +2190,10 @@
       "wins": 9
     },
     {
-      "avgMargin": -14.42,
-      "losses": 12,
+      "avgMargin": -15.73,
+      "losses": 13,
       "manager": "Tyler S.",
-      "meetings": 17,
+      "meetings": 18,
       "opponent": "Max O.",
       "playoffLosses": 1,
       "playoffWins": 0,
@@ -2255,84 +2255,84 @@
   "lineups": {
     "career": [
       {
-        "actual": 14465.8,
-        "efficiency": 0.8864,
+        "actual": 14570.7,
+        "efficiency": 0.8871,
         "leftOnBench": 1854.6,
         "manager": "Olivia M.",
-        "optimal": 16320.4,
-        "weeks": 106
+        "optimal": 16425.3,
+        "weeks": 107
       },
       {
-        "actual": 17560.9,
-        "efficiency": 0.8844,
-        "leftOnBench": 2296.4,
+        "actual": 17719.4,
+        "efficiency": 0.8829,
+        "leftOnBench": 2351.0,
         "manager": "Max O.",
-        "optimal": 19857.3,
-        "weeks": 130
+        "optimal": 20070.4,
+        "weeks": 131
       },
       {
-        "actual": 16079.5,
-        "efficiency": 0.8768,
-        "leftOnBench": 2259.1,
+        "actual": 16231.6,
+        "efficiency": 0.8767,
+        "leftOnBench": 2283.9,
         "manager": "Tommy G.",
-        "optimal": 18338.7,
-        "weeks": 122
-      },
-      {
-        "actual": 14807.4,
-        "efficiency": 0.8721,
-        "leftOnBench": 2171.3,
-        "manager": "Tyler S.",
-        "optimal": 16978.7,
-        "weeks": 117
-      },
-      {
-        "actual": 15945.2,
-        "efficiency": 0.8718,
-        "leftOnBench": 2345.4,
-        "manager": "Griffin B.",
-        "optimal": 18290.6,
-        "weeks": 121
-      },
-      {
-        "actual": 16133.4,
-        "efficiency": 0.8712,
-        "leftOnBench": 2384.8,
-        "manager": "Liam H.",
-        "optimal": 18518.2,
+        "optimal": 18515.5,
         "weeks": 123
       },
       {
-        "actual": 15142.3,
-        "efficiency": 0.87,
-        "leftOnBench": 2262.5,
-        "manager": "Spencer C.",
-        "optimal": 17404.8,
-        "weeks": 116
+        "actual": 16262.5,
+        "efficiency": 0.8716,
+        "leftOnBench": 2395.4,
+        "manager": "Liam H.",
+        "optimal": 18657.9,
+        "weeks": 124
       },
       {
-        "actual": 14249.2,
-        "efficiency": 0.8658,
-        "leftOnBench": 2208.4,
-        "manager": "Nathan M.",
-        "optimal": 16457.6,
-        "weeks": 117
-      },
-      {
-        "actual": 14867.7,
-        "efficiency": 0.8631,
-        "leftOnBench": 2357.7,
-        "manager": "Jack C.",
-        "optimal": 17225.3,
+        "actual": 14927.9,
+        "efficiency": 0.8712,
+        "leftOnBench": 2206.9,
+        "manager": "Tyler S.",
+        "optimal": 17134.8,
         "weeks": 118
       },
       {
-        "actual": 14961.8,
-        "efficiency": 0.8583,
-        "leftOnBench": 2470.0,
+        "actual": 16067.2,
+        "efficiency": 0.8704,
+        "leftOnBench": 2393.3,
+        "manager": "Griffin B.",
+        "optimal": 18460.4,
+        "weeks": 122
+      },
+      {
+        "actual": 15284.0,
+        "efficiency": 0.8697,
+        "leftOnBench": 2290.6,
+        "manager": "Spencer C.",
+        "optimal": 17574.6,
+        "weeks": 117
+      },
+      {
+        "actual": 14402.3,
+        "efficiency": 0.8662,
+        "leftOnBench": 2225.6,
+        "manager": "Nathan M.",
+        "optimal": 16627.9,
+        "weeks": 118
+      },
+      {
+        "actual": 14990.8,
+        "efficiency": 0.8632,
+        "leftOnBench": 2375.3,
+        "manager": "Jack C.",
+        "optimal": 17366.1,
+        "weeks": 119
+      },
+      {
+        "actual": 15083.3,
+        "efficiency": 0.8577,
+        "leftOnBench": 2502.3,
         "manager": "Teddy C.",
-        "optimal": 17431.8,
-        "weeks": 121
+        "optimal": 17585.6,
+        "weeks": 122
       },
       {
         "actual": 1896.5,
@@ -2825,62 +2825,62 @@
         "year": 2025
       },
       {
-        "efficiency": 0.8928,
-        "leftOnBench": 40.7,
+        "efficiency": 0.8388,
+        "leftOnBench": 88.6,
         "manager": "Griffin B.",
         "year": 2026
       },
       {
-        "efficiency": 0.8588,
-        "leftOnBench": 42.3,
+        "efficiency": 0.8639,
+        "leftOnBench": 59.9,
         "manager": "Jack C.",
         "year": 2026
       },
       {
-        "efficiency": 0.8332,
-        "leftOnBench": 50.9,
+        "efficiency": 0.8617,
+        "leftOnBench": 61.5,
         "manager": "Liam H.",
         "year": 2026
       },
       {
-        "efficiency": 0.8395,
-        "leftOnBench": 53.5,
+        "efficiency": 0.8023,
+        "leftOnBench": 108.0,
         "manager": "Max O.",
         "year": 2026
       },
       {
-        "efficiency": 0.8242,
-        "leftOnBench": 68.6,
+        "efficiency": 0.8469,
+        "leftOnBench": 85.8,
         "manager": "Nathan M.",
         "year": 2026
       },
       {
-        "efficiency": 0.8779,
+        "efficiency": 0.9128,
         "leftOnBench": 32.0,
         "manager": "Olivia M.",
         "year": 2026
       },
       {
-        "efficiency": 0.8489,
-        "leftOnBench": 48.0,
+        "efficiency": 0.8439,
+        "leftOnBench": 76.1,
         "manager": "Spencer C.",
         "year": 2026
       },
       {
-        "efficiency": 0.9543,
-        "leftOnBench": 11.6,
+        "efficiency": 0.8923,
+        "leftOnBench": 44.0,
         "manager": "Teddy C.",
         "year": 2026
       },
       {
-        "efficiency": 0.7964,
-        "leftOnBench": 67.3,
+        "efficiency": 0.8186,
+        "leftOnBench": 92.1,
         "manager": "Tommy G.",
         "year": 2026
       },
       {
-        "efficiency": 0.8839,
-        "leftOnBench": 37.4,
+        "efficiency": 0.8475,
+        "leftOnBench": 73.0,
         "manager": "Tyler S.",
         "year": 2026
       }
@@ -2971,18 +2971,18 @@
   "luck": {
     "career": [
       {
-        "actualWins": 67,
-        "expectedWins": 61.33,
-        "games": 111,
-        "luck": 5.67,
-        "manager": "Tommy G."
-      },
-      {
-        "actualWins": 70,
-        "expectedWins": 64.56,
-        "games": 111,
+        "actualWins": 71,
+        "expectedWins": 65.56,
+        "games": 112,
         "luck": 5.44,
         "manager": "Max O."
+      },
+      {
+        "actualWins": 67,
+        "expectedWins": 62.11,
+        "games": 112,
+        "luck": 4.89,
+        "manager": "Tommy G."
       },
       {
         "actualWins": 10,
@@ -2992,59 +2992,59 @@
         "manager": "Josh D."
       },
       {
-        "actualWins": 47,
-        "expectedWins": 45.0,
-        "games": 111,
-        "luck": 2.0,
-        "manager": "Teddy C."
-      },
-      {
-        "actualWins": 60,
-        "expectedWins": 58.0,
-        "games": 111,
-        "luck": 2.0,
+        "actualWins": 61,
+        "expectedWins": 58.33,
+        "games": 112,
+        "luck": 2.67,
         "manager": "Griffin B."
       },
       {
-        "actualWins": 55,
-        "expectedWins": 54.78,
-        "games": 111,
-        "luck": 0.22,
+        "actualWins": 47,
+        "expectedWins": 45.22,
+        "games": 112,
+        "luck": 1.78,
+        "manager": "Teddy C."
+      },
+      {
+        "actualWins": 56,
+        "expectedWins": 55.44,
+        "games": 112,
+        "luck": 0.56,
         "manager": "Spencer C."
       },
       {
         "actualWins": 51,
-        "expectedWins": 52.11,
-        "games": 111,
-        "luck": -1.11,
+        "expectedWins": 52.22,
+        "games": 112,
+        "luck": -1.22,
         "manager": "Tyler S."
       },
       {
         "actualWins": 56,
         "expectedWins": 57.44,
-        "games": 98,
+        "games": 99,
         "luck": -1.44,
         "manager": "Olivia M."
       },
       {
-        "actualWins": 52,
-        "expectedWins": 56.0,
-        "games": 111,
+        "actualWins": 43,
+        "expectedWins": 47.0,
+        "games": 112,
         "luck": -4.0,
-        "manager": "Liam H."
-      },
-      {
-        "actualWins": 42,
-        "expectedWins": 46.11,
-        "games": 111,
-        "luck": -4.11,
         "manager": "Nathan M."
       },
       {
-        "actualWins": 45,
-        "expectedWins": 52.33,
-        "games": 111,
-        "luck": -7.33,
+        "actualWins": 52,
+        "expectedWins": 56.56,
+        "games": 112,
+        "luck": -4.56,
+        "manager": "Liam H."
+      },
+      {
+        "actualWins": 46,
+        "expectedWins": 52.78,
+        "games": 112,
+        "luck": -6.78,
         "manager": "Jack C."
       }
     ],
@@ -3610,37 +3610,37 @@
         "year": 2025
       },
       {
-        "actualWins": 1,
-        "expectedWins": 1.89,
-        "luck": -0.89,
+        "actualWins": 2,
+        "expectedWins": 2.22,
+        "luck": -0.22,
         "manager": "Griffin B.",
         "year": 2026
       },
       {
-        "actualWins": 1,
-        "expectedWins": 0.78,
-        "luck": 0.22,
+        "actualWins": 2,
+        "expectedWins": 1.22,
+        "luck": 0.78,
         "manager": "Jack C.",
         "year": 2026
       },
       {
         "actualWins": 1,
-        "expectedWins": 0.89,
-        "luck": 0.11,
+        "expectedWins": 1.44,
+        "luck": -0.44,
         "manager": "Liam H.",
         "year": 2026
       },
       {
-        "actualWins": 1,
-        "expectedWins": 1.11,
+        "actualWins": 2,
+        "expectedWins": 2.11,
         "luck": -0.11,
         "manager": "Max O.",
         "year": 2026
       },
       {
-        "actualWins": 1,
-        "expectedWins": 1.67,
-        "luck": -0.67,
+        "actualWins": 2,
+        "expectedWins": 2.56,
+        "luck": -0.56,
         "manager": "Nathan M.",
         "year": 2026
       },
@@ -3652,30 +3652,30 @@
         "year": 2026
       },
       {
-        "actualWins": 2,
-        "expectedWins": 1.11,
-        "luck": 0.89,
+        "actualWins": 3,
+        "expectedWins": 1.78,
+        "luck": 1.22,
         "manager": "Spencer C.",
         "year": 2026
       },
       {
         "actualWins": 1,
-        "expectedWins": 0.44,
-        "luck": 0.56,
+        "expectedWins": 0.67,
+        "luck": 0.33,
         "manager": "Teddy C.",
         "year": 2026
       },
       {
         "actualWins": 0,
-        "expectedWins": 0.78,
-        "luck": -0.78,
+        "expectedWins": 1.56,
+        "luck": -1.56,
         "manager": "Tommy G.",
         "year": 2026
       },
       {
         "actualWins": 1,
-        "expectedWins": 1.11,
-        "luck": -0.11,
+        "expectedWins": 1.22,
+        "luck": -0.22,
         "manager": "Tyler S.",
         "year": 2026
       }
@@ -3687,12 +3687,12 @@
       "championships": 3,
       "firstSeason": 2018,
       "lastSeason": 2026,
-      "losses": 60,
+      "losses": 61,
       "manager": "Liam H.",
-      "pointsAgainst": 16117.3,
-      "pointsFor": 16133.4,
+      "pointsAgainst": 16259.1,
+      "pointsFor": 16262.5,
       "seasons": 9,
-      "winPct": 0.512,
+      "winPct": 0.508,
       "wins": 63
     },
     {
@@ -3702,23 +3702,23 @@
       "lastSeason": 2026,
       "losses": 51,
       "manager": "Max O.",
-      "pointsAgainst": 16753.5,
-      "pointsFor": 17560.9,
+      "pointsAgainst": 16874.1,
+      "pointsFor": 17719.4,
       "seasons": 9,
-      "winPct": 0.608,
-      "wins": 79
+      "winPct": 0.611,
+      "wins": 80
     },
     {
       "active": true,
       "championships": 1,
       "firstSeason": 2019,
       "lastSeason": 2026,
-      "losses": 46,
+      "losses": 47,
       "manager": "Olivia M.",
-      "pointsAgainst": 13459.6,
-      "pointsFor": 14465.8,
+      "pointsAgainst": 13581.6,
+      "pointsFor": 14570.7,
       "seasons": 8,
-      "winPct": 0.566,
+      "winPct": 0.561,
       "wins": 60
     },
     {
@@ -3728,23 +3728,23 @@
       "lastSeason": 2026,
       "losses": 59,
       "manager": "Spencer C.",
-      "pointsAgainst": 15020.3,
-      "pointsFor": 15142.3,
+      "pointsAgainst": 15149.4,
+      "pointsFor": 15284.0,
       "seasons": 9,
-      "winPct": 0.491,
-      "wins": 57
+      "winPct": 0.496,
+      "wins": 58
     },
     {
       "active": true,
       "championships": 1,
       "firstSeason": 2018,
       "lastSeason": 2026,
-      "losses": 67,
+      "losses": 68,
       "manager": "Teddy C.",
-      "pointsAgainst": 15352.5,
-      "pointsFor": 14961.8,
+      "pointsAgainst": 15475.7,
+      "pointsFor": 15083.3,
       "seasons": 9,
-      "winPct": 0.446,
+      "winPct": 0.443,
       "wins": 54
     },
     {
@@ -3754,11 +3754,11 @@
       "lastSeason": 2026,
       "losses": 71,
       "manager": "Nathan M.",
-      "pointsAgainst": 15766.3,
-      "pointsFor": 14249.2,
+      "pointsAgainst": 15918.4,
+      "pointsFor": 14402.3,
       "seasons": 9,
-      "winPct": 0.393,
-      "wins": 46
+      "winPct": 0.398,
+      "wins": 47
     },
     {
       "active": false,
@@ -3778,12 +3778,12 @@
       "championships": 0,
       "firstSeason": 2018,
       "lastSeason": 2026,
-      "losses": 54,
+      "losses": 55,
       "manager": "Tommy G.",
-      "pointsAgainst": 15650.8,
-      "pointsFor": 16079.5,
+      "pointsAgainst": 15803.9,
+      "pointsFor": 16231.6,
       "seasons": 9,
-      "winPct": 0.557,
+      "winPct": 0.553,
       "wins": 68
     },
     {
@@ -3793,23 +3793,23 @@
       "lastSeason": 2026,
       "losses": 57,
       "manager": "Griffin B.",
-      "pointsAgainst": 15549.5,
-      "pointsFor": 15945.2,
+      "pointsAgainst": 15654.3,
+      "pointsFor": 16067.2,
       "seasons": 9,
-      "winPct": 0.529,
-      "wins": 64
+      "winPct": 0.533,
+      "wins": 65
     },
     {
       "active": true,
       "championships": 0,
       "firstSeason": 2018,
       "lastSeason": 2026,
-      "losses": 65,
+      "losses": 66,
       "manager": "Tyler S.",
-      "pointsAgainst": 15234.7,
-      "pointsFor": 14807.4,
+      "pointsAgainst": 15393.3,
+      "pointsFor": 14927.9,
       "seasons": 9,
-      "winPct": 0.444,
+      "winPct": 0.441,
       "wins": 52
     },
     {
@@ -3819,20 +3819,20 @@
       "lastSeason": 2026,
       "losses": 69,
       "manager": "Jack C.",
-      "pointsAgainst": 15534.3,
-      "pointsFor": 14867.7,
+      "pointsAgainst": 15655.8,
+      "pointsFor": 14990.8,
       "seasons": 9,
-      "winPct": 0.415,
-      "wins": 49
+      "winPct": 0.42,
+      "wins": 50
     }
   ],
   "records": {
     "bestSeason": {
-      "games": 2,
+      "games": 3,
       "manager": "Spencer C.",
-      "points": 269.6,
+      "points": 411.4,
       "winPct": 1.0,
-      "wins": 2,
+      "wins": 3,
       "year": 2026
     },
     "playoff": {
@@ -3932,9 +3932,9 @@
       }
     },
     "worstSeason": {
-      "games": 2,
+      "games": 3,
       "manager": "Tommy G.",
-      "points": 263.4,
+      "points": 415.4,
       "winPct": 0.0,
       "wins": 0,
       "year": 2026
