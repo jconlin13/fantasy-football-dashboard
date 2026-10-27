@@ -216,7 +216,13 @@ def season_available(league_id, year, cookies):
     fails the run either way.
     """
     try:
-        fetch_view(league_id, year, "mSettings", cookies=cookies, retries=1)
+        # Full retries on purpose, despite this being a throwaway probe. A
+        # season that genuinely does not exist answers 404 or with an HTML
+        # error page, and fetch_view gives up on both without retrying, so the
+        # retries only ever spend requests on network errors and rate limits --
+        # exactly the case where a single attempt would mistake a blip for a
+        # missing season and quietly archive the wrong year for a week.
+        fetch_view(league_id, year, "mSettings", cookies=cookies)
         return True
     except EspnError as exc:
         if "HTTP 401" in str(exc) or "HTTP 403" in str(exc):
