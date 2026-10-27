@@ -92,7 +92,11 @@ def main():
     for year in sorted(history.seasons):
         season = history.seasons[year]
         if not season.complete:
-            print("=== %d === not played yet, skipping\n" % year)
+            # Still being played. There is nothing to check it against: the
+            # ESPN record this compares to is rankCalculatedFinal, which ESPN
+            # leaves at 0 until the bracket resolves. The site still shows this
+            # season's standings and week records -- see season_summaries.
+            print("=== %d === in progress, nothing final to check\n" % year)
             continue
 
         regular_only = records_for(history, year, (REGULAR,))

@@ -1,4 +1,5 @@
 {
+  "currentSeason": 2026,
   "draft": {
     "bestPicks": [
       {
@@ -1167,7 +1168,7 @@
     ]
   },
   "firstSeason": 2018,
-  "generated": "2026-10-20",
+  "generated": "2026-10-27",
   "headToHead": [
     {
       "avgMargin": 8.06,
@@ -3943,6 +3944,7 @@
   "seasons": [
     {
       "champion": "Max O.",
+      "complete": true,
       "runnerUp": "Josh D.",
       "standings": [
         {
@@ -4016,10 +4018,12 @@
           "wins": 3
         }
       ],
+      "throughWeek": null,
       "year": 2018
     },
     {
       "champion": "Liam H.",
+      "complete": true,
       "runnerUp": "Max O.",
       "standings": [
         {
@@ -4093,10 +4097,12 @@
           "wins": 1
         }
       ],
+      "throughWeek": null,
       "year": 2019
     },
     {
       "champion": "Liam H.",
+      "complete": true,
       "runnerUp": "Teddy C.",
       "standings": [
         {
@@ -4170,10 +4176,12 @@
           "wins": 6
         }
       ],
+      "throughWeek": null,
       "year": 2020
     },
     {
       "champion": "Olivia M.",
+      "complete": true,
       "runnerUp": "Griffin B.",
       "standings": [
         {
@@ -4247,10 +4255,12 @@
           "wins": 3
         }
       ],
+      "throughWeek": null,
       "year": 2021
     },
     {
       "champion": "Nathan M.",
+      "complete": true,
       "runnerUp": "Max O.",
       "standings": [
         {
@@ -4324,10 +4334,12 @@
           "wins": 3
         }
       ],
+      "throughWeek": null,
       "year": 2022
     },
     {
       "champion": "Liam H.",
+      "complete": true,
       "runnerUp": "Jack C.",
       "standings": [
         {
@@ -4401,10 +4413,12 @@
           "wins": 6
         }
       ],
+      "throughWeek": null,
       "year": 2023
     },
     {
       "champion": "Teddy C.",
+      "complete": true,
       "runnerUp": "Max O.",
       "standings": [
         {
@@ -4478,10 +4492,12 @@
           "wins": 6
         }
       ],
+      "throughWeek": null,
       "year": 2024
     },
     {
       "champion": "Spencer C.",
+      "complete": true,
       "runnerUp": "Liam H.",
       "standings": [
         {
@@ -4555,7 +4571,87 @@
           "wins": 6
         }
       ],
+      "throughWeek": null,
       "year": 2025
+    },
+    {
+      "champion": null,
+      "complete": false,
+      "runnerUp": null,
+      "standings": [
+        {
+          "losses": 1,
+          "manager": "Spencer C.",
+          "points": 751.5,
+          "rank": 1,
+          "wins": 5
+        },
+        {
+          "losses": 2,
+          "manager": "Griffin B.",
+          "points": 918.4,
+          "rank": 2,
+          "wins": 4
+        },
+        {
+          "losses": 2,
+          "manager": "Max O.",
+          "points": 893.1,
+          "rank": 3,
+          "wins": 4
+        },
+        {
+          "losses": 3,
+          "manager": "Teddy C.",
+          "points": 886.8,
+          "rank": 4,
+          "wins": 3
+        },
+        {
+          "losses": 3,
+          "manager": "Nathan M.",
+          "points": 809.2,
+          "rank": 5,
+          "wins": 3
+        },
+        {
+          "losses": 3,
+          "manager": "Jack C.",
+          "points": 774.0,
+          "rank": 6,
+          "wins": 3
+        },
+        {
+          "losses": 3,
+          "manager": "Olivia M.",
+          "points": 760.3,
+          "rank": 7,
+          "wins": 3
+        },
+        {
+          "losses": 4,
+          "manager": "Liam H.",
+          "points": 766.9,
+          "rank": 8,
+          "wins": 2
+        },
+        {
+          "losses": 4,
+          "manager": "Tyler S.",
+          "points": 752.8,
+          "rank": 9,
+          "wins": 2
+        },
+        {
+          "losses": 5,
+          "manager": "Tommy G.",
+          "points": 831.1,
+          "rank": 10,
+          "wins": 1
+        }
+      ],
+      "throughWeek": 6,
+      "year": 2026
     }
   ],
   "trades": {

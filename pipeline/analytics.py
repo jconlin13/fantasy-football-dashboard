@@ -80,8 +80,16 @@ def records_book(history):
 
     # Season records, regular season only -- playoff games would let a team with
     # a bye look like it played fewer games than it did.
+    #
+    # Completed seasons only, unlike the week records above. These rank on win
+    # percentage, so a 5-1 start in a season still being played would outrank a
+    # finished 12-2 and claim "best season ever" in October on six games of
+    # evidence. A week record is a week record the moment it happens; a season
+    # record needs the season.
     seasons = collections.defaultdict(lambda: [0, 0, 0.0])
     for game in _counting(history, (REGULAR,)):
+        if not history.seasons[game["year"]].complete:
+            continue
         row = seasons[(game["year"], game["manager"])]
         row[0] += 1 if game["won"] else 0
         row[1] += 1
@@ -205,14 +213,24 @@ def head_to_head(history):
 
 
 def season_summaries(history):
-    """Champion and final standings for each completed season."""
+    """Standings for every season, finished or still being played.
+
+    A finished season is ranked by ESPN's own rankCalculatedFinal. A season in
+    progress has no such ranking -- ESPN leaves rankCalculatedFinal at 0 for
+    every team until the bracket resolves, and `0 or 99` would collapse the
+    whole table onto one sort key -- so the live playoffSeed is used instead.
+    Checked against 2026 through week 6: ESPN's live seeding and a plain sort
+    by wins, then points, agree team for team.
+
+    A season still being played carries `complete: false` and `throughWeek`,
+    and reports no champion or runner-up, because it does not have one yet.
+    """
     summaries = []
     for year in sorted(history.seasons):
         season = history.seasons[year]
-        if not season.complete:
-            continue
 
         table = collections.defaultdict(lambda: [0, 0, 0.0])
+        through = 0
         for game in _counting(history, (REGULAR,)):
             if game["year"] != year:
                 continue
@@ -220,6 +238,10 @@ def season_summaries(history):
             row[0] += 1 if game["won"] else 0
             row[1] += 0 if game["won"] else 1
             row[2] += game["points_for"]
+            # Only counting games reach here, so the highest week among them is
+            # the last one actually scored -- the in-progress week ESPN is still
+            # settling carries counts=False and never gets this far.
+            through = max(through, game["week"])
 
         standings = []
         for team_id, manager in season.manager_of.items():
@@ -227,7 +249,9 @@ def season_summaries(history):
             standings.append(
                 {
                     "manager": _name(history, manager),
-                    "rank": season.espn_rank.get(team_id),
+                    "rank": season.espn_rank.get(team_id)
+                    if season.complete
+                    else season.seed.get(team_id),
                     "wins": wins,
                     "losses": losses,
                     "points": round(points, 1),
@@ -238,8 +262,12 @@ def season_summaries(history):
         summaries.append(
             {
                 "year": year,
+                "complete": season.complete,
+                "throughWeek": None if season.complete else through,
                 "champion": _name(history, season.champion) if season.champion else None,
-                "runnerUp": standings[1]["manager"] if len(standings) > 1 else None,
+                "runnerUp": standings[1]["manager"]
+                if season.complete and len(standings) > 1
+                else None,
                 "standings": standings,
             }
         )

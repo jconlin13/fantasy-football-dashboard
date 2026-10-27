@@ -223,8 +223,17 @@ def build_analysis():
         "generated": datetime.date.today().isoformat(),
         "leagueName": espn_league_name(load_league()["current_season"]),
         "firstSeason": min(history.seasons) if history.seasons else None,
+        # Two different questions. lastSeason is the last season that finished,
+        # which is what "last season's rosters" and any career-retrospective
+        # wording mean. currentSeason is the one being played right now, or null
+        # in the offseason -- the page needs to know which season is still live
+        # before it offers standings for it or leaves a trophy row blank.
         "lastSeason": max(
             (year for year, season in history.seasons.items() if season.complete),
+            default=None,
+        ),
+        "currentSeason": max(
+            (year for year, season in history.seasons.items() if not season.complete),
             default=None,
         ),
         "seasons": analytics.season_summaries(history),

@@ -73,6 +73,42 @@
 
   /* ---------- sections ---------- */
 
+  /* The season still being played, or null in the offseason. The build marks
+     it rather than the page guessing from the calendar: "is the season over"
+     is a question about the bracket, not about the date. */
+  function liveSeason() {
+    if (!data.currentSeason) { return null; }
+    var found = null;
+    data.seasons.forEach(function (season) {
+      if (season.year === data.currentSeason) { found = season; }
+    });
+    return found;
+  }
+
+  function thisSeason() {
+    var season = liveSeason();
+    var frag = document.createDocumentFragment();
+    frag.appendChild(explain(
+      "Standings through week " + season.throughWeek + ", in ESPN's own playoff " +
+      "seeding order. Nothing here is final: the week records on the Records tab " +
+      "already count this season, but season and career records wait for it to " +
+      "finish before ranking it against the ones that did."
+    ));
+    frag.appendChild(table(
+      ["Seed", "Manager", "W", "L", "Points"],
+      season.standings.map(function (row, index) {
+        return [
+          index + 1,
+          row.manager,
+          row.wins,
+          row.losses,
+          Math.round(row.points).toLocaleString()
+        ];
+      })
+    ));
+    return frag;
+  }
+
   function champions() {
     var frag = document.createDocumentFragment();
     frag.appendChild(explain(
@@ -93,6 +129,10 @@
     });
 
     data.seasons.slice().reverse().forEach(function (season) {
+      // The season in progress has no champion yet, and a row reading "2026 —"
+      // under a trophy reads as though nobody won rather than as not yet.
+      // It has its own tab.
+      if (season.complete === false) { return; }
       var row = el("div", "champ");
       row.appendChild(el("div", "year", season.year));
       row.appendChild(el("div", "name", season.champion || "—"));
@@ -308,6 +348,8 @@
 
   /* ---------- tabs ---------- */
 
+  // "This Season" is prepended in render() only when a season is actually
+  // being played, so the tab does not sit there empty all offseason.
   var SECTIONS = [
     ["Champions", champions],
     ["Managers", managers],
@@ -332,8 +374,11 @@
 
   function render() {
     var leagueName = data.leagueName || "Fantasy League";
-    $("span-years").textContent =
-      leagueName + " · " + data.firstSeason + "–" + data.lastSeason;
+    if (liveSeason()) { SECTIONS.unshift(["This Season", thisSeason]); }
+    // The span ends at the season being played, not the last one that finished,
+    // so the header stops reading "2018-2025" in the middle of 2026.
+    $("span-years").textContent = leagueName + " · " + data.firstSeason +
+      "–" + (data.currentSeason || data.lastSeason);
     document.title = "All-Time Analysis · " + leagueName;
     var footerLeague = $("footer-league");
     if (footerLeague) { footerLeague.textContent = leagueName; }

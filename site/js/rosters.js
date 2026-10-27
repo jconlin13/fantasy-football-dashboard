@@ -136,7 +136,11 @@
   function renderPickers() {
     panel.textContent = "";
     panel.appendChild(el("p", "explain",
-      "End-of-season rosters. “Season points” includes a free agent’s " +
+      // Worded to cover both cases rather than switched per year: the season
+      // being played is in this picker too, and its rosters are current, not
+      // final.
+      "Rosters as they finished each season, or as they stand now for a season " +
+      "still being played. “Season points” includes a free agent’s " +
       "points from before they were added to this team."
     ));
 
