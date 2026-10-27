@@ -89,12 +89,10 @@
     var season = liveSeason();
     var frag = document.createDocumentFragment();
     frag.appendChild(explain(
-      "Standings through week " + season.throughWeek + ", in ESPN's own playoff " +
-      "seeding order. Expected wins is this season's schedule luck, worked out " +
-      "exactly as the Luck tab does it for a career: each week your score is " +
-      "compared with every other team that played, so beating 7 of 9 earns 0.78 " +
-      "of a win. A positive Luck number is a record better than the scoring " +
-      "behind it, a negative one is a team that has been beaten by the schedule."
+      "Standings through week " + season.throughWeek + ". Luck compares each " +
+      "week's score against every other team that played: beat 7 of 9 and you " +
+      "earned 0.78 of a win. +1.8 is about two more wins than the scoring " +
+      "earned, -2.0 about two fewer."
     ));
 
     // Same luck numbers the Luck tab shows, sliced to this season. The build
