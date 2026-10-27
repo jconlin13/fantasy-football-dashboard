@@ -90,19 +90,33 @@
     var frag = document.createDocumentFragment();
     frag.appendChild(explain(
       "Standings through week " + season.throughWeek + ", in ESPN's own playoff " +
-      "seeding order. Nothing here is final: the week records on the Records tab " +
-      "already count this season, but season and career records wait for it to " +
-      "finish before ranking it against the ones that did."
+      "seeding order. Expected wins is this season's schedule luck, worked out " +
+      "exactly as the Luck tab does it for a career: each week your score is " +
+      "compared with every other team that played, so beating 7 of 9 earns 0.78 " +
+      "of a win. A positive Luck number is a record better than the scoring " +
+      "behind it, a negative one is a team that has been beaten by the schedule."
     ));
+
+    // Same luck numbers the Luck tab shows, sliced to this season. The build
+    // already computes them per season for every year; nothing on the page was
+    // reading that until now.
+    var lucky = {};
+    (data.luck.seasons || []).forEach(function (row) {
+      if (row.year === season.year) { lucky[row.manager] = row; }
+    });
+
     frag.appendChild(table(
-      ["Seed", "Manager", "W", "L", "Points"],
+      ["Seed", "Manager", "W", "L", "Points", "Expected", "Luck"],
       season.standings.map(function (row, index) {
+        var mine = lucky[row.manager];
         return [
           index + 1,
           row.manager,
           row.wins,
           row.losses,
-          Math.round(row.points).toLocaleString()
+          Math.round(row.points).toLocaleString(),
+          mine ? mine.expectedWins.toFixed(1) : "—",
+          mine ? signed(mine.luck, 1) : "—"
         ];
       })
     ));

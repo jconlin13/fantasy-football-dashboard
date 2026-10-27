@@ -101,6 +101,22 @@ def espn_draft_datetime(year):
     return moment.isoformat()
 
 
+def newest_archived_season():
+    """The latest season with anything archived, or None if nothing is.
+
+    What the pages should render, which is not the same question as what the
+    calendar says the season is. From September 1st the calendar has already
+    rolled over, but the new season may not be in ESPN -- let alone fetched --
+    for days after that. Reading the archive means the site shows the newest
+    season it actually has data for, instead of a correct-but-empty year with
+    the league name blanked and the draft card reading "Not set".
+    """
+    if not os.path.isdir(RAW):
+        return None
+    years = [int(name) for name in os.listdir(RAW) if name.isdigit()]
+    return max(years) if years else None
+
+
 def espn_league_name(year):
     """The league's name exactly as its commissioner set it in ESPN.
 
@@ -158,7 +174,9 @@ def build_draft():
     # set in ESPN. Neither one present means the draft genuinely is not
     # scheduled, and the page says so rather than counting down to a guess.
     league = load_league()
-    year = league["current_season"]
+    # The newest archived season, falling back to the calendar on a machine
+    # with no archive at all (--splash-only). See newest_archived_season.
+    year = newest_archived_season() or league["current_season"]
     from_espn = espn_draft_datetime(year)
     override = get(draft, "datetime")
     when = override or from_espn or ""
@@ -221,7 +239,7 @@ def build_analysis():
 
     return {
         "generated": datetime.date.today().isoformat(),
-        "leagueName": espn_league_name(load_league()["current_season"]),
+        "leagueName": espn_league_name(newest_archived_season()),
         "firstSeason": min(history.seasons) if history.seasons else None,
         # Two different questions. lastSeason is the last season that finished,
         # which is what "last season's rosters" and any career-retrospective
@@ -266,7 +284,7 @@ def build_rosters():
 
     return {
         "generated": datetime.date.today().isoformat(),
-        "leagueName": espn_league_name(load_league()["current_season"]),
+        "leagueName": espn_league_name(newest_archived_season()),
         "seasons": sorted(by_year, reverse=True),
         "rosters": {str(year): managers for year, managers in by_year.items()},
     }

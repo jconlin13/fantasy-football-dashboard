@@ -17,6 +17,7 @@ rest of the pipeline can stop guessing.
 """
 
 import configparser
+import datetime
 import gzip
 import json
 import os
@@ -79,17 +80,56 @@ class EspnError(Exception):
     pass
 
 
+def season_for_date(today=None):
+    """Which NFL season a calendar date belongs to.
+
+    The season kicks off in September and its playoffs run into January, so
+    September through December belong to that calendar year's season, and
+    January through August still belong to the season before. September 1st is
+    the changeover: on 2027-09-01 this answers 2027, on 2027-08-31 it answers
+    2026, and in January 2028 it still answers 2027 because that is the season
+    being finished.
+
+    Nothing here asks ESPN whether the new season exists yet. That is a
+    separate question with a separate answer -- see season_available() in
+    fetch_raw, which is what keeps the changeover from reaching for a season
+    the league has not been renewed into.
+    """
+    today = today or datetime.date.today()
+    return today.year if today.month >= 9 else today.year - 1
+
+
+def _optional_int(section, key):
+    """An int from the ini, or None if the key is absent or left blank."""
+    raw = (section.get(key) or "").strip()
+    return int(raw) if raw else None
+
+
 def load_league():
-    """Read config/league.ini -> {id, name, first_season, current_season}."""
+    """Read config/league.ini.
+
+    -> {id, name, first_season, current_season, current_season_pinned}
+
+    `current_season` is left blank in the ini on purpose and worked out from
+    the date instead, so nobody has to remember to bump it every September.
+    Filling it in pins the season and overrides that, which is the same
+    blank-means-derive relationship draft.ini already uses for `datetime` and
+    `label`. `current_season_pinned` says which of the two happened, because
+    the two deserve different behavior when ESPN has no such season yet: a
+    derived guess steps back a year quietly, a number somebody typed on purpose
+    is taken at their word and allowed to fail loudly.
+    """
     parser = configparser.ConfigParser()
     if not parser.read(LEAGUE_INI):
         raise EspnError("missing %s" % LEAGUE_INI)
     section = parser["league"]
+    pinned = _optional_int(section, "current_season")
     return {
         "id": section.get("id"),
         "name": section.get("name", ""),
         "first_season": section.getint("first_season"),
-        "current_season": section.getint("current_season"),
+        "current_season": pinned if pinned else season_for_date(),
+        "current_season_pinned": pinned is not None,
     }
 
 

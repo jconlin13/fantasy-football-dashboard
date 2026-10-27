@@ -201,6 +201,53 @@ def archive_size():
     return total
 
 
+def season_available(league_id, year, cookies):
+    """Does ESPN serve this league for this season yet?
+
+    Asked once a year, at the September changeover. ESPN does not create the
+    new season for a league until the commissioner renews it, and until then
+    every URL for that year answers with an HTTP error or an HTML error page.
+    That is an expected, temporary state in early September, not a broken run.
+
+    Deliberately not treating a 401/403 as "no such season": that is expired
+    cookies, and silently stepping back a year on an auth failure would hide
+    exactly the problem the refresh is supposed to shout about. The fallback
+    season still gets fetched for real afterwards, so a genuine auth failure
+    fails the run either way.
+    """
+    try:
+        fetch_view(league_id, year, "mSettings", cookies=cookies, retries=1)
+        return True
+    except EspnError as exc:
+        if "HTTP 401" in str(exc) or "HTTP 403" in str(exc):
+            return True  # auth problem, not a missing season -- let it fail below
+        return False
+
+
+def resolve_current_season(league, cookies):
+    """The season to treat as current, checked against what ESPN actually has.
+
+    From September 1st the calendar says the new season has started, but the
+    league itself may not exist in ESPN for a few more days or weeks. Reaching
+    for it anyway would fail the weekly refresh and stop last season's results
+    being updated. So a derived season that ESPN cannot serve steps back one
+    year, loudly in the log but without failing.
+
+    A season pinned by hand in league.ini is taken at its word and never
+    stepped back, because somebody typed that number for a reason.
+    """
+    current = league["current_season"]
+    if league["current_season_pinned"]:
+        return current
+    if season_available(league["id"], current, cookies):
+        return current
+    print(
+        "note: ESPN has no %d season for this league yet (not renewed?), "
+        "staying on %d\n" % (current, current - 1)
+    )
+    return current - 1
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -222,13 +269,18 @@ def main():
     if not cookies:
         print("warning: no SWID/espn_s2 -- private leagues will 401\n")
 
-    current = league["current_season"]
+    # An explicit --season says exactly what to fetch, so there is nothing to
+    # resolve and no reason to spend a request asking ESPN about a year the
+    # caller did not mention.
     if args.season:
+        current = league["current_season"]
         years = sorted(args.season)
-    elif args.current_season_only:
-        years = [current]
     else:
-        years = list(range(league["first_season"], current + 1))
+        current = resolve_current_season(league, cookies)
+        if args.current_season_only:
+            years = [current]
+        else:
+            years = list(range(league["first_season"], current + 1))
 
     print("league %s (%s), seasons %s\n" % (league["id"], league["name"], years))
 
