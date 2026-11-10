@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03",
+  "generated": "2026-11-10",
   "leagueName": "MHD Fantasy League",
   "rosters": {
     "2018": {
@@ -12351,7 +12351,7 @@
         {
           "name": "Kirk Cousins",
           "playerId": 14880,
-          "points": 159.7,
+          "points": 172.3,
           "position": "QB",
           "round": null,
           "roundPick": null,
@@ -12360,7 +12360,7 @@
         {
           "name": "Jayden Daniels",
           "playerId": 4426348,
-          "points": 100.6,
+          "points": 115.2,
           "position": "QB",
           "round": 2,
           "roundPick": 8,
@@ -12369,7 +12369,7 @@
         {
           "name": "Caleb Williams",
           "playerId": 4431611,
-          "points": 97.6,
+          "points": 110.3,
           "position": "QB",
           "round": 4,
           "roundPick": 8,
@@ -12378,7 +12378,7 @@
         {
           "name": "Kenneth Walker III",
           "playerId": 4567048,
-          "points": 160.1,
+          "points": 196.4,
           "position": "RB",
           "round": 6,
           "roundPick": 8,
@@ -12387,7 +12387,7 @@
         {
           "name": "Bhayshul Tuten",
           "playerId": 4882093,
-          "points": 118.3,
+          "points": 127.2,
           "position": "RB",
           "round": 8,
           "roundPick": 8,
@@ -12396,11 +12396,20 @@
         {
           "name": "Quinshon Judkins",
           "playerId": 4685702,
-          "points": 86.6,
+          "points": 92.1,
           "position": "RB",
           "round": 7,
           "roundPick": 3,
           "status": "Drafted"
+        },
+        {
+          "name": "Jonah Coleman",
+          "playerId": 4702555,
+          "points": 62.9,
+          "position": "RB",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
         },
         {
           "name": "Jacory Croskey-Merritt",
@@ -12412,27 +12421,9 @@
           "status": "Drafted"
         },
         {
-          "name": "Jonah Coleman",
-          "playerId": 4702555,
-          "points": 44.1,
-          "position": "RB",
-          "round": null,
-          "roundPick": null,
-          "status": "Free Agent"
-        },
-        {
-          "name": "TreVeyon Henderson",
-          "playerId": 4432710,
-          "points": 33.8,
-          "position": "RB",
-          "round": 11,
-          "roundPick": 3,
-          "status": "Drafted"
-        },
-        {
           "name": "Ja'Marr Chase",
           "playerId": 4362628,
-          "points": 128.2,
+          "points": 159.7,
           "position": "WR",
           "round": 1,
           "roundPick": 3,
@@ -12441,7 +12432,7 @@
         {
           "name": "Parker Washington",
           "playerId": 4432620,
-          "points": 95.5,
+          "points": 109.6,
           "position": "WR",
           "round": 9,
           "roundPick": 3,
@@ -12450,7 +12441,7 @@
         {
           "name": "Devaughn Vele",
           "playerId": 4569559,
-          "points": 85.8,
+          "points": 89.5,
           "position": "WR",
           "round": null,
           "roundPick": null,
@@ -12466,6 +12457,15 @@
           "status": "Drafted"
         },
         {
+          "name": "Makai Lemon",
+          "playerId": 4870795,
+          "points": 73.7,
+          "position": "WR",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
+        },
+        {
           "name": "DeVonta Smith",
           "playerId": 4241478,
           "points": 69.0,
@@ -12475,18 +12475,9 @@
           "status": "Drafted"
         },
         {
-          "name": "Makai Lemon",
-          "playerId": 4870795,
-          "points": 61.6,
-          "position": "WR",
-          "round": null,
-          "roundPick": null,
-          "status": "Free Agent"
-        },
-        {
           "name": "Omar Cooper Jr.",
           "playerId": 4723820,
-          "points": 48.8,
+          "points": 62.6,
           "position": "WR",
           "round": null,
           "roundPick": null,
@@ -12495,7 +12486,7 @@
         {
           "name": "Brock Bowers",
           "playerId": 4432665,
-          "points": 123.7,
+          "points": 146.0,
           "position": "TE",
           "round": 3,
           "roundPick": 3,
@@ -12504,7 +12495,7 @@
         {
           "name": "Will Reichard",
           "playerId": 4567104,
-          "points": 80.0,
+          "points": 89.0,
           "position": "K",
           "round": null,
           "roundPick": null,
@@ -12518,13 +12509,22 @@
           "round": 14,
           "roundPick": 8,
           "status": "Drafted"
+        },
+        {
+          "name": "49ers D/ST",
+          "playerId": -16025,
+          "points": 80.0,
+          "position": "D/ST",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
         }
       ],
       "Jack C.": [
         {
           "name": "Jordan Love",
           "playerId": 4036378,
-          "points": 148.8,
+          "points": 185.0,
           "position": "QB",
           "round": 6,
           "roundPick": 9,
@@ -12549,40 +12549,40 @@
           "status": "Drafted"
         },
         {
+          "name": "J.J. McCarthy",
+          "playerId": 4433970,
+          "points": 34.0,
+          "position": "QB",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
+        },
+        {
           "name": "Blake Corum",
           "playerId": 4429096,
-          "points": 82.8,
+          "points": 94.6,
           "position": "RB",
           "round": null,
           "roundPick": null,
           "status": "Free Agent"
         },
         {
-          "name": "Omarion Hampton",
-          "playerId": 4685382,
-          "points": 62.2,
+          "name": "Alvin Kamara",
+          "playerId": 3054850,
+          "points": 73.7,
           "position": "RB",
-          "round": 3,
-          "roundPick": 2,
-          "status": "Drafted"
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
         },
         {
           "name": "Saquon Barkley",
           "playerId": 3929630,
-          "points": 50.5,
+          "points": 58.7,
           "position": "RB",
           "round": 2,
           "roundPick": 9,
           "status": "Drafted"
-        },
-        {
-          "name": "Dameon Pierce",
-          "playerId": 4360238,
-          "points": 30.0,
-          "position": "RB",
-          "round": null,
-          "roundPick": null,
-          "status": "Free Agent"
         },
         {
           "name": "Jonathon Brooks",
@@ -12596,7 +12596,7 @@
         {
           "name": "Christian Watson",
           "playerId": 4248528,
-          "points": 146.8,
+          "points": 176.9,
           "position": "WR",
           "round": 9,
           "roundPick": 2,
@@ -12605,25 +12605,16 @@
         {
           "name": "Jameson Williams",
           "playerId": 4426388,
-          "points": 100.7,
+          "points": 105.7,
           "position": "WR",
           "round": 7,
           "roundPick": 2,
           "status": "Drafted"
         },
         {
-          "name": "Germie Bernard",
-          "playerId": 4685261,
-          "points": 66.8,
-          "position": "WR",
-          "round": null,
-          "roundPick": null,
-          "status": "Free Agent"
-        },
-        {
           "name": "Khalil Shakir",
           "playerId": 4373678,
-          "points": 66.4,
+          "points": 76.2,
           "position": "WR",
           "round": null,
           "roundPick": null,
@@ -12632,7 +12623,7 @@
         {
           "name": "Jakobi Meyers",
           "playerId": 3916433,
-          "points": 65.1,
+          "points": 75.6,
           "position": "WR",
           "round": 11,
           "roundPick": 2,
@@ -12641,7 +12632,16 @@
         {
           "name": "Kalif Raymond",
           "playerId": 2973405,
-          "points": 63.5,
+          "points": 70.7,
+          "position": "WR",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
+        },
+        {
+          "name": "Germie Bernard",
+          "playerId": 4685261,
+          "points": 66.8,
           "position": "WR",
           "round": null,
           "roundPick": null,
@@ -12657,27 +12657,36 @@
           "status": "Drafted"
         },
         {
+          "name": "Mack Hollins",
+          "playerId": 2991662,
+          "points": 48.5,
+          "position": "WR",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
+        },
+        {
           "name": "Trey McBride",
           "playerId": 4361307,
-          "points": 150.4,
+          "points": 162.8,
           "position": "TE",
           "round": 4,
           "roundPick": 9,
           "status": "Added"
         },
         {
-          "name": "Tyler Loop",
-          "playerId": 4697745,
-          "points": 65.0,
+          "name": "Jake Bates",
+          "playerId": 4689936,
+          "points": 79.0,
           "position": "K",
-          "round": null,
-          "roundPick": null,
-          "status": "Free Agent"
+          "round": 14,
+          "roundPick": 9,
+          "status": "Drafted"
         },
         {
           "name": "Seahawks D/ST",
           "playerId": -16026,
-          "points": 72.0,
+          "points": 84.0,
           "position": "D/ST",
           "round": 10,
           "roundPick": 9,
@@ -12688,7 +12697,7 @@
         {
           "name": "Joe Burrow",
           "playerId": 3915511,
-          "points": 169.6,
+          "points": 199.1,
           "position": "QB",
           "round": 2,
           "roundPick": 2,
@@ -12706,7 +12715,7 @@
         {
           "name": "Malik Willis",
           "playerId": 4242512,
-          "points": 101.2,
+          "points": 105.0,
           "position": "QB",
           "round": 12,
           "roundPick": 2,
@@ -12733,25 +12742,16 @@
         {
           "name": "Chase Brown",
           "playerId": 4362238,
-          "points": 90.9,
+          "points": 101.4,
           "position": "RB",
           "round": 4,
           "roundPick": 2,
           "status": "Added"
         },
         {
-          "name": "MarShawn Lloyd",
-          "playerId": 4429023,
-          "points": 51.8,
-          "position": "RB",
-          "round": 14,
-          "roundPick": 2,
-          "status": "Drafted"
-        },
-        {
           "name": "Jadarian Price",
           "playerId": 4685512,
-          "points": 19.7,
+          "points": 31.5,
           "position": "RB",
           "round": 8,
           "roundPick": 2,
@@ -12760,7 +12760,7 @@
         {
           "name": "Amon-Ra St. Brown",
           "playerId": 4374302,
-          "points": 141.0,
+          "points": 157.6,
           "position": "WR",
           "round": 1,
           "roundPick": 9,
@@ -12776,6 +12776,15 @@
           "status": "Drafted"
         },
         {
+          "name": "Nico Collins",
+          "playerId": 4258173,
+          "points": 91.6,
+          "position": "WR",
+          "round": 3,
+          "roundPick": 9,
+          "status": "Drafted"
+        },
+        {
           "name": "Mike Evans",
           "playerId": 16737,
           "points": 89.0,
@@ -12787,25 +12796,16 @@
         {
           "name": "Jalen Coker",
           "playerId": 4695883,
-          "points": 79.4,
+          "points": 86.0,
           "position": "WR",
           "round": 15,
           "roundPick": 9,
           "status": "Drafted"
         },
         {
-          "name": "Nico Collins",
-          "playerId": 4258173,
-          "points": 76.1,
-          "position": "WR",
-          "round": 3,
-          "roundPick": 9,
-          "status": "Drafted"
-        },
-        {
-          "name": "Josh Downs",
-          "playerId": 4688813,
-          "points": 69.7,
+          "name": "Jordyn Tyson",
+          "playerId": 4880281,
+          "points": 5.0,
           "position": "WR",
           "round": null,
           "roundPick": null,
@@ -12814,7 +12814,7 @@
         {
           "name": "Tucker Kraft",
           "playerId": 4572680,
-          "points": 88.5,
+          "points": 90.4,
           "position": "TE",
           "round": 10,
           "roundPick": 2,
@@ -12823,16 +12823,16 @@
         {
           "name": "Kyle Pitts Sr.",
           "playerId": 4360248,
-          "points": 65.7,
+          "points": 71.0,
           "position": "TE",
           "round": 7,
           "roundPick": 9,
           "status": "Drafted"
         },
         {
-          "name": "Chris Boswell",
-          "playerId": 17372,
-          "points": 77.0,
+          "name": "Ka'imi Fairbairn",
+          "playerId": 2971573,
+          "points": 92.0,
           "position": "K",
           "round": null,
           "roundPick": null,
@@ -12841,7 +12841,7 @@
         {
           "name": "Bengals D/ST",
           "playerId": -16004,
-          "points": 66.0,
+          "points": 70.0,
           "position": "D/ST",
           "round": null,
           "roundPick": null,
@@ -12850,7 +12850,7 @@
         {
           "name": "Chiefs D/ST",
           "playerId": -16012,
-          "points": 45.0,
+          "points": 58.0,
           "position": "D/ST",
           "round": null,
           "roundPick": null,
@@ -12861,7 +12861,7 @@
         {
           "name": "Brock Purdy",
           "playerId": 4361741,
-          "points": 146.0,
+          "points": 171.3,
           "position": "QB",
           "round": 5,
           "roundPick": 7,
@@ -12870,7 +12870,7 @@
         {
           "name": "Matthew Stafford",
           "playerId": 12483,
-          "points": 131.6,
+          "points": 142.9,
           "position": "QB",
           "round": 4,
           "roundPick": 4,
@@ -12879,7 +12879,7 @@
         {
           "name": "Geno Smith",
           "playerId": 15864,
-          "points": 123.1,
+          "points": 130.5,
           "position": "QB",
           "round": 14,
           "roundPick": 4,
@@ -12888,7 +12888,7 @@
         {
           "name": "Jahmyr Gibbs",
           "playerId": 4429795,
-          "points": 195.8,
+          "points": 209.2,
           "position": "RB",
           "round": 1,
           "roundPick": 7,
@@ -12897,7 +12897,7 @@
         {
           "name": "Ashton Jeanty",
           "playerId": 4890973,
-          "points": 132.3,
+          "points": 139.3,
           "position": "RB",
           "round": 3,
           "roundPick": 7,
@@ -12906,25 +12906,16 @@
         {
           "name": "Aaron Jones Sr.",
           "playerId": 3042519,
-          "points": 79.8,
+          "points": 82.9,
           "position": "RB",
           "round": 15,
           "roundPick": 7,
           "status": "Drafted"
         },
         {
-          "name": "Isaiah Davis",
-          "playerId": 4695404,
-          "points": 16.2,
-          "position": "RB",
-          "round": null,
-          "roundPick": null,
-          "status": "Free Agent"
-        },
-        {
           "name": "Michael Wilson",
           "playerId": 4360761,
-          "points": 108.7,
+          "points": 120.7,
           "position": "WR",
           "round": null,
           "roundPick": null,
@@ -12933,7 +12924,7 @@
         {
           "name": "DeMario Douglas",
           "playerId": 4427095,
-          "points": 81.2,
+          "points": 96.4,
           "position": "WR",
           "round": null,
           "roundPick": null,
@@ -12942,9 +12933,18 @@
         {
           "name": "Jaylen Waddle",
           "playerId": 4372016,
-          "points": 78.8,
+          "points": 82.0,
           "position": "WR",
           "round": 8,
+          "roundPick": 4,
+          "status": "Drafted"
+        },
+        {
+          "name": "Emeka Egbuka",
+          "playerId": 4567750,
+          "points": 78.0,
+          "position": "WR",
+          "round": 6,
           "roundPick": 4,
           "status": "Drafted"
         },
@@ -12958,27 +12958,27 @@
           "status": "Drafted"
         },
         {
-          "name": "Emeka Egbuka",
-          "playerId": 4567750,
-          "points": 71.1,
-          "position": "WR",
-          "round": 6,
-          "roundPick": 4,
-          "status": "Drafted"
-        },
-        {
           "name": "Rashee Rice",
           "playerId": 4428331,
-          "points": 56.3,
+          "points": 66.2,
           "position": "WR",
           "round": 2,
           "roundPick": 4,
           "status": "Drafted"
         },
         {
+          "name": "Deebo Samuel Sr.",
+          "playerId": 3126486,
+          "points": 60.4,
+          "position": "WR",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
+        },
+        {
           "name": "Isaiah Likely",
           "playerId": 4361050,
-          "points": 112.5,
+          "points": 128.8,
           "position": "TE",
           "round": 12,
           "roundPick": 4,
@@ -12987,7 +12987,7 @@
         {
           "name": "George Kittle",
           "playerId": 3040151,
-          "points": 104.5,
+          "points": 114.3,
           "position": "TE",
           "round": 7,
           "roundPick": 7,
@@ -12996,7 +12996,7 @@
         {
           "name": "Brenton Strange",
           "playerId": 4430539,
-          "points": 67.4,
+          "points": 71.6,
           "position": "TE",
           "round": null,
           "roundPick": null,
@@ -13005,25 +13005,25 @@
         {
           "name": "Spencer Shrader",
           "playerId": 4571557,
-          "points": 88.0,
+          "points": 104.0,
           "position": "K",
           "round": null,
           "roundPick": null,
           "status": "Free Agent"
         },
         {
-          "name": "Jason Myers",
-          "playerId": 2473037,
-          "points": 69.0,
+          "name": "Chad Ryland",
+          "playerId": 4363538,
+          "points": 83.0,
           "position": "K",
-          "round": 11,
-          "roundPick": 7,
-          "status": "Drafted"
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
         },
         {
           "name": "Broncos D/ST",
           "playerId": -16007,
-          "points": 64.0,
+          "points": 73.0,
           "position": "D/ST",
           "round": 13,
           "roundPick": 7,
@@ -13034,7 +13034,7 @@
         {
           "name": "Josh Allen",
           "playerId": 3918298,
-          "points": 187.8,
+          "points": 200.7,
           "position": "QB",
           "round": 1,
           "roundPick": 1,
@@ -13043,7 +13043,7 @@
         {
           "name": "C.J. Stroud",
           "playerId": 4432577,
-          "points": 128.7,
+          "points": 164.0,
           "position": "QB",
           "round": 11,
           "roundPick": 1,
@@ -13052,7 +13052,7 @@
         {
           "name": "Bo Nix",
           "playerId": 4426338,
-          "points": 115.1,
+          "points": 130.8,
           "position": "QB",
           "round": 2,
           "roundPick": 10,
@@ -13061,7 +13061,7 @@
         {
           "name": "Kyren Williams",
           "playerId": 4430737,
-          "points": 150.0,
+          "points": 159.1,
           "position": "RB",
           "round": 5,
           "roundPick": 1,
@@ -13070,11 +13070,20 @@
         {
           "name": "Derrick Henry",
           "playerId": 3043078,
-          "points": 136.7,
+          "points": 142.3,
           "position": "RB",
           "round": 3,
           "roundPick": 1,
           "status": "Added"
+        },
+        {
+          "name": "Tyler Allgeier",
+          "playerId": 4373626,
+          "points": 90.7,
+          "position": "RB",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
         },
         {
           "name": "RJ Harvey",
@@ -13082,6 +13091,15 @@
           "points": 67.4,
           "position": "RB",
           "round": 14,
+          "roundPick": 10,
+          "status": "Drafted"
+        },
+        {
+          "name": "Breece Hall",
+          "playerId": 4427366,
+          "points": 54.2,
+          "position": "RB",
+          "round": 4,
           "roundPick": 10,
           "status": "Drafted"
         },
@@ -13095,19 +13113,19 @@
           "status": "Drafted"
         },
         {
-          "name": "Breece Hall",
-          "playerId": 4427366,
-          "points": 42.5,
-          "position": "RB",
-          "round": 4,
-          "roundPick": 10,
-          "status": "Drafted"
-        },
-        {
           "name": "Jordan Mason",
           "playerId": 4360569,
-          "points": 20.7,
+          "points": 26.9,
           "position": "RB",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
+        },
+        {
+          "name": "Denzel Boston",
+          "playerId": 4832800,
+          "points": 102.7,
+          "position": "WR",
           "round": null,
           "roundPick": null,
           "status": "Free Agent"
@@ -13122,18 +13140,9 @@
           "status": "Drafted"
         },
         {
-          "name": "Denzel Boston",
-          "playerId": 4832800,
-          "points": 86.9,
-          "position": "WR",
-          "round": null,
-          "roundPick": null,
-          "status": "Free Agent"
-        },
-        {
           "name": "Stefon Diggs",
           "playerId": 2976212,
-          "points": 82.2,
+          "points": 90.3,
           "position": "WR",
           "round": 12,
           "roundPick": 10,
@@ -13151,7 +13160,7 @@
         {
           "name": "Marvin Harrison Jr.",
           "playerId": 4432708,
-          "points": 33.5,
+          "points": 37.5,
           "position": "WR",
           "round": 10,
           "roundPick": 10,
@@ -13160,7 +13169,7 @@
         {
           "name": "Travis Kelce",
           "playerId": 15847,
-          "points": 82.0,
+          "points": 99.3,
           "position": "TE",
           "round": 13,
           "roundPick": 1,
@@ -13169,7 +13178,7 @@
         {
           "name": "Juwan Johnson",
           "playerId": 3929645,
-          "points": 67.5,
+          "points": 78.9,
           "position": "TE",
           "round": null,
           "roundPick": null,
@@ -13178,16 +13187,7 @@
         {
           "name": "Tyler Bass",
           "playerId": 3917232,
-          "points": 78.0,
-          "position": "K",
-          "round": null,
-          "roundPick": null,
-          "status": "Free Agent"
-        },
-        {
-          "name": "Dominic Zvada",
-          "playerId": 5082424,
-          "points": 57.0,
+          "points": 91.0,
           "position": "K",
           "round": null,
           "roundPick": null,
@@ -13196,7 +13196,7 @@
         {
           "name": "Bears D/ST",
           "playerId": -16003,
-          "points": 68.0,
+          "points": 83.0,
           "position": "D/ST",
           "round": 17,
           "roundPick": 1,
@@ -13207,16 +13207,16 @@
         {
           "name": "Michael Penix Jr.",
           "playerId": 4360423,
-          "points": 82.8,
+          "points": 96.3,
           "position": "QB",
           "round": null,
           "roundPick": null,
           "status": "Free Agent"
         },
         {
-          "name": "Tanner McKee",
-          "playerId": 4685201,
-          "points": 30.1,
+          "name": "Drew Lock",
+          "playerId": 3924327,
+          "points": 46.8,
           "position": "QB",
           "round": null,
           "roundPick": null,
@@ -13234,7 +13234,7 @@
         {
           "name": "Jonathan Taylor",
           "playerId": 4242335,
-          "points": 144.2,
+          "points": 153.6,
           "position": "RB",
           "round": 3,
           "roundPick": 5,
@@ -13243,11 +13243,20 @@
         {
           "name": "Chuba Hubbard",
           "playerId": 4241416,
-          "points": 133.0,
+          "points": 146.6,
           "position": "RB",
           "round": 10,
           "roundPick": 6,
           "status": "Drafted"
+        },
+        {
+          "name": "Woody Marks",
+          "playerId": 4429059,
+          "points": 70.9,
+          "position": "RB",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
         },
         {
           "name": "Jeremiyah Love",
@@ -13261,7 +13270,7 @@
         {
           "name": "Zach Charbonnet",
           "playerId": 4426385,
-          "points": 5.9,
+          "points": 15.5,
           "position": "RB",
           "round": 13,
           "roundPick": 5,
@@ -13270,7 +13279,7 @@
         {
           "name": "Puka Nacua",
           "playerId": 4426515,
-          "points": 138.6,
+          "points": 173.6,
           "position": "WR",
           "round": 1,
           "roundPick": 5,
@@ -13279,7 +13288,7 @@
         {
           "name": "Malik Nabers",
           "playerId": 4595348,
-          "points": 120.5,
+          "points": 129.8,
           "position": "WR",
           "round": 4,
           "roundPick": 6,
@@ -13288,7 +13297,7 @@
         {
           "name": "Rome Odunze",
           "playerId": 4431299,
-          "points": 72.8,
+          "points": 88.8,
           "position": "WR",
           "round": 9,
           "roundPick": 5,
@@ -13297,7 +13306,7 @@
         {
           "name": "KC Concepcion",
           "playerId": 4870653,
-          "points": 69.6,
+          "points": 88.4,
           "position": "WR",
           "round": 16,
           "roundPick": 6,
@@ -13306,25 +13315,16 @@
         {
           "name": "DJ Moore",
           "playerId": 3915416,
-          "points": 52.9,
+          "points": 59.5,
           "position": "WR",
           "round": 8,
           "roundPick": 6,
           "status": "Drafted"
         },
         {
-          "name": "Pat Freiermuth",
-          "playerId": 4361411,
-          "points": 79.0,
-          "position": "TE",
-          "round": null,
-          "roundPick": null,
-          "status": "Free Agent"
-        },
-        {
           "name": "T.J. Hockenson",
           "playerId": 4036133,
-          "points": 78.5,
+          "points": 85.8,
           "position": "TE",
           "round": 17,
           "roundPick": 5,
@@ -13333,7 +13333,7 @@
         {
           "name": "Tyler Warren",
           "playerId": 4431459,
-          "points": 75.7,
+          "points": 84.1,
           "position": "TE",
           "round": 7,
           "roundPick": 5,
@@ -13342,7 +13342,7 @@
         {
           "name": "Chase McLaughlin",
           "playerId": 3150744,
-          "points": 89.0,
+          "points": 99.0,
           "position": "K",
           "round": null,
           "roundPick": null,
@@ -13351,7 +13351,7 @@
         {
           "name": "Rams D/ST",
           "playerId": -16014,
-          "points": 47.0,
+          "points": 62.0,
           "position": "D/ST",
           "round": 11,
           "roundPick": 5,
@@ -13362,7 +13362,7 @@
         {
           "name": "Jared Goff",
           "playerId": 3046779,
-          "points": 142.1,
+          "points": 147.4,
           "position": "QB",
           "round": 5,
           "roundPick": 10,
@@ -13380,7 +13380,7 @@
         {
           "name": "Baker Mayfield",
           "playerId": 3052587,
-          "points": 43.2,
+          "points": 50.9,
           "position": "QB",
           "round": 6,
           "roundPick": 1,
@@ -13389,7 +13389,7 @@
         {
           "name": "Bijan Robinson",
           "playerId": 4430807,
-          "points": 153.3,
+          "points": 180.0,
           "position": "RB",
           "round": 1,
           "roundPick": 10,
@@ -13398,7 +13398,7 @@
         {
           "name": "Bucky Irving",
           "playerId": 4596448,
-          "points": 130.6,
+          "points": 159.1,
           "position": "RB",
           "round": 7,
           "roundPick": 10,
@@ -13407,7 +13407,7 @@
         {
           "name": "Rachaad White",
           "playerId": 4697815,
-          "points": 62.8,
+          "points": 69.7,
           "position": "RB",
           "round": 16,
           "roundPick": 1,
@@ -13416,7 +13416,7 @@
         {
           "name": "Kenny Gainwell",
           "playerId": 4371733,
-          "points": 53.0,
+          "points": 63.6,
           "position": "RB",
           "round": 12,
           "roundPick": 1,
@@ -13434,7 +13434,7 @@
         {
           "name": "Chris Olave",
           "playerId": 4361370,
-          "points": 124.6,
+          "points": 141.4,
           "position": "WR",
           "round": 4,
           "roundPick": 1,
@@ -13443,34 +13443,34 @@
         {
           "name": "Justin Jefferson",
           "playerId": 4262921,
-          "points": 86.4,
+          "points": 95.2,
           "position": "WR",
           "round": 2,
           "roundPick": 1,
           "status": "Drafted"
         },
         {
-          "name": "Chris Godwin Jr.",
-          "playerId": 3116165,
-          "points": 53.1,
-          "position": "WR",
-          "round": 14,
-          "roundPick": 1,
-          "status": "Drafted"
-        },
-        {
           "name": "Courtland Sutton",
           "playerId": 3128429,
-          "points": 48.1,
+          "points": 63.6,
           "position": "WR",
           "round": 10,
           "roundPick": 1,
           "status": "Drafted"
         },
         {
+          "name": "Chris Godwin Jr.",
+          "playerId": 3116165,
+          "points": 57.9,
+          "position": "WR",
+          "round": 14,
+          "roundPick": 1,
+          "status": "Drafted"
+        },
+        {
           "name": "Harold Fannin Jr.",
           "playerId": 5083076,
-          "points": 90.1,
+          "points": 102.3,
           "position": "TE",
           "round": 8,
           "roundPick": 1,
@@ -13479,7 +13479,7 @@
         {
           "name": "Dallas Goedert",
           "playerId": 3121023,
-          "points": 64.0,
+          "points": 74.0,
           "position": "TE",
           "round": 13,
           "roundPick": 10,
@@ -13488,7 +13488,7 @@
         {
           "name": "Matt Gay",
           "playerId": 4249087,
-          "points": 81.0,
+          "points": 88.0,
           "position": "K",
           "round": null,
           "roundPick": null,
@@ -13497,7 +13497,7 @@
         {
           "name": "Cameron Dicker",
           "playerId": 4362081,
-          "points": 47.0,
+          "points": 60.0,
           "position": "K",
           "round": 11,
           "roundPick": 10,
@@ -13506,7 +13506,7 @@
         {
           "name": "Texans D/ST",
           "playerId": -16034,
-          "points": 38.0,
+          "points": 51.0,
           "position": "D/ST",
           "round": 9,
           "roundPick": 10,
@@ -13515,7 +13515,7 @@
         {
           "name": "Eagles D/ST",
           "playerId": -16021,
-          "points": 23.0,
+          "points": 35.0,
           "position": "D/ST",
           "round": 15,
           "roundPick": 10,
@@ -13526,7 +13526,7 @@
         {
           "name": "Drake Maye",
           "playerId": 4431452,
-          "points": 160.9,
+          "points": 179.2,
           "position": "QB",
           "round": 4,
           "roundPick": 3,
@@ -13535,7 +13535,7 @@
         {
           "name": "Trevor Lawrence",
           "playerId": 4360310,
-          "points": 133.6,
+          "points": 147.2,
           "position": "QB",
           "round": 5,
           "roundPick": 8,
@@ -13544,7 +13544,7 @@
         {
           "name": "Daniel Jones",
           "playerId": 3917792,
-          "points": 71.2,
+          "points": 81.5,
           "position": "QB",
           "round": 10,
           "roundPick": 3,
@@ -13553,7 +13553,7 @@
         {
           "name": "Javonte Williams",
           "playerId": 4361579,
-          "points": 137.2,
+          "points": 159.6,
           "position": "RB",
           "round": 3,
           "roundPick": 8,
@@ -13562,7 +13562,7 @@
         {
           "name": "James Cook III",
           "playerId": 4379399,
-          "points": 131.7,
+          "points": 148.4,
           "position": "RB",
           "round": 2,
           "roundPick": 3,
@@ -13580,7 +13580,7 @@
         {
           "name": "J.K. Dobbins",
           "playerId": 4241985,
-          "points": 59.3,
+          "points": 62.5,
           "position": "RB",
           "round": 9,
           "roundPick": 8,
@@ -13589,7 +13589,7 @@
         {
           "name": "CeeDee Lamb",
           "playerId": 4241389,
-          "points": 168.3,
+          "points": 201.8,
           "position": "WR",
           "round": 1,
           "roundPick": 8,
@@ -13598,7 +13598,7 @@
         {
           "name": "Luther Burden III",
           "playerId": 4685278,
-          "points": 115.6,
+          "points": 136.3,
           "position": "WR",
           "round": 8,
           "roundPick": 3,
@@ -13607,7 +13607,7 @@
         {
           "name": "Tetairoa McMillan",
           "playerId": 4685472,
-          "points": 108.9,
+          "points": 124.5,
           "position": "WR",
           "round": 6,
           "roundPick": 3,
@@ -13625,7 +13625,7 @@
         {
           "name": "Jordan Addison",
           "playerId": 4429205,
-          "points": 49.1,
+          "points": 53.9,
           "position": "WR",
           "round": 15,
           "roundPick": 8,
@@ -13643,7 +13643,7 @@
         {
           "name": "Sam LaPorta",
           "playerId": 4430027,
-          "points": 85.9,
+          "points": 93.1,
           "position": "TE",
           "round": 7,
           "roundPick": 8,
@@ -13652,7 +13652,7 @@
         {
           "name": "Eli Raridon",
           "playerId": 4831959,
-          "points": 42.3,
+          "points": 50.5,
           "position": "TE",
           "round": 17,
           "roundPick": 8,
@@ -13661,7 +13661,7 @@
         {
           "name": "Nick Folk",
           "playerId": 10621,
-          "points": 53.0,
+          "points": 57.0,
           "position": "K",
           "round": null,
           "roundPick": null,
@@ -13670,7 +13670,7 @@
         {
           "name": "Jaguars D/ST",
           "playerId": -16030,
-          "points": 62.0,
+          "points": 75.0,
           "position": "D/ST",
           "round": null,
           "roundPick": null,
@@ -13681,7 +13681,7 @@
         {
           "name": "Bryce Young",
           "playerId": 4685720,
-          "points": 126.2,
+          "points": 146.6,
           "position": "QB",
           "round": 11,
           "roundPick": 6,
@@ -13697,15 +13697,6 @@
           "status": "Added"
         },
         {
-          "name": "Jalen Hurts",
-          "playerId": 4040715,
-          "points": 80.0,
-          "position": "QB",
-          "round": 2,
-          "roundPick": 5,
-          "status": "Drafted"
-        },
-        {
           "name": "Kyler Murray",
           "playerId": 3917315,
           "points": 73.6,
@@ -13715,27 +13706,36 @@
           "status": "Free Agent"
         },
         {
-          "name": "D'Andre Swift",
-          "playerId": 4259545,
-          "points": 150.7,
-          "position": "RB",
-          "round": 6,
-          "roundPick": 5,
-          "status": "Drafted"
+          "name": "Carson Wentz",
+          "playerId": 2573079,
+          "points": 22.8,
+          "position": "QB",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
         },
         {
           "name": "Christian McCaffrey",
           "playerId": 3117251,
-          "points": 144.0,
+          "points": 166.7,
           "position": "RB",
           "round": 1,
           "roundPick": 6,
           "status": "Drafted"
         },
         {
+          "name": "D'Andre Swift",
+          "playerId": 4259545,
+          "points": 153.8,
+          "position": "RB",
+          "round": 6,
+          "roundPick": 5,
+          "status": "Drafted"
+        },
+        {
           "name": "Rhamondre Stevenson",
           "playerId": 4569173,
-          "points": 98.9,
+          "points": 113.7,
           "position": "RB",
           "round": 8,
           "roundPick": 5,
@@ -13753,7 +13753,7 @@
         {
           "name": "Tee Higgins",
           "playerId": 4239993,
-          "points": 139.6,
+          "points": 159.8,
           "position": "WR",
           "round": 7,
           "roundPick": 6,
@@ -13762,7 +13762,7 @@
         {
           "name": "Zay Flowers",
           "playerId": 4429615,
-          "points": 122.2,
+          "points": 127.5,
           "position": "WR",
           "round": 5,
           "roundPick": 6,
@@ -13771,11 +13771,20 @@
         {
           "name": "Drake London",
           "playerId": 4426502,
-          "points": 109.8,
+          "points": 121.6,
           "position": "WR",
           "round": 3,
           "roundPick": 6,
           "status": "Drafted"
+        },
+        {
+          "name": "Tre Tucker",
+          "playerId": 4428718,
+          "points": 109.3,
+          "position": "WR",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
         },
         {
           "name": "George Pickens",
@@ -13787,18 +13796,9 @@
           "status": "Drafted"
         },
         {
-          "name": "Tre Tucker",
-          "playerId": 4428718,
-          "points": 99.8,
-          "position": "WR",
-          "round": null,
-          "roundPick": null,
-          "status": "Free Agent"
-        },
-        {
           "name": "Hunter Henry",
           "playerId": 3046439,
-          "points": 73.6,
+          "points": 80.1,
           "position": "TE",
           "round": null,
           "roundPick": null,
@@ -13807,7 +13807,7 @@
         {
           "name": "Mark Andrews",
           "playerId": 3116365,
-          "points": 54.8,
+          "points": 58.7,
           "position": "TE",
           "round": 13,
           "roundPick": 6,
@@ -13816,7 +13816,7 @@
         {
           "name": "Brandon Aubrey",
           "playerId": 3953687,
-          "points": 70.0,
+          "points": 79.0,
           "position": "K",
           "round": 10,
           "roundPick": 5,
@@ -13825,7 +13825,7 @@
         {
           "name": "Vikings D/ST",
           "playerId": -16016,
-          "points": 87.0,
+          "points": 93.0,
           "position": "D/ST",
           "round": null,
           "roundPick": null,
@@ -13834,7 +13834,7 @@
         {
           "name": "Ravens D/ST",
           "playerId": -16033,
-          "points": 44.0,
+          "points": 46.0,
           "position": "D/ST",
           "round": 14,
           "roundPick": 5,
@@ -13845,7 +13845,7 @@
         {
           "name": "Dak Prescott",
           "playerId": 2577417,
-          "points": 147.9,
+          "points": 167.4,
           "position": "QB",
           "round": 2,
           "roundPick": 7,
@@ -13854,7 +13854,7 @@
         {
           "name": "Tyler Shough",
           "playerId": 4360689,
-          "points": 125.9,
+          "points": 145.6,
           "position": "QB",
           "round": 9,
           "roundPick": 4,
@@ -13863,7 +13863,7 @@
         {
           "name": "Patrick Mahomes",
           "playerId": 3139477,
-          "points": 125.5,
+          "points": 142.0,
           "position": "QB",
           "round": 4,
           "roundPick": 7,
@@ -13872,16 +13872,7 @@
         {
           "name": "Braelon Allen",
           "playerId": 4685247,
-          "points": 99.6,
-          "position": "RB",
-          "round": null,
-          "roundPick": null,
-          "status": "Free Agent"
-        },
-        {
-          "name": "Emanuel Wilson",
-          "playerId": 4887558,
-          "points": 74.8,
+          "points": 105.0,
           "position": "RB",
           "round": null,
           "roundPick": null,
@@ -13890,7 +13881,7 @@
         {
           "name": "Ollie Gordon II",
           "playerId": 4711533,
-          "points": 72.2,
+          "points": 79.6,
           "position": "RB",
           "round": null,
           "roundPick": null,
@@ -13908,11 +13899,20 @@
         {
           "name": "Josh Jacobs",
           "playerId": 4047365,
-          "points": 43.3,
+          "points": 43.8,
           "position": "RB",
           "round": 10,
           "roundPick": 7,
           "status": "Drafted"
+        },
+        {
+          "name": "Devin Singletary",
+          "playerId": 4040761,
+          "points": 39.4,
+          "position": "RB",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
         },
         {
           "name": "Isiah Pacheco",
@@ -13926,7 +13926,7 @@
         {
           "name": "Jaxon Smith-Njigba",
           "playerId": 4430878,
-          "points": 220.0,
+          "points": 232.1,
           "position": "WR",
           "round": 5,
           "roundPick": 4,
@@ -13935,7 +13935,7 @@
         {
           "name": "Matthew Golden",
           "playerId": 4701936,
-          "points": 131.5,
+          "points": 163.9,
           "position": "WR",
           "round": 11,
           "roundPick": 4,
@@ -13944,7 +13944,7 @@
         {
           "name": "Xavier Worthy",
           "playerId": 4683062,
-          "points": 56.0,
+          "points": 66.8,
           "position": "WR",
           "round": 13,
           "roundPick": 4,
@@ -13960,49 +13960,49 @@
           "status": "Drafted"
         },
         {
+          "name": "Brandon Aiyuk",
+          "playerId": 4360438,
+          "points": 0.0,
+          "position": "WR",
+          "round": null,
+          "roundPick": null,
+          "status": "Free Agent"
+        },
+        {
           "name": "Colston Loveland",
           "playerId": 4723086,
-          "points": 73.9,
+          "points": 83.3,
           "position": "TE",
           "round": 6,
           "roundPick": 7,
           "status": "Drafted"
         },
         {
-          "name": "Chad Ryland",
-          "playerId": 4363538,
-          "points": 80.0,
-          "position": "K",
-          "round": null,
-          "roundPick": null,
-          "status": "Free Agent"
-        },
-        {
           "name": "Cam Little",
           "playerId": 4686361,
-          "points": 61.0,
+          "points": 78.0,
           "position": "K",
           "round": 14,
           "roundPick": 7,
           "status": "Drafted"
         },
         {
-          "name": "Patriots D/ST",
-          "playerId": -16017,
-          "points": 57.0,
-          "position": "D/ST",
-          "round": 15,
-          "roundPick": 4,
-          "status": "Drafted"
-        },
-        {
-          "name": "Jets D/ST",
-          "playerId": -16020,
-          "points": 53.0,
+          "name": "Giants D/ST",
+          "playerId": -16019,
+          "points": 59.0,
           "position": "D/ST",
           "round": null,
           "roundPick": null,
           "status": "Free Agent"
+        },
+        {
+          "name": "Patriots D/ST",
+          "playerId": -16017,
+          "points": 55.0,
+          "position": "D/ST",
+          "round": 15,
+          "roundPick": 4,
+          "status": "Drafted"
         }
       ]
     }
